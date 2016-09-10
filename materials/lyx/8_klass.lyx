@@ -1,0 +1,2400 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+8.
+ klass
+\end_layout
+
+\begin_layout Subsection*
+Arvud, arvutamine
+\end_layout
+
+\begin_layout Subsubsection*
+astendamise reeglid 
+\end_layout
+
+\begin_layout Standard
+Astendamisel kehtivad järgmised reeglid:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a^{m}\cdot a^{n}=a^{m+n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(a\cdot b)^{n}=a^{n}\cdot b^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(a^{m})^{n}=a^{m\cdot n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a^{m}\div a^{n}=a^{m-n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\frac{a}{b}){}^{n}=\frac{a^{n}}{b^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+kümne astmed // 8.
+ klass
+\end_layout
+
+\begin_layout Standard
+Esimesed kümne astmed negatiivsete täisarvuliste astendajatega:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $10^{-1}=0,1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $10^{-2}=0,01$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $10^{-3}=0,001$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $10^{-4}=0,0001$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+jne
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Kümnendmurdu saab esitada kümne astmetena.
+ 
+\series default
+Näiteks 
+\begin_inset Formula $0,5=5\cdot10^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+standardkuju
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Standardkujul kirjutatud arv
+\series default
+ on vastava arvu tüve ja sobiva kümne astme korrutis.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks: 
+\begin_inset Formula 
+\[
+0,54=5,4\cdot10^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+512=5,12\cdot10^{2}\,.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+ruutjuur // 8.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Arvust ruutjuure võtmine
+\series default
+ on kahega astendamise pöördtehe.
+ Mittenegatiivse reaalarvu 
+\emph on
+a
+\emph default
+ ruutjuureks nimetatakse mittenegatiivset reaalarvu 
+\begin_inset Formula $\sqrt{a}$
+\end_inset
+
+, mille ruut on arv 
+\emph on
+a
+\emph default
+ ehk 
+\begin_inset Formula $a=(\sqrt{a})^{2}$
+\end_inset
+
+.
+ Seega on hetkel defineeritud ruutjuure võtmine ainult positiivsetest arvudest
+ ja nullist.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks: 
+\begin_inset Formula 
+\[
+\sqrt{9}=3
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sqrt{25}=5
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sqrt{16}=4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+arvude ruudud, juured // 8.
+ klass
+\end_layout
+
+\begin_layout Standard
+Arvude 0-15 ruudud ja juured.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a, 
+\begin_inset Formula $\sqrt{a^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a, 
+\begin_inset Formula $\sqrt{a^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+64
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+81
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+100
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+121
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+144
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+169
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+36
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+196
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+49
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+225
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Algebra ja funktsioonid
+\end_layout
+
+\begin_layout Subsubsection*
+üksliige, hulkliige
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Üksliige
+\series default
+ ehk 
+\series bold
+monoom 
+\series default
+on avaldis, milles ei ole liitmise ja lahutamise tehteid või avaldis, mille
+ viimane sooritatav operatsioon ei ole liitmine või lahutamine.
+\begin_inset Newline newline
+\end_inset
+
+Kui üksliikme kordajaks on üks, siis see kordaja jäetakse kirjutamata.
+ Miinusmärk üksliikme ees tähistab kordajat -1.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Üksliikmete näited: 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $ax_{1}^{b_{1}}x_{2}^{b_{2}}$
+\end_inset
+
+ ja 
+\begin_inset Formula $sin(x+y).$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Hulkliige
+\series default
+ on üksliikmete summa.
+ Näiteks 
+\begin_inset Formula $ax+bx+c$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kaksliige
+\series default
+ ehk 
+\series bold
+binoom
+\series default
+ on kahe üksliikme summana esitatud hulkliige.
+ Näiteks 
+\begin_inset Formula $x^{2}+2x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+ruutude vahe valem
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+Ruutude vahe valem
+\series default
+ 
+\begin_inset Formula 
+\[
+(a+b)(a-b)=a^{2}-b^{2}.
+\]
+
+\end_inset
+
+See valem saadakse, kui avada sulud korrutamise teel ehk 
+\begin_inset Formula 
+\[
+(a+b)(a-b)=a^{2}-ab+ab-b^{2}=a^{2}-b^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+kaksliikme ruut
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Kaksliikme ruudu valemid
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(a+b)^{2}=a^{2}+2ab+b^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(a-b)^{2}=a^{2}-2ab+b^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Need valemid saadakse sulgude avamise teel ja liikmete koondamisel.
+ Esimene valem saadakse nii: 
+\begin_inset Formula 
+\begin{eqnarray*}
+(a+b)^{2} & = & (a+b)(a+b)=\\
+ & = & a^{2}+ab+ba+b^{2}=\\
+ & = & a^{2}+2ab+b^{2}.
+\end{eqnarray*}
+
+\end_inset
+
+Teine valem saadakse nii: 
+\begin_inset Formula 
+\begin{eqnarray*}
+(a-b)^{2} & = & (a-b)(a-b)=\\
+ & = & a^{2}-ab-ba+b^{2}=\\
+ & = & a^{2}-2ab+b^{2}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+lihtsustamine // 8.
+ klass
+\end_layout
+
+\begin_layout Standard
+Avaldiste lihtsustamiseks kasutatakse järgmisi võtteid:
+\end_layout
+
+\begin_layout Enumerate
+sulgude avamine
+\end_layout
+
+\begin_layout Enumerate
+sarnaste liikmete koondamine
+\end_layout
+
+\begin_layout Enumerate
+liikmete taandamine
+\end_layout
+
+\begin_layout Subsection*
+Võrrandid
+\end_layout
+
+\begin_layout Subsubsection*
+ruutvõrrand
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+Ruutvõrrand
+\series default
+ on teise astme võrrand ehk võrrand, kus tundmatu maksimaalne aste on kaks.
+ Ühe tundmatuga ruutvõrrand on esitatav kujul 
+\begin_inset Formula $ax^{2}+bx+c=0,$
+\end_inset
+
+ kus 
+\begin_inset Formula $ax^{2}$
+\end_inset
+
+ on ruutliige, 
+\begin_inset Formula $bx$
+\end_inset
+
+ on lineaarliige ja 
+\emph on
+c
+\emph default
+ on vabaliige.
+ Kõikidel ruutvõrranditel ei ole reaalarvulist lahendit ehk mõnedel ruutvõrrandi
+tel puudub lahend.
+ Kui ruutvõrrandil leidub lahend siis selleks võib olla:
+\end_layout
+
+\begin_layout Itemize
+\noindent
+kaks erinevat lahendit 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ ja 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+üks lahend ehk 
+\begin_inset Formula $x_{1}=x_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+ruutvõrrandi lahendamine
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+Ruutvõrrandi üldine lahendivalem:
+\series default
+ 
+\begin_inset Formula 
+\[
+x_{1,2}=\frac{-b\pm\sqrt{b^{2}-4\cdot a\cdot c}}{2\cdot a}\,\,,
+\]
+
+\end_inset
+
+kus ühe lahendi jaoks kasutatakse plussmärki ja teise jaoks miinusmärki.
+ 
+\series bold
+Ruutvõrrandi diskriminandiks
+\series default
+ nimetatakse väärtust 
+\begin_inset Formula $D=\sqrt{b^{2}-4\cdot a\cdot c}.$
+\end_inset
+
+ Ruutvõrrandi diskriminandi väärtus määrab ruutvõrrandite lahendite arvu:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D>0$
+\end_inset
+
+ korral on ruutvõrrandil kaks lahendit
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D=0$
+\end_inset
+
+ korral on ruutvõrrandil üks lahend
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D<0$
+\end_inset
+
+ korral pole ruutvõrrandil reaalarvulisi lahendeid.
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+Taandatud ruutvõrrandiks
+\series default
+ nimetatakse ruutvõrrandit, kus ruutliikme kordajaks on üks.
+ Seega on taandatud ruutvõrrand kujul 
+\begin_inset Formula $x^{2}+px+q=0$
+\end_inset
+
+, kus 
+\emph on
+p
+\emph default
+ ja 
+\emph on
+q
+\emph default
+ on konstandid.
+ Taandatud ruutvõrrandi lahendamiseks saab kasutada lisaks üldisele valemile
+ ka valemit: 
+\begin_inset Formula 
+\[
+x_{1,2}=-\frac{p}{2}\pm\sqrt{(\frac{p}{2})^{2}-q}.
+\]
+
+\end_inset
+
+Lisaks sellele saab taandatud ruutvõrrandit lahendada 
+\series bold
+Viète'i teoreemi
+\series default
+ abil.
+ 
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Viète'i teoreemi 
+\series default
+kohaselt järgivad ruutvõrrandi lahendid samasusi 
+\begin_inset Formula 
+\[
+x_{1}+x_{2}=-p
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{1}\cdot x_{2}=q
+\]
+
+\end_inset
+
+ehk lahendite summa peab võrduma lineaarliikme kordaja vastandarvuga ja
+ lahendite korrutis peab võrduma vabaliikmega.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks ruutvõrrandi 
+\begin_inset Formula $x^{2}-5x+6$
+\end_inset
+
+ lahendid on Viète'i teoreemi kohaselt 2 ja 3, sest 
+\begin_inset Formula 
+\[
+2+3=5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2\cdot3=6\,.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+liitmisvõte
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Liitmisvõte
+\series default
+ põhineb ideel, et kahe võrrandi kokkuliitmisel elimineerime ühe muutuja.
+ Näiteks kui meil on võrrandid:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{ccccc}
+2x & + & y & = & 5\\
+x & - & y & = & 1
+\end{array}
+\]
+
+\end_inset
+
+siis nende kokkuliitmisel saame võrrandi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3x+0y=6,
+\]
+
+\end_inset
+
+seega 
+\begin_inset Formula $x=2$
+\end_inset
+
+ ja 
+\begin_inset Formula $y=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Pange tähele, et 
+\begin_inset Formula $y$
+\end_inset
+
+ taandub välja.
+ Probleem tekib siis, kui kokkuliitmisel ükski muutuja välja ei taandu.
+ Sellisel juhul tuleb ühte võrranditest teisendada.
+ Näiteks järgmiste võrrandite kokkuliitmisel ei taandu kumbi muutuja välja.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{ccccc}
+6x & + & 3y & = & 15\\
+2x & - & 2y & = & 2
+\end{array}
+\]
+
+\end_inset
+
+Kui aga korrutame teise võrrandi mõlemat poolt arvuga 
+\begin_inset Formula $\frac{3}{2}$
+\end_inset
+
+, saame võrrandid
+\begin_inset Formula 
+\[
+\begin{array}{ccccc}
+6x & + & 3y & = & 15\\
+3x & - & 3y & = & 3
+\end{array}
+\]
+
+\end_inset
+
+ning need omavahel liites tekib võrrand
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+9x=18,
+\]
+
+\end_inset
+
+millest tuleneb, et 
+\begin_inset Formula $x=2$
+\end_inset
+
+ ning 
+\begin_inset Formula $y=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+asendusvõte
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Asendusvõttega
+\series default
+ võrrandisüsteemi lahendamiseks tuleb kõigepealt ühest võrrandist üks muutuja
+ avaldada ning seejärel see asendada teise võrrandisse.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks kui meil on võrran
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+did 
+\begin_inset Formula 
+\[
+2x+y=5\:,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x-y=1
+\]
+
+\end_inset
+
+siis esimesest võrrandist saame, et 
+\begin_inset Formula $y=5-2x$
+\end_inset
+
+ ja asendades selle teise võrrandisse tekib võrrand
+\begin_inset Formula 
+\[
+x-5+2x=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+3x=6
+\]
+
+\end_inset
+
+ning seega 
+\begin_inset Formula $x=2$
+\end_inset
+
+.
+ Nüüd asendades 
+\begin_inset Formula $x$
+\end_inset
+
+'i ükskõik kumba võrrandisse, saame et 
+\begin_inset Formula $y=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+lahendi kontroll
+\end_layout
+
+\begin_layout Standard
+Leitud lahendeid saab kontrollida, kui need asendada esialgsesse võrrandisse
+ ja kontrollida võrduse kehtivust.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks ruutvõrrandi 
+\begin_inset Formula $x^{2}-5x+6=0$
+\end_inset
+
+ lahendid on 
+\begin_inset Formula $x_{1}=2$
+\end_inset
+
+ ja 
+\begin_inset Formula $x_{2}=3$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Nende lahendite kontrollimiseks asendame lahendid võrrandisse 
+\begin_inset Formula 
+\[
+2^{2}-5\cdot2+6=4-10+6=0
+\]
+
+\end_inset
+
+ ja 
+\begin_inset Formula 
+\[
+3^{2}-5\cdot3+6=9-15+6=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Statistika, tõenäosus
+\end_layout
+
+\begin_layout Subsubsection*
+keskmine hälve
+\end_layout
+
+\begin_layout Standard
+Hälbeks nimetatakse kõrvalekallet mingi suuruse keskmisest, standardsest
+ või normaalsest väärtusest.
+
+\series bold
+ Keskmine hälve
+\series default
+ on kõigi hälvete aritmeetiline keskmine.
+\end_layout
+
+\begin_layout Subsubsection*
+katse, sündmus
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sündmus
+\series default
+ on katse võimalike tulemuste hulk.
+ Sündmus kas toimub või ei toimu.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+tõenäosus // 8.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Tõenäosus
+\series default
+ kirjeldab sündmuse toimumise võimalikkust.
+ Tõenäosuse kirjeldamiseks seatakse sündmusega vastavusse arv nullist üheni,
+ mis iseloomustab sündmuse toimumise võimalikkust.
+\begin_inset Newline newline
+\end_inset
+
+Tõenäosus on null, kui sündmus ei toimu ja tõenäosus on üks, kui sündmus
+ toimub.
+ Seega jäävad tõenäosuse võimalikud väärtused 0 ja 1 vahele.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks katse tulemuse tõenäosus 0.5 tähendab seda, et iga kord kui vastavat
+ katset teha on vastava tulemuse saamise võimalus pool.
+ Näiteks enne mündiviset on kulli tulemise tõenäosus 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+, kuna pärast mündiviset on tulemuseks kull või kiri.
+\end_layout
+
+\begin_layout Subsection*
+Geomeetria
+\end_layout
+
+\begin_layout Subsubsection*
+mõisted // 8.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\color black
+Väide
+\series default
+ 
+\series bold
+on
+\color red
+ 
+\series default
+\color inherit
+teoreemi osa, mis on seotud sõnaga siis ehk selle osaga kus midagi väidetakse.
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Aksioom
+\series default
+ on lause, mille õigsust ei põhjendata teiset lausete abil.
+ Aksioomide puhul lihtsalt eeldatakse, et nad kehtivad ning neid kasutatakse
+ teiste väidete tuletamiseks.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Definitsiooni
+\series default
+ all mõeldaks mõiste sisu täpset avamist, selgitamist.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Teoreem
+\series default
+ on lause, mille õigsuse tõestatamiseks kasutatakse arutelu, aksioome ja
+ varem tõestatud teoreeme.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Eeldus
+\series default
+ on väide, mille tõesus võetakse tõestamisel aluseks, kuigi see tõesus pole
+ alati kindel.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+paralleelsed sirged // 8.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Paralleelseteks
+\series default
+ 
+\series bold
+sirgeteks
+\series default
+ nimetatakse kahte tasandil olevat sirget, kui neil pole ühist punkti ehk
+ nad ei lõiku.
+ 
+\series bold
+\color red
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\color black
+Põiknurkadeks
+\series default
+ nimetatakse kahte nurka, mis saadakse kahe sirge lõikamisel kolmandaga
+ ja kus nurkade haarad lõikajal on vastassuunalised ja teised haarad asuvad
+ lõikaja eri pooltel.
+ Põiknurkade definitsiooni kirjeldab järgnev joonis.
+\color red
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/poiknurgad.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\color black
+Lähisnurkadeks
+\series default
+ nimetatakse kahte nurka, mis saadakse kahe sirge lõikamisel kolmandaga
+ ja kus nurkade haarad lõikajal on vastassuunalised ja teised haarad asuvad
+ samal pool lõikajat.
+ Lähisnurkade definitsiooni kirjeldab järgnev joonis.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/lahisnurgad.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Paralleelsete sirgete omadusi:
+\end_layout
+
+\begin_layout Itemize
+kui paralleelsed sirged on paralleelsed kolmanda sirgega, siis on nad kõik
+ teineteisega paralleelsed
+\end_layout
+
+\begin_layout Itemize
+kui sirge lõikab ühte kahest paralleelsest sirgest, siis ta lõikab ka teist
+ sirget
+\end_layout
+
+\begin_layout Itemize
+kui kaks sirget on risti ühe ja sama sirgega, siis need sirged on teineteisega
+ paralleelsed
+\end_layout
+
+\begin_layout Subsubsection*
+kolmnurk // 8.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/kolmnurk_sesering_valisring.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\series bold
+\color black
+
+\begin_inset Newline newline
+\end_inset
+
+Kolmnurga välisnurgaks
+\series default
+ nimetatakse nurka, mis on saadud kolmnurga serva pikendamise teel.
+ Välisnurk on moodustatud pikendatud serva ja sellega lõikuva serva poolt.
+\color red
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\color black
+Kolmnurga kesklõiguks
+\series default
+ nimetatakse l
+\color inherit
+õiku, mis ühendab kahe külje keskpunkte.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\color black
+Kolmnurga mediaaniks 
+\series default
+nimetatakse
+\color inherit
+ kolmnurga tipust vastaskülje keskpunkti tõmmatud lõiku.
+ Kolmnurgal on kolm mediaani.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kolmnurga ümberringjooneks
+\series default
+ nimetatakse ringjoont, mis puutub kõiki kolmnurga tippe.
+ Kolmnurga ümberringjoonte keskpunkt asub külgede keskristsirgete lõikepunktis.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kolmnurga siseringjooneks
+\series default
+ nimetatakse ringjoont, mis asub kolmnurga sees ja puutub komnurga kõiki
+ külgi.
+ Kolmnurga siseringjoone keskpunkt asub nurgapoolitajate ristumiskohas.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kolmnurga omadusi:
+\end_layout
+
+\begin_layout Itemize
+kolmnurga sisenurkade summa on alati 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+kolmnurga pindala 
+\begin_inset Formula $S=\frac{1}{2}\cdot a\cdot h$
+\end_inset
+
+, kus 
+\emph on
+a
+\emph default
+ on alus, 
+\emph on
+h
+\emph default
+ on kõrgus.
+\end_layout
+
+\begin_layout Itemize
+võrdkülgse kolmnurga kõik nurgad on 
+\begin_inset Formula $60^{\circ}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+võrdhaarse kolmnurga alusnurgad on võrdsed.
+\end_layout
+
+\begin_layout Itemize
+hüpotenuus on alati pikem kaatetitest.
+\end_layout
+
+\begin_layout Itemize
+kolmnurga mediaanide ristumiskohas on kolmnurga raskuskese
+\end_layout
+
+\begin_layout Subsubsection*
+rööpkülik // 8.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/roopkylik.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Rööpkülikuks
+\series default
+ nimetatakse nelinurka, mille vastasküljed on paralleelsed.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Rööpküliku omadusi: 
+\end_layout
+
+\begin_layout Itemize
+rööpküliku vastasküljed on võrdse pikkusega
+\end_layout
+
+\begin_layout Itemize
+rööpküliku vastasnurgad on võrdsed
+\end_layout
+
+\begin_layout Itemize
+lähisnurkade summa on 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+diagonaalid poolitavad teineteist
+\end_layout
+
+\begin_layout Itemize
+pindala 
+\begin_inset Formula $S=a\cdot h,$
+\end_inset
+
+ kus 
+\emph on
+a
+\emph default
+ on alus ja 
+\emph on
+h
+\emph default
+ on kõrgus
+\end_layout
+
+\begin_layout Itemize
+ümbermõõt võrdub küljepikkuste summaga
+\end_layout
+
+\begin_layout Subsubsection*
+romb // 8.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/romb.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Romb
+\series default
+ on nelinurk, mille kõik küljed on võrdsed.
+ Romb on rööpküliku erijuht ja seetõttu on 
+\series bold
+rombil kõik rööpküliku omadused
+\series default
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Rombi omadusi:
+\end_layout
+
+\begin_layout Itemize
+rombi diagonaalid on risti 
+\end_layout
+
+\begin_layout Itemize
+diagonaalid poolitavad teineteist ja nurki
+\end_layout
+
+\begin_layout Itemize
+pindala 
+\begin_inset Formula $S=a\cdot h$
+\end_inset
+
+, kus 
+\emph on
+a
+\emph default
+ on alus ja 
+\emph on
+h
+\emph default
+ on kõrgus
+\end_layout
+
+\begin_layout Itemize
+pindala 
+\begin_inset Formula $S=\frac{d_{1}\cdot d_{2}}{2}$
+\end_inset
+
+, kus 
+\begin_inset Formula $d_{1},d_{2}$
+\end_inset
+
+ on diagonaalide pikkused
+\end_layout
+
+\begin_layout Subsubsection*
+trapets // 8.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/trapets.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Trapets
+\series default
+ on nelinurk, mille kaks külge on omavahel parallelsed ja kaks ülejäänud
+ külge ei ole omavahel paralleelsed.
+ Paralleelseid külgi nimetatakse 
+\series bold
+trapetsi alusteks
+\series default
+.
+ Trapetsi kõrgus on aluste vaheline kaugus.
+ 
+\series bold
+\color black
+Trapetsi kesklõiguks
+\series default
+ nimetatakse
+\color inherit
+ haarade keskpunkte ühendavat lõiku.
+ Kesklõik on joonisel tähistatud tähega 
+\emph on
+k
+\emph default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Trapetsi omadusi:
+\end_layout
+
+\begin_layout Itemize
+ümbermõõt on võrdne külgede pikkuste summaga
+\end_layout
+
+\begin_layout Itemize
+pindala 
+\begin_inset Formula $S=\frac{a+b}{2}\cdot h$
+\end_inset
+
+, kus 
+\emph on
+a,b
+\emph default
+ on alused ja 
+\emph on
+h
+\emph default
+ on kõrgus
+\end_layout
+
+\begin_layout Itemize
+haarade lähisnurkade summa on 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+võrdhaarse trapetsi alusnurgad on võrdsed
+\end_layout
+
+\begin_layout Subsubsection*
+ringjoon // 8.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/ring_sektor.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ringjoon
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\series bold
+\color black
+
+\begin_inset Newline newline
+\end_inset
+
+Ringjoone kaareks
+\series default
+ nimetatakse ringjoone osa tema kahe punkti vahel koos nende punktidega.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kõõluks
+\series default
+ nimetatakse ringjoone mingit kahte punkti ühendavat lõiku.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kaarekraadiks
+\series default
+ nimetatakse 
+\begin_inset Formula $\frac{1}{360}$
+\end_inset
+
+ ringjoonest.
+\color red
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\color black
+Kesknurgaks
+\series default
+ nimetatakse nurka, mille tipp asub ringjoone keskpunktis, teisiti öeldes
+ on see nurk, mille moodustavad kaks ringjoone raadiust.
+\color red
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\color black
+Piirdenurgaks
+\series default
+ nimetatakse nurka, mis on moodustatud kahe ühise otspunktiga kõõlu poolt.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Ringjoone lõikajaks
+\series default
+ nimetatakse sirget, millel on ringjoonega kaks ühist punkti.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Ringjoone puutujaks
+\series default
+ nimetatakse sirget, millel on ringjoonega üks ühine punkt.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\color inherit
+Ringjoone omadusi:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\begin_inset Formula $\pi\approx3.14$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+ringjoone ümbermõõt on võrdne 
+\begin_inset Formula $2\cdot\pi\cdot r=\pi\cdot d$
+\end_inset
+
+, kus 
+\emph on
+r
+\emph default
+ on raadius ja 
+\emph on
+d
+\emph default
+ on diameeter
+\end_layout
+
+\begin_layout Itemize
+pi on ringjoone ümbermõõdu ja diagonaali suhe
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Thales'i teoreem:
+\series default
+ diameetrile toetuv nurk on täisnurk
+\end_layout
+
+\begin_layout Subsubsection*
+püstprisma // 8.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/kolmnurkne_pystprisma.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/kuup.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Püstprismaks
+\series default
+ nimetatakse prismat, mille külgservad on põhjadega risti.
+ Püstprisma külgtahkudeks on ristkülikud.
+
+\series bold
+\color red
+ 
+\color black
+Korrapäraseks püstprismaks 
+\series default
+nimetatakse püstprismat, mille põhjadeks on korrapärased hulknurgad.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Püstprisma omadused:
+\end_layout
+
+\begin_layout Itemize
+pindala võrdub külgede pindalade summaga
+\end_layout
+
+\begin_layout Itemize
+ruumala võrdub põhja pindala ja kõrguse korrutisega
+\end_layout
+
+\begin_layout Subsubsection*
+püramiid // 8.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/pyramiis.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Püramiid
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\series bold
+\color black
+
+\begin_inset Newline newline
+\end_inset
+
+Püramiidiks 
+\series default
+nimetatakse hulktahukat, mille üks tahk on hulknurk ja ülejäänud tahud on
+ kolmnurgad.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Korrapäraseks püramiidiks
+\series default
+ nimetatakse püramiidi, mille põhjaks on korrapärane hulknurk.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Korrapärase püramiidi põhja apoteemiks
+\series default
+ nimetatakse lõiku põhja keskpunktist põhja serva keskpunktini.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Korrapärase püramiidi apoteemiks
+\series default
+ nimetatakse tipust tõmmatud külgtahu kõrgust.
+\color red
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\color black
+Püramiidi omadused:
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+pindala on võrdne põhjapindala ja külgpindala summaga
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+ruumala võrdub kolmandikuga sama põhja ja sama kõrgusega prisma ruumalast
+\end_layout
+
+\end_body
+\end_document

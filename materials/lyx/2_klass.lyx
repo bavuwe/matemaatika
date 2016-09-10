@@ -1,0 +1,1667 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+2.
+ klass
+\end_layout
+
+\begin_layout Subsection*
+Arvud
+\end_layout
+
+\begin_layout Subsubsection*
+võrdus ja võrratus // 2.
+ klass
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+Võrdusmärki
+\series default
+ tähistatakse sümboliga 
+\series bold
+=
+\series default
+.
+ Näiteks 2=2.
+ Võrdusmärk näitab, et vasakul pool võrdusmärki asuv on samaväärne parema
+ pool võrdusmärki asuvaga.
+
+\series bold
+ 
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Avaldis 
+\series default
+on eeskiri, mis määrab ära tehted ja nende sooritamise järjekorra.
+ Näiteks 1+1, 2-1.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Võrdus
+\series default
+ on moodustatud kahest võrdusmärgiga ühendatud avaldisest.
+ Seega on võrduses olevad avaldised võrdsed.
+ Näiteks 2+3=7-2, 3+1=5-1.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Sümbolitega 
+\series bold
+< 
+\series default
+ja
+\series bold
+ >
+\series default
+ märgitakse seda, kas üks arv on teisest väiksem või suurem.
+ Avaldist 2<3 loeme: kaks on väiksem kui kolm ja avaldist 3>2 loeme: kolm
+ on suurem kui kaks.
+ Seega, 
+\series bold
+väiksem kui
+\series default
+ märgitakse sümboliga 
+\series bold
+<
+\series default
+ ja
+\series bold
+ suurem kui 
+\series default
+sümboliga 
+\series bold
+>
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+arvud 1 - 100 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Numbrid
+\series default
+ on 0,1,2,3,4,5,6,7,8,9.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Numbritest saab moodustada arve.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ühekohalised
+\series default
+ arvud on moodustatud ühest numbrist, 
+\series bold
+kahekohalised
+\series default
+ kahest numbrist ja 
+\series bold
+kolmekohalised
+\series default
+ kolmest numbrist.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+ühelised, kümnelised
+\end_layout
+
+\begin_layout Standard
+\noindent
+Kahekohalised arvud on moodustatud 
+\series bold
+ühelistest
+\series default
+ ja 
+\series bold
+kümnelistest
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Kümnelisi tähistatakse esimese numbriga ja ühelisi teise numbriga.
+ Näiteks arvus 15 on ühelisteks 5 ja kümnelisteks 10.
+ Arv 15 saadakse, kui liita 10 ja 5 ehk 15=10+5.
+\begin_inset Newline newline
+\end_inset
+
+Niimoodi saab osadeks jagada kõik kahekohalised arvud.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Selleks, et võrrelda kahekohalisi arve tuleb kõigepealt võrrelda nende kümnelisi.
+ Näiteks, kui on vaja võrrelda 35 ja 42, siis kirjutame lahti 35=30+5 ja
+ 42=40+2 ning siis võrdleme kümnelisi: 30<40.
+ Järelikult on 35<42.
+ Kui kümnelised on võrdsed, siis tuleb võrrelda ka ühelisi, et teha kindlaks
+ kumb arv on suurem.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks 41 ja 46 korral kirjutame arvud kõigepealt summadena 41=40+1 ja
+ 46=40+6 ja näeme, et kümnelised on võrdsed 40=40.
+ Nüüd võrdleme ühelisi ja näeme, et 1<6, mistõttu 41<46.
+\end_layout
+
+\begin_layout Subsubsection*
+suurendada, vähendada
+\end_layout
+
+\begin_layout Standard
+Arvu saab 
+\series bold
+suurendada
+\series default
+, kui arvule liita teine arv.
+ Näiteks tehe 21+3 näitab, kuidas suurenda arvu kakskümmend üks kolme võrra,
+ et saada arv 24.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Arvu saab 
+\series bold
+vähendada
+\series default
+, kui arvust lahutada teine arv.
+ Näiteks tehe 21-3 näitab, kuidas vähendada arvu kakskümmend üks kolme võrra,
+ et saada arv 18.
+\end_layout
+
+\begin_layout Subsubsection*
+arvud 1 - 1000 
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+Kolmekohalised
+\series default
+ arvud on moodustatud 
+\series bold
+ühelistest
+\series default
+ ja 
+\series bold
+kümnelistest
+\series default
+ ja 
+\series bold
+sajalistest
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Sajalisi tähistatakse esimese numbriga, kümnelisi tähistatakse teise numbriga
+ ja ühelisi kolmanda numbriga.
+\begin_inset Newline newline
+\end_inset
+
+Näiteks arvus 157 on ühelisteks 7 ja kümnelisteks 50 ja sajalisteks 100.
+ Arv 157 saadakse, kui liita 100 ja 50 ja 7 ehk 157=100+50+7.
+ Niimoodi saab osadeks jagada kõik kolmekohalised arvud.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Kolmekohaliste arvude võrdlemine on sarnane kahekohaliste arvude võrdlemisele,
+ aga nüüd tuleb kõigepealt kontrollida sajalisi, siis kümnelisi ja viimasena
+ ühelisi.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks 328 ja 358 korral kirjutame arvud summadena 328=300+20+8 ja 358=300+50+8
+ ja võrdleme sajalisi 300=300.
+ Kuna sajalised on võrdsed, siis võrdleme järgmisena kümnelisi 50>20 ja
+ järeldame, et 358>328.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Kolmekohalistele arvudele järgnevad 
+\series bold
+neljakohalised
+\series default
+ arvud.
+ Esimene neljakohaline arv on 1000 (
+\series bold
+tuhat
+\series default
+).
+ 
+\end_layout
+
+\begin_layout Subsection*
+Arvutamine
+\end_layout
+
+\begin_layout Subsubsection*
+arvutamine 20 piires
+\end_layout
+
+\begin_layout Standard
+\noindent
+Liitmine ja lahutamine 20 piires peab olema nii selge, et seda on võimalik
+ teha peast.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Arve liites nimetakse neid 
+\series bold
+liidetavateks
+\series default
+ ja liitmise tulemust 
+\series bold
+summaks
+\series default
+.
+ Näiteks tehte 7+8=15 korral nimetatakse seitset ja kaheksat 
+\series bold
+liidetavateks
+\series default
+ ja 15 
+\series bold
+summaks
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Arve lahutades nimetatakse arvu, millest teine arv lahutatakse 
+\series bold
+vähendatavaks
+\series default
+.
+ Arvu, mis vähendatavast lahutatakse nimetatakse 
+\series bold
+vähendajaks
+\series default
+ ja lahutuse tulemust 
+\series bold
+vaheks
+\series default
+.
+ Näiteks tehte 17-9=8 korral on 17 
+\series bold
+vähendatav
+\series default
+, üheksa 
+\series bold
+vähendaja
+\series default
+ ja kaheksa 
+\series bold
+vahe
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+arvutamine arvudega 0 – 100
+\end_layout
+
+\begin_layout Standard
+\noindent
+Peast on vaja osata liita kahekohalistele arvudele täiskümneid ja lahutada
+ kahekohalistest arvudest täiskümneid.
+ Täiskümned on 10,20,30,40,50,60,70,80,90.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks 77-20=50, 42+40=92.
+\end_layout
+
+\begin_layout Subsubsection*
+korrutamine, selle seos liitmisega
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+Korrutamiseks
+\series default
+ nimetatakse võrdsete liidetavate liitmist.
+ Korrutamist tähistatakse sümboliga 
+\begin_inset Formula $\cdot$
+\end_inset
+
+ ja seda sümbolit nimetatakse korrutusmärgiks.
+\begin_inset Newline newline
+\end_inset
+
+Näiteks 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$4+4+4+4=4 
+\backslash
+cdot 4$
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Korrutamistehte liikmeid nimetatakse 
+\series bold
+teguriteks
+\series default
+.
+ Korrutamistehte tulemust nimetatakse 
+\series bold
+korrutiseks
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$4 
+\backslash
+cdot 3=12$
+\end_layout
+
+\end_inset
+
+ korral on neli ja kolm tegurid ja korrutis on 12.
+ Korrutamist on vaja osata 20 piires.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+korda suurem, korda vähem
+\end_layout
+
+\begin_layout Standard
+\noindent
+Arv on 
+\series bold
+kaks korda suurem
+\series default
+ kui teine arv, kui teist arvu kahega korrutades saadakse esimene arv.
+\begin_inset Newline newline
+\end_inset
+
+Näiteks, 28 on kaks korda suurem kui 14, sest 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$2 
+\backslash
+cdot 14=28$
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Arv on 
+\series bold
+kolm korda suurem
+\series default
+ kui teine arv, kui teist arvu kolmega korrutades saadakse esimene arv.
+\begin_inset Newline newline
+\end_inset
+
+Näiteks, 45 on kolm korda suurem kui 15, sest 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$3 
+\backslash
+cdot 15=45$
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Arv on 
+\series bold
+kaks korda väiksem
+\series default
+, kui teine arv, kui esimest arvu kahega korrutades saame teise arvu.
+ Näiteks, 14 on kaks korda väiksem kui 28, sest 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$2 
+\backslash
+cdot 14=28$
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Arv on 
+\series bold
+kolm korda väiksem
+\series default
+, kui teine arv, kui esimest arvu kolmega korrutades saame teise arvu.
+ Näiteks, 15 on kolm korda väiksem kui 45, sest 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$3 
+\backslash
+cdot 15=45$
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+jagamine, selle seos korrutamisega 
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+Jagamiseks
+\series default
+ nimetatakse korrutise ja ühe teguri järgi teise teguri leidmist.
+ Jagamistehet märgitakse sümboliga 
+\begin_inset Formula $:$
+\end_inset
+
+ või sümboliga 
+\begin_inset Formula $\div$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Kuna jagamine on korrutamise pöördtehe ehk vastandtehe, siis saab jagamise
+ tulemust kontrollida korrutamise abil.
+\begin_inset Newline newline
+\end_inset
+
+Näiteks 18:6=3 ja kontroll näitab, et 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$3 
+\backslash
+cdot 6=18$
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Jagamistehte liiget, mida jagatakse nimetatakse 
+\series bold
+jagatavaks
+\series default
+, liiget millega jagatakse nimetatakse 
+\series bold
+jagajaks
+\series default
+ ja tulemust 
+\series bold
+jagatiseks
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+Näiteks, 18:6=3 korral on 18 jagatav, kuus on jagaja ja kolm on jagatis.
+\end_layout
+
+\begin_layout Subsection*
+Mõõtühikud
+\end_layout
+
+\begin_layout Subsubsection*
+pikkusühikud
+\end_layout
+
+\begin_layout Standard
+\noindent
+Kilomeeter, meeter, detsimeeter, sentimeeter ja millimeeter on 
+\series bold
+pikkusühikud
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+kilomeeter (km) - 1 km = 1000 m
+\begin_inset Newline newline
+\end_inset
+
+meeter (m) - 1 m = 10 dm 
+\begin_inset Newline newline
+\end_inset
+
+detsimeeter (dm) - 1 dm = 10 cm
+\begin_inset Newline newline
+\end_inset
+
+sentimeeter (cm) - 1 cm = 10 mm
+\end_layout
+
+\begin_layout Subsubsection*
+mahuühikud
+\end_layout
+
+\begin_layout Standard
+\noindent
+Liiter on 
+\series bold
+ruumalaühik
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+liiter (l) - 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1 dm^3$
+\end_layout
+
+\end_inset
+
+ = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.001 m^3$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+ajaühikud
+\end_layout
+
+\begin_layout Standard
+\noindent
+Tund, minut ja sekund on 
+\series bold
+ajaühikud
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+tund (h) - 1 h = 60 min
+\begin_inset Newline newline
+\end_inset
+
+minut (min) - 1 min = 60 s
+\begin_inset Newline newline
+\end_inset
+
+sekund (s) - 1 s
+\end_layout
+
+\begin_layout Subsection*
+Algebra ja funktsioonid 
+\end_layout
+
+\begin_layout Subsubsection*
+täht arvu tähisena 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Avaldises olevat tundmatut väärtust võib tähistada tähega.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks olgu meil ülesanne a+5=7.
+ Selles ülesandes on tundmatuks täht a.
+ Antud ülesandes tuleb leida tundmatule väärtus nii, et võrdus kehtiks.
+\begin_inset Newline newline
+\end_inset
+
+Seega tuleb leida arv, mis asendaks tundmatut a nii, et a+5 võrduks seitsmega.
+ Antud juhul a=2, sest 2+5=7.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Niisuguseid ülesandeid saab lahendada proovimise abil.
+\end_layout
+
+\begin_layout Subsection*
+Geomeetria
+\end_layout
+
+\begin_layout Subsubsection*
+sirge ja sirglõik // 2.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/sirge.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sirge
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+Sirge
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ (
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+sirgjoon
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+) on lõpmata pikk kõverusteta joon.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/sirgloik.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sirglõik
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+Sirglõik
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ moodustub kahe punkti sirgjoonega ühendamisel.
+ Joonisel on sirglõiguks joon, mis jääb punktide A ja B vahele.
+\end_layout
+
+\begin_layout Subsubsection*
+nurk // 2.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/nurk.png
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nurk
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Nurk
+\series default
+ on geomeetriline kujund, mille moodustavad kaks ühest punktist väljuvat
+ kiirt.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+nelinurgad // 2.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/ruut.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ruut
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Ruut
+\series default
+ on nelinurk, mille külgede pikkused on võrdsed ja mille kõik nurgad on
+ täisnurgad.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/ristkylik.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ristkülik
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Ristkülik
+\series default
+ on nelinurk, millel on kaks paari võrdsete pikkustega külgi ja mille kõik
+ nurgad on täisnurgad.
+ Ristkülikut, mille kõik küljed on võrdsete pikkustega nimetatakse ruuduks.
+\end_layout
+
+\begin_layout Subsubsection*
+kolmnurk // 2.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/kolmnurk_tipud_servad.png
+	lyxscale 50
+	scale 48
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kolmnurk
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kolmnurgal
+\series default
+ on kolm tippu, kolm külge ja kolm nurka.
+ Tipud on antud joonisel tähistatud punktidega A, B ja C.
+ Küljed on punktide vahele tõmmatud jooned.
+ Küljed on joonisel tähistatud tähtedega a, b ja c.
+ Nurgad on moodustatud tipust väljuvate haarade poolt.
+ Nurgad on antud joonisel tähistatud sümbolitega 
+\begin_inset Formula $\alpha,\,\beta,\,\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+ring ja ringjoon // 2.
+ klass
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/ringjoon.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ringjoon
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Ringijooneks
+\series default
+ nimetatakse kujundit, mille kõik punktid asuvad keskpunktist (tähistatud
+ tähega O) võrdsel kaugusel ja samal tasandil.
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Ringjoone raadiuseks
+\series default
+ nimetatakse pikkust ringi keskpunktist ringi piirjooneni, raadius on joonisel
+ tähistatud tähega r.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/ring.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ring
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Ringiks 
+\series default
+nimetatakse ringjoont ja selle sees olevat ala, mis antud joonisel on värvitud
+ siniseks.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Ringi keskpunktiks
+\series default
+ nimetatakse ringjoone kõikidest punktidest võrdsel kaugusel olevat fikseeritud
+ punkti, st.
+ punkti, mis asub ringi keskel ja mis on antud joonisel tähistatud tähega
+ O.
+\end_layout
+
+\begin_layout Subsubsection*
+kuup // 2.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/kuup.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kuup
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kuup
+\series default
+ on moodustatud ruudukujulistest tahkudest.
+ Kuubis on kuus tahku, kaheksa tippu ja 12 serva.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+risttahukas // 2.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/risttahukas.png
+	lyxscale 48
+	scale 48
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Risttahukas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Risttahukas
+\series default
+ on moodustatud ristküliku kujulistest tahkudest.
+ Risttahukas on kuus tahku, kaheksa tippu ja 12 serva.
+\end_layout
+
+\begin_layout Subsubsection*
+kera // 2.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/kera.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kera
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+silinder // 2.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/silinder.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Silinder
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+koonus // 2.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/koonus.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Koonus
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+püramiid // 2.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/pyramiis.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Püramiid
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

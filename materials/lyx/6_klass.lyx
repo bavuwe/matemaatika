@@ -1,0 +1,1692 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+6.
+ klass
+\end_layout
+
+\begin_layout Subsection*
+Arvud
+\end_layout
+
+\begin_layout Subsubsection*
+täisarvud, negatiivsed arvud
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Negatiivseteks arvudeks 
+\series default
+nimetatakse nullist väiksemaid arve.
+ Negatiivseid arve tähistatakse miinusmärgiga.
+ Arv null ei ole ei negatiivne ega positiivne arv.
+ Näiteks -1, -2, -3 on negatiivsed arvud.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Täisarvude hulga 
+\series default
+moodustavad naturaalarvud, null ja negatiivsed arvud.
+ Täisarvude hulka tähistatakse sümboliga 
+\begin_inset Formula $\mathbf{Z}$
+\end_inset
+
+.
+ Täisarvude hulka kuuluvad järgmised arvud 
+\begin_inset Formula $\{\ldots,-2,\,-1,\,0,\,1,\,2,\ldots\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+vastandarv
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Vastandarvudeks
+\series default
+ nimetatakse märgi poolest erinevaid arve.
+ Näiteks on vastandarvud -3, 3 ja -8, 8.
+ Arvu 0 vastandarvuks on 0.
+ 
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Arvu ja selle vastandarvu summaks on alati null ehk -a+a=0.
+
+\series default
+ Seega eelmise näite kohaselt
+\begin_inset Formula $-3+3=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+arvu absoluutväärtus
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Arvu absoluutväärtus
+\series default
+ on antud arvu arvteljel kujutava punkti kaugus nullpunktist.
+ Seega on positiivsete arvude ja nulli absoluutväärtus võrdne endaga ja
+ negatiivsete arvude absoluutväärtus võrdne vastava negatiivse arvu vastandarvug
+a.
+ Arvu 
+\emph on
+a
+\emph default
+ absoluutväärtus tähistatakse 
+\begin_inset Formula $\mid a\mid.$
+\end_inset
+
+ 
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks 
+\begin_inset Formula $\mid-5\mid=5$
+\end_inset
+
+,
+\begin_inset Formula $\mid12\mid=12$
+\end_inset
+
+ ja 
+\begin_inset Formula $\mid0\mid=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+pöördarv
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Nullist erineva arvu pöördarvuks
+\series default
+ nimetatakse arvu 1 ja antud arvu jagatist.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Arvu ja tema pöördarvu korrutis on võrdne ühega.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Naturaalarvu pöördarvu leidmiseks kirjutame selle hariliku murruna ja siis
+ vahetame lugeja ja nimetaja.
+ Hariliku murru pöördarvu leidmiseks vahetame antud hariliku murru lugeja
+ ja nimetaja.
+ Näiteks arvu 5 korral 
+\begin_inset Formula $5=\frac{5}{1}$
+\end_inset
+
+ ja siis vahetame lugeja ja nimetaja ja saame
+\begin_inset Formula $\frac{1}{5}$
+\end_inset
+
+.
+ Korrutades näeme, et arvu ja pöördarvu korrutis võrdub ühega 
+\begin_inset Formula $\frac{5}{1}\cdot\frac{1}{5}=\frac{5}{5}=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+harilik murd
+\end_layout
+
+\begin_layout Standard
+Harilikuks murruks nimetatakse arvu, mis on kujul 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+, kus 
+\emph on
+a
+\emph default
+ on 
+\series bold
+murru lugeja 
+\series default
+ja 
+\emph on
+b
+\emph default
+ on 
+\series bold
+murru nimetaja
+\series default
+.
+ Neid eraldavat joont nimetatakse 
+\series bold
+murrujooneks
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Hariliku murru nimetaja näitab mitmeks võrdseks osaks saab arvu jaotada
+ ja lugeja näitab mitu osa on parajasti valitud.
+ Seega on murrujoonel jagamismärgiga sama tähendus.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Lihtmurruks
+\series default
+ nimetatakse harilikku murdu, mille lugeja on väiksem kui nimetaja.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Liigmurruks
+\series default
+ nimetatakse harilikku murdu, mille lugeja on nimetajaga võrdne või suurem.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks 
+\begin_inset Formula $\frac{4}{5}$
+\end_inset
+
+ on lihtmurd ja 
+\begin_inset Formula $\frac{5}{5}$
+\end_inset
+
+,
+\begin_inset Formula $\frac{6}{5}$
+\end_inset
+
+ liigmurrud.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Hariliku murru põhiomadus:
+\series default
+ 
+\begin_inset Formula $\frac{a}{b}=\frac{c}{c}\cdot\frac{a}{b}$
+\end_inset
+
+, kui 
+\begin_inset Formula $c\neq0$
+\end_inset
+
+ ja 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+.
+ Seega võib harliku murru lugejat ja nimetajat korrutada nullist erineva
+ arvuga ilma murru väärtust muutmata.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks kehtib võrdus 
+\begin_inset Formula $\frac{1}{2}=\frac{5}{5}\cdot\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Arvutamine
+\end_layout
+
+\begin_layout Subsubsection*
+hariliku murru taandamine
+\end_layout
+
+\begin_layout Standard
+Mõningaid harilikke murde saab lihtsustada 
+\series bold
+taandamise
+\series default
+ teel.
+ Selleks tuleb nii lugejat kui nimetajat sobiva arvuga läbi jagada.
+ Seda saab teha, kui nii lugeja kui nimetaja jaguvad antud arvuga.
+ Taandada ei saa, kui niisugust arvu ei leidu.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks 
+\begin_inset Formula $\frac{20}{35}=\frac{4}{7}$
+\end_inset
+
+, sest 20 ja 35 jaguvad viiega ning 
+\begin_inset Formula $\frac{6}{12}=\frac{1}{2}$
+\end_inset
+
+, sest 6 ja 12 jaguvad kuuega.
+\end_layout
+
+\begin_layout Subsubsection*
+kümnendmurd // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Kümnendmurdu saab esitada hariliku murruna.
+
+\series default
+ Selleks kirjutame hariliku murru lugejaks kümnendmurru murdosa ja nimetajaks
+ ühe millele järgneb murdosas olevate numbrite arv nulle.
+\begin_inset Newline newline
+\end_inset
+
+Näiteks 
+\begin_inset Formula $0,71=\frac{71}{100}$
+\end_inset
+
+ ja 
+\begin_inset Formula $0,4=\frac{4}{10}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Kui kümnendmurrul on täisosa, siis jääb see ka harilikus murrus täisosaks.
+\begin_inset Newline newline
+\end_inset
+
+Näiteks 
+\begin_inset Formula $2,5=2\frac{5}{10}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+protsent // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+Üks protsent
+\series default
+ on sajandik tervikust ja seda tähistatakse 1%.
+ Tervikut tähistatakse 100%.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $1\%=\frac{1}{100}=0,01$
+\end_inset
+
+osa tervikust.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+25%
+\series default
+ tähistab neljandikku täisosast, 
+\series bold
+50% 
+\series default
+poolt täisosast ja 
+\series bold
+75%
+\series default
+ kolme neljandikku täisosast.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Arvust protsendi leidmiseks 
+\series default
+tuleb arv antud protsendile vastava osaga läbi korrutada.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Näiteks
+\series default
+ 73% leidmiseks arvust 8 tuleb arv 8 läbi korrutada arvuga 
+\begin_inset Formula $\frac{73}{100}=0,73$
+\end_inset
+
+.
+ Seega 73% kaheksast on 
+\begin_inset Formula $0,73\cdot8=5,84$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+negatiivsete arvudega 
+\end_layout
+
+\begin_layout Standard
+Negatiivsete arvudega korrutades ja jagades tuleb jälgida tulemuse märki.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.
+ liikme märk
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+tehe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.
+ liikme märk
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+tulemuse märk
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $\cdot,\div$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
++
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $\cdot,\div$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
++
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $\cdot,\div$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $\cdot,\div$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Seetõttu on negatiivsete arvude ruut positiivne ja kuup negatiivne ehk 
+\begin_inset Formula 
+\[
+(-a)^{2}=a^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+(-a)^{3}=-a^{3}\,\,,
+\]
+
+\end_inset
+
+sest 
+\begin_inset Formula $(-a)^{2}=(-a)\cdot(-a)=a$
+\end_inset
+
+ ja 
+\begin_inset Formula $(-a)^{3}=(-a)\cdot(-a)\cdot(-a)=-a\cdot a^{2}=-a^{3}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Joonestamine
+\end_layout
+
+\begin_layout Subsubsection*
+sektor // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/ring_sektor.png
+	lyxscale 45
+	scale 55
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Sektorid
+\series default
+ moodustuvad ringi raadiustega mitmeks osaks jagamise tulemusena.
+ Sektorid on niisuguse jagamise tulemusena tekkinud ringi osad.
+\end_layout
+
+\begin_layout Subsubsection*
+sektordiagramm // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/sektordiagramm.png
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Sektordiagramm
+\series default
+ on diagramm, kus arve kujutatakse sektorite abil.
+ Sektordiagrammi kasutatakse põhiliselt protsentide kujutamiseks.
+ Suurem sektor vastab suuremale protsendile tervikust ja väiksem sektor
+ väiksemale protsendile.
+\end_layout
+
+\begin_layout Subsection*
+Algebra ja funktsioonid 
+\end_layout
+
+\begin_layout Subsubsection*
+võrrandi lihtsustamine // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+Võrrandi lihtsustamiseks on mitmeid meetodeid:
+\end_layout
+
+\begin_layout Enumerate
+avatakse sulud
+\end_layout
+
+\begin_layout Enumerate
+tuuakse sulgude ette ühistegur
+\end_layout
+
+\begin_layout Enumerate
+taandatakse vastasmärgilised liikmed
+\end_layout
+
+\begin_layout Subsubsection*
+lineaarvõrrand // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Lineaarvõrrand
+\series default
+ on ühe tundmatuga võrrand, kus tundmatu aste on väiksem kui kaks.
+ 
+\series bold
+Vabaliikmeks
+\series default
+ nimetatakse lineaarvõrrandi liiget, mille väärtust me teame.
+ 
+\series bold
+Lineaarliikmeks
+\series default
+ nimetatakse lineaarvõrrandi liiget, milles on tundmatu.
+ Näiteks
+\series bold
+ 
+\series default
+võrrandi 
+\begin_inset Formula $3x-6=0$
+\end_inset
+
+ korral on lineaarliikmeks 3
+\emph on
+x
+\emph default
+ ja vabaliikmeks -6.
+ 
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Lineaarvõrrandi lahendamiseks
+\series default
+ tuleb tundmatu viia ühele poole võrdusmärki ja vabaliikmed teisele poole
+ võrdusmärki.
+ Seejärel tuleb võrduse mõlemad pooled sobiva kordajaga läbi korrutada või
+ jagada, et tundmatu kordajaks saaks üks.
+ 
+\series bold
+Võrdus peab alati kehtima jääma
+\series default
+, seega tehakse kõik tehted mõlema võrduse poolega.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks võrrandi 
+\begin_inset Formula $3x+4=10$
+\end_inset
+
+ korral lahutatakse mõlemalt poolt võrdusmärki neli 
+\begin_inset Formula $3x+4-4=10-4$
+\end_inset
+
+ ehk 
+\begin_inset Formula $3x=10-4$
+\end_inset
+
+ ehk 
+\begin_inset Formula $3x=6$
+\end_inset
+
+.
+ Nüüd jagatakse võrduse mõlemad pooled kolmega, et saada tundmatu kordajaks
+ üks ning seega on leitud lahend 
+\emph on
+x
+\emph default
+=2.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+arvkiir // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Arvkiir
+\series default
+ on kiir, mis on jagatud kindla pikkusega lõikudeks ja iga lõigu lõppu on
+ märgitud arv nii, et iga järgnev arv on eelmisest ühe võrra suurem.
+ Nii saab kujutada arvkiirel negatiivseid arve, nulli ja naturaalarve.
+\end_layout
+
+\begin_layout Subsubsection*
+koordinaatteljestik // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/kordinaatteljestik.png
+	lyxscale 30
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Koordinaatteljestik
+\series default
+ koosneb kahest ristuvast arvteljest.
+ 
+\series bold
+Abstsisstelg
+\series default
+ ehk 
+\series bold
+x–telg
+\series default
+ on koordinaatteljestikul esitatud horisontaalselt suunaga vasakult paremale,
+ tema koordinaate nimetatakse 
+\series bold
+abstsissideks
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+Punkti väärtus x-teljel näitab, kui kaugel asub antud punkt y–teljest.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Ordinaattelg
+\series default
+ ehk y–telg on koordinaatteljestikul esitatud vertikaalselt suunaga alt
+ üles, tema koordinaate nimetatakse 
+\series bold
+ordinaatideks
+\series default
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Punkti väärtus y-teljel näitab, kui kaugel asub antud punkt x–teljest.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Koordinaatteljed jaotavad tasandi neljaks veerandiks: I veerand, II veerand,
+ III veerand ja IV veerand.
+\end_layout
+
+\begin_layout Subsubsection*
+koordinaadid // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Koordinaatideks
+\series default
+ nimetatakse arve, mis määravad punkti asukoha.
+ Koordinaatteljestikus on punkti koordinaatideks vastava punkti väärtus
+ x-teljel ja y-teljel.
+ Seega koosneb punkti koordinaat kahest arvust.
+ Näiteks nullpunkti koordinaatideks on (0,0) ehk x=0 ja y=0.
+\end_layout
+
+\begin_layout Subsection*
+Geomeetria
+\end_layout
+
+\begin_layout Subsubsection*
+sümmeetria
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sümmeetria
+\series default
+ tähendab seda, et kui objekti keskpunktist tõmmata läbi suvaline sirge,
+ siis kummagile poole sirget jäävad punktid peegeldavad teineteist.
+\end_layout
+
+\begin_layout Subsubsection*
+lõik // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/keskristsirge.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Lõigu keskristsirgeks
+\series default
+ nimetatakse sirget, mis on risti lõiguga ja läbib lõigu keskpunkti.
+ Lõigu keskristsirgel asuv punkt on selle lõigu mõlemast otspunktist samal
+ kaugusel.
+\end_layout
+
+\begin_layout Subsubsection*
+nurk // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/nurgapoolitaja.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Nurgapoolitaja
+\series default
+ on kiir, mis algab nurga tipust ja jagab antud nurga pooleks.
+ Nurgapoolitaja iga punkt on nurga mõlemast haarast samal kaugusel.
+\end_layout
+
+\begin_layout Subsubsection*
+kolmnurga elemendid // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/kolmnurk_tipud_servad.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kolmnurk
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Kolmnurgal on kolm tippu, kolm külge ja kolm nurka.
+ Tipud on antud joonisel tähistatud punktidega.
+ Küljed on punktide vahele tõmmatud jooned.
+ Nurgad on moodustatud tipust väljuvate joonte poolt.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kolmnurga ümbermõõt
+\series default
+ on kolmnurga külgede pikkuste summa.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kolmnurga külje vastasnurgaks
+\series default
+ nimetatakse nurka, mille haaraks ei ole vastav külg.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kolmnurga külje lähisnurgaks
+\series default
+ nimetatakse nurka, mille haaraks on vastav külg.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kolmnurga nurga lähisküljeks
+\series default
+ nimetatakse külge, mis on vastava nurga haaraks.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kolmnurga nurkade summa on alati 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+k
+\series bold
+olmnur
+\series default
+kade liigitamine // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/kolmnurk_nyri_terav_tais.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Teravnurkne (vasakul), täisnurkne (keskel), nürinurkne (paremal) kolmnurk
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Täisnurkne kolmnurk
+\series default
+ on kolmnurk, mille üks nurk on täisnurk ehk 
+\series bold
+
+\begin_inset Formula $90^{\circ}$
+\end_inset
+
+.
+ 
+\series default
+Täisnurkse kolmnurga täisnurka moodustavaid külgi
+\series bold
+ 
+\series default
+nimetatakse 
+\series bold
+kaatetiteks 
+\series default
+ja ülejäävat külge
+\series bold
+ hüpotenuusiks.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Teravnurkne kolmnurk 
+\series default
+on kolmnurk, mille kõik nurgad on teravnurgad ehk väiksemad kui 
+\series bold
+
+\begin_inset Formula $90^{\circ}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Nürinurkne kolmnurk 
+\series default
+on kolmnurk, mille üks nurk on nürinurk ehk suurem kui 
+\series bold
+
+\begin_inset Formula $90^{\circ}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Erikülgne kolmnurk
+\series default
+ on kolmnurk, mille kõik küljed on erineva pikkusega.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Võrdkülgne kolmnurk 
+\series default
+on kolmnurk, mille kõik küljed on võrdse pikkusega.
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Võrdhaarne kolmnurk 
+\series default
+on kolmnurk, mille vähemalt kaks külge on võrdsed.
+ Võrdhaarse kolmnurga tippu, mis asub võrdsete haarade vahel nimetatakse
+ 
+\series bold
+tipunurgaks
+\series default
+ ja teisi nurkasid nimetatakse 
+\series bold
+alusnurkadeks
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+kolmnurkade omadused // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/kolmnurk_korgusega.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Kolmnurga nurkade summa on alati 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Kolmnurga pindala 
+\begin_inset Formula $S=\frac{1}{2}\cdot a\cdot h$
+\end_inset
+
+, kus 
+\emph on
+a
+\emph default
+ on alus, 
+\emph on
+h
+\emph default
+ on kõrgus.
+\end_layout
+
+\begin_layout Itemize
+Võrdkülgse kolmnurga kõik nurgad on 
+\begin_inset Formula $60^{\circ}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Võrdhaarse kolmnurga alusnurgad on võrdsed.
+\end_layout
+
+\begin_layout Itemize
+Hüpotenuus on alati pikem kaatetitest.
+\end_layout
+
+\begin_layout Subsubsection*
+ringjoone omadused // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/ringjoon.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ringjoon
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Ringjoone keskpunktiks
+\series default
+ nimetatakse ringjoone kõikidest punktidest võrdsel kaugusel olevat fikseeritud
+ punkti, st.
+ punkti, mis asub ringjoone keskel.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Ringjoone raadiuseks
+\series default
+ nimetatakse lõiku ringi keskpunktist ringi piirjooneni ja tähistatakse
+ tähega r.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Ringjoone diameetriks 
+\series default
+nimetatakse sirglõiku, mis ühendab ringjoone kahte punkti ja ringjoone keskpunkt
+i.
+ Ringjoone diameetri pikkus on kaks ringjoone raadiuse pikkust.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Ringjoone
+\series default
+ 
+\series bold
+ümbermõõdu ja diameetri omavahelist suhet kirjeldab arv pi, mida tähistatakse
+ sümboliga 
+\begin_inset Formula $\pi$
+\end_inset
+
+ ja mille ligikaudne väärtus on 3,14.
+ See tähendab, et ringjoone ümbermõõt on ligikaudu 3,14 korda pikem kui
+ ringi diameeter.
+
+\series default
+ Seega on 
+\series bold
+ringjoone ümbermõõt
+\series default
+ võrdne 
+\begin_inset Formula $2\cdot\pi\cdot r=\pi\cdot d$
+\end_inset
+
+, kus d tähistab ringjoone diameetrit.
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ringi
+\series default
+ moodustab ringjoon koos selle sees oleva tasandi osaga.
+ Ringjoone raadius ja diameeter on ka ringi raadiuseks ja diameetriks.
+ 
+\series bold
+Ringi pindala valem:
+\series default
+ 
+\begin_inset Formula $S=\pi\cdot r^{2}$
+\end_inset
+
+, kus r on ringi raadius.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Ringjoone omadusi:
+\end_layout
+
+\begin_layout Itemize
+ringjoone ümbermõõt 
+\begin_inset Formula $2\cdot\pi\cdot r=\pi\cdot d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\pi\approx3,14$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+kolmnurkne püstprisma // 6.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/kolmnurkne_pystprisma.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Kolmnurkne püstprisma
+\series default
+ on moodustatud kolme ristküliku ja kahe võrdse kolmnurga poolt.
+ Kolmnurgad on püstprisma 
+\series bold
+põhitahud
+\series default
+ ja ristkülikud on 
+\series bold
+külgtahud
+\series default
+.
+ 
+\series bold
+Põhiservadeks
+\series default
+ nimetatakse kolmnurksete tahkude servi ja 
+\series bold
+külgservadeks
+\series default
+ nimetatakse ristkülikute ühiseid servi.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kolmnurkse püstprisma pindala
+\series default
+ on võrdne tema tahkude pindalade summaga.
+ 
+\series bold
+Kolmnurkse püstprisma ruumala
+\series default
+ on võrdne tema põhja pindala ja kõrguse korrutisega.
+\end_layout
+
+\end_body
+\end_document

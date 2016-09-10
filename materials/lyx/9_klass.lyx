@@ -1,0 +1,1576 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+9.
+ klass
+\end_layout
+
+\begin_layout Subsection*
+Arvud, arvutamine
+\end_layout
+
+\begin_layout Subsubsection*
+kuupjuur, neljas juur
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Kuupjuureks
+\series default
+ nimetatakse juurt, kus juurijaks on kolm.
+ Arvu 
+\emph on
+a
+\emph default
+ kuupjuurt tähistatakse 
+\begin_inset Formula $\sqrt[3]{a}$
+\end_inset
+
+ ja arvu kuubi järgi arvu leidmist nimetatakse kuupjuure leidmiseks.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Näiteks:
+\series default
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\sqrt[3]{27}=3,$
+\end_inset
+
+ sest 
+\begin_inset Formula $3^{3}=27$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\sqrt[3]{64}=4,$
+\end_inset
+
+ sest 
+\begin_inset Formula $4^{3}=64$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\sqrt[3]{125}=5,$
+\end_inset
+
+ sest 
+\begin_inset Formula $5^{3}=125$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Neljandaks juureks
+\series default
+ nimetatakse juurt, kus juurijaks on neli.
+ Arvu 
+\emph on
+a
+\emph default
+ neljandat juurt tähistatakse 
+\begin_inset Formula $\sqrt[4]{a}$
+\end_inset
+
+.
+ Arvu neljanda astme järgi arvu leidmist nimetakse neljanda juure leidmiseks.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Näiteks:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\sqrt[4]{81}=3,$
+\end_inset
+
+ sest 
+\begin_inset Formula $3^{4}=81$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\sqrt[4]{256}=4,$
+\end_inset
+
+ sest 
+\begin_inset Formula $4^{4}=256$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\sqrt[4]{625}=5,$
+\end_inset
+
+ sest 
+\begin_inset Formula $5^{4}=625$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Algebra ja funktsioonid
+\end_layout
+
+\begin_layout Subsubsection*
+ruutkolmliige
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+Ruutkolmliikmeks
+\series default
+ nimetatakse ruutliiget kujul 
+\begin_inset Formula $ax^{2}+bx+c$
+\end_inset
+
+.
+ 
+\series bold
+Ruutkolmliikme nullkohtadeks
+\series default
+ nimetatakse muutuja 
+\emph on
+x
+\emph default
+ selliseid väärtusi, mille korral ruutkolmliikme väärtus on võrdne nulliga.
+ Näiteks ruutkolmliikme 
+\begin_inset Formula $2x^{2}-5x-7$
+\end_inset
+
+ nullkohtades on -1 ja 3,5 sest 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\cdot(-1)^{2}-5\cdot(-1)-7=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\cdot(3,5)^{2}-5\cdot3,5-7=0
+\]
+
+\end_inset
+
+Seega on ruutkolmliikme 
+\begin_inset Formula $ax^{2}+bx+c$
+\end_inset
+
+ nullkohad ruutvõrrandi 
+\begin_inset Formula $ax^{2}+bx+c=0$
+\end_inset
+
+ lahenditeks.
+ Kasutades nullkohti, saame kirjutada ruutkolmliikme korrutisena ehk 
+\series bold
+ruutkolmliikme tegurdada
+\series default
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+ax^{2}+bx+c=a(x-x_{1})(x-x_{2}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Eelneva näite puhul saaksime tegurdades saaksime tulemuseks
+\begin_inset Formula 
+\[
+2(x-1)(x-3,5)\quad.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+Lisamaterjal
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Järgnevalt tõestame, miks see võrdus kehtib.
+ Olgu ruutvõrrandi lahenditeks 
+\begin_inset Formula $x_{1},\, x_{2},$
+\end_inset
+
+ siis Viète'i teoreemi põhjal 
+\begin_inset Formula $x_{1}+x_{2}=-\frac{b}{a}$
+\end_inset
+
+ ja 
+\begin_inset Formula $x_{1}\cdot x_{2}=\frac{c}{a}$
+\end_inset
+
+, sest Viète'i teoreem kehtib taandatud ruutvõrrandi korral ja seetõttu
+ tuleb võrrand 
+\emph on
+a
+\emph default
+-ga läbi jagada.
+ Nendest võrdustest tuleneb, et 
+\begin_inset Formula $b=-a(x_{1}+x_{2})$
+\end_inset
+
+ ja 
+\begin_inset Formula $c=ax_{1}\cdot x_{2}$
+\end_inset
+
+.
+ Nüüd, kui asendada ruutkolmliikmes kordajad 
+\emph on
+b
+\emph default
+, 
+\emph on
+c
+\emph default
+ vastavate avaldistega, siis saame
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+ax^{2}+bx+c=ax^{2}-a(x_{1}+x_{2})\cdot x+ax_{1}x_{2}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=a[x^{2}-(x_{1}+x_{2})x+x_{1}x_{2}]=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=a(x^{2}-x_{1}x-x_{2}x+x_{1}x_{2})=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=a[(x^{2}-x_{1}x)-(x_{2}x-x_{1}x_{2})]=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=a[(x-x_{1})x-(x-x_{1})x_{2}]=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=a(x-x_{1})(x-x_{2}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+avaldised
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Algebraliseks avaldiseks
+\series default
+ nimetatakse avaldist, mille teheteks on vaid liitmine, lahutamine, korrutamine,
+ jagamine, astendamine ja juurimine.
+
+\series bold
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Täisavaldiseks
+\series default
+ nimetatakse avaldist, mis ei sisalda jagajas muutujat.
+
+\series bold
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ratsionaalseks avaldiseks
+\series default
+ nimetatakse algebralist avaldist, kus ei esine juurimist.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+algebraline murd 
+\end_layout
+
+\begin_layout Standard
+Algebraliseks murruks nimetatakse avaldist kujul 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+, kus a ja b on täisavaldised.
+ 
+\series bold
+Algebralise murru põhiomaduseks
+\series default
+ on 
+\begin_inset Formula 
+\[
+\frac{a}{b}=\frac{c}{c}\cdot\frac{a}{b}\,\,,kui\,\, c\neq0\,\, ja\,\, b\neq0.
+\]
+
+\end_inset
+
+ Seega võib algebralist murdu läbi korrutada nullist erineva arvu või avaldisega
+ ilma murru väärtust muutmata.
+\end_layout
+
+\begin_layout Subsubsection*
+ruutfunktsioon // 9.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/ruutfunktsioon.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Ruutfunktsiooniks
+\series default
+ nimetatakse funktsiooni kujul 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+.
+ 
+\series bold
+Ruutfunktsiooni graafikuks on
+\series default
+ 
+\series bold
+parabool
+\series default
+ ja selle haripunkt asub nullpunktis.
+ Ruutfunktsiooni harude suund sõltub märgist, 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+ korral on harud suunatud ülespoole ja 
+\begin_inset Formula $y=-x^{2}$
+\end_inset
+
+ korral allapoole.
+
+\series bold
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Funktsiooni argumendiks
+\series default
+ nimetatakse funktsioonis 
+\emph on
+y=f(x)
+\emph default
+ olevat muutujat 
+\emph on
+x
+\emph default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Funktsiooni y=f(x) määramispiirkonnaks
+\series default
+ nimetatakse argumendi 
+\emph on
+x
+\emph default
+ väärtuste hulka 
+\emph on
+X
+\emph default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Funktsiooni y=f(x) väärtuste piirkonnaks
+\series default
+ ehk 
+\series bold
+muutumispiirkonnaks
+\series default
+ nimetatakse funktsiooni 
+\emph on
+y
+\emph default
+ väärtuste hulka 
+\emph on
+Y
+\emph default
+.
+\end_layout
+
+\begin_layout Subsection*
+Tõenäosus, statistika
+\end_layout
+
+\begin_layout Subsubsection*
+tõenäosusteooria // 9.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Tõenäosusteooria
+\series default
+ on matemaatika haru, mis uurib juhuslikke sündmusi ja nende seaduspärasusi.
+
+\series bold
+ Tõenäosus
+\series default
+ kirjeldab sündmuste toimumise võimalikkust.
+ Tõenäosuse kirjeldamiseks seatakse sündmusega vastavusse arv nullist üheni,
+ mis iseloomustab sündmuse toimumise võimalikkust.
+ Tõenäosus on null, kui sündmus ei toimu ja tõenäosus on üks, kui sündmus
+ toimub.
+ Seega jäävad tõenäosuse võimalikud väärtused 0 ja 1 vahele.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kindlaks sündmuseks
+\series default
+ nimetatakse sündmust, mis kindlasti toimub ja 
+\series bold
+võimatuks sündmuseks
+\series default
+ nimetatakse sündmust, mis kindlasti ei toimu.
+ 
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Statistiliseks tõenäosuseks
+\series default
+ nimetatakse sündmuse suhtelist sagedust, kui katsete arv on küllaltki suur.
+ See tähendab, et tõenäosus leitakse suure hulga katsete põhjal.
+ 
+\series bold
+Klassikaliseks tõenäosuseks
+\series default
+ nimetatakse sündmuse jaoks soodsate võimaluste arvu 
+\emph on
+m
+\emph default
+ ja kõigi võimaluste arvu 
+\emph on
+n
+\emph default
+ jagatist 
+\begin_inset Formula $\frac{m}{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+statistiline rida // 9.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Statistiline rida
+\series default
+ 
+\series medium
+on vaadeldava tunnuse väärtuste rida.
+ Statistiline rida ei ole järjestatud.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks õpilaste jalanumbrite statistiline rida:
+\begin_inset Newline newline
+\end_inset
+
+40,43,42,39,40,44,42,45,38,42,43,41,42,43,39,42,40.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+kaalutud keskmine // 9.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Kaalutud keskmiseks
+\series default
+ nimetatakse keskmist, kus erinevatel elementidel on erinev kaal.
+ Kaal tähendab seda, et iga element korrutatakse mingi arvuga läbi.
+\begin_inset Newline newline
+\end_inset
+
+Kui kõikidel elementidel on samad kaalud, siis on tegu aritmeetilise keskmisega.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Kaalutud keskmine 
+\begin_inset Formula $\bar{x}$
+\end_inset
+
+ arvutatakse valemi abil
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\bar{x}=\frac{x_{1}w_{1}+x_{2}w_{2}+\ldots+x_{n}w_{n}}{w_{1}+w_{2}+\ldots+w_{n}},
+\]
+
+\end_inset
+
+kus 
+\emph on
+x
+\emph default
+-d tähistavad elemente ja 
+\emph on
+w
+\emph default
+-d elementide kaalusid.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+üldkogum, valim // 9.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Üldkogumiks
+\series default
+ nimetatakse nähtust või objektide hulka, mille kohta soovime teaduslikult
+ põhjendatud järeldusi teha.
+ Üldkogumis uuritakse, kas kõiki elemente või ainult osasid elemente ja
+ tehakse nende pealt üldistusi tervele üldkogumile.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Valimiks
+\series default
+ nimetatakse mõõtmiseks valitud üldkogumi osa.
+ Valim peab olema küllaltki suur, et selle põhjal uuringuid saaks teha.
+ Lisaks sellele peab igal üldkogumi elemendil olema võimalus valimisse sattumise
+ks.
+ Valimit kasutatakse kui pole võimalik otseselt mõõta tervet üldkogumit
+ või terve üldkogumi peal arvutuste tegemine oleks ajaliselt mittemõistlik.
+ Näiteks keskmise palga puhul ei ole võimalik terve Eesti elanikkonna käest
+ nende palka küsida.
+ Seevastu küsitakse hoopis palga suurust ainult mingi hulga juhuslike inimeste
+ (valimi) käest ning tehakse arvutusi nendega.
+\end_layout
+
+\begin_layout Subsection*
+Geomeetria
+\end_layout
+
+\begin_layout Subsubsection*
+võrdelised lõigud // 9.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Kahe lõigu suhteks 
+\series default
+ehk jagatiseks nimetatakse nende lõikude pikkuste jagatist.
+ Lõikude suhe kirjeldab mitu korda on üks lõik teisest lõigust pikem või
+ kui suure osa ta teisest lõigust moodustab.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Lõike nimetatakse võrdelisteks
+\series default
+, kui nende pikkuste suhted on võrdsed.
+ 
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Lõike
+\series default
+ 
+\series bold
+
+\begin_inset Formula $a_{1},a_{2},a_{3},\ldots,a_{n}$
+\end_inset
+
+
+\series default
+ 
+\series bold
+nimetatakse võrdeliseks
+\series default
+ lõikudega 
+\begin_inset Formula $b_{1},b_{2},b_{3},\ldots,b_{n}$
+\end_inset
+
+, kui 
+\begin_inset Formula 
+\[
+\frac{a_{1}}{b_{1}}=\frac{a_{2}}{b_{2}}=\frac{a_{3}}{b_{3}}=\ldots=\frac{a_{n}}{b_{n}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+kolmnurk // 9.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/kolmnurgad_sarnased.png
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Sarnasteks kolmnurkadeks
+\series default
+ nimetatakse kolmnurki, mille küljed on võrdelised ja mille nurgad on võrdsed.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kolmnurga omadused:
+\end_layout
+
+\begin_layout Itemize
+kolmnurga nurkade summa on alati 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+kolmnurga pindala 
+\begin_inset Formula $S=\frac{1}{2}\cdot a\cdot h$
+\end_inset
+
+, kus a on alus ja h on kõrgus
+\end_layout
+
+\begin_layout Itemize
+võrdkülgse kolmnurga kõik nurgad on 
+\begin_inset Formula $60^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+võrdhaarse kolmnurga alusnurgad on võrdsed
+\end_layout
+
+\begin_layout Itemize
+hüpotenuus on alati pikem kaatetitest
+\end_layout
+
+\begin_layout Itemize
+kolmnurga mediaanide ristumiskohas on kolmnurga raskuskese
+\end_layout
+
+\begin_layout Itemize
+täisnurkse kolmnurga korral 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Pythagorase teoreem
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/kolmnurk_taisnurkne_tipud_servad.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Pythagorase teoreem
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Täisnurkse kolmnurga hüpotenuusi ruut on võrdne kaatetite ruutude summaga,
+ ehk 
+\begin_inset Formula 
+\[
+a^{2}+b^{2}=c^{2}\,\,,
+\]
+
+\end_inset
+
+kus 
+\emph on
+a
+\emph default
+, 
+\emph on
+b
+\emph default
+ on kaatetid ja 
+\emph on
+c
+\emph default
+ on hüpotenuus.
+\end_layout
+
+\begin_layout Subsubsection*
+hulknurgad // 9.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Kaks hulknurka on sarnased
+\series default
+, kui ühe hulknurga nurgad on võrdsed teise hulknurga nurkadega ja võrdsete
+ nurkade lähisküljed on võrdelised.
+ Hulknurkade sarnasust tähistatakse sümboliga 
+\begin_inset Formula $\sim$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Sarnaste hulknurkade omadused:
+\end_layout
+
+\begin_layout Itemize
+sarnaseid hulknurki saab tükeldada samaks arvuks sarnasteks kolmnurkadeks
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+sarnaste hulknurkade ümbermõõtude suhe 
+\series default
+on võrdne vastavate külgede pikkuste suhtega
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+sarnaste hulknurkade pindalade suhe 
+\series default
+on võrdne vastavate külgede pikkuste ruutude suhtega
+\end_layout
+
+\begin_layout Subsubsection*
+siinus, koosinus, tangents // 9.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Täisnurkses kolmnurgas on defineeritud teravnurga siinus, koosinus, tangens
+ ja kootangens.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/kolmnurk_taisnurkne_tipud_servad.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Teravnurga 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ siinuseks
+\series default
+ nimetatakse tema vastaskaateti ja hüpotenuusi suhet:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\sin\,\alpha=\frac{a}{c}$
+\end_inset
+
+, kus 
+\emph on
+a
+\emph default
+ on vastaskaatet ja 
+\emph on
+c
+\emph default
+ on hüpotenuus.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Teravnurga 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ koosinuseks
+\series default
+ nimetatakse tema lähiskaateti ja hüpotenuusi suhet:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\cos\,\alpha=\frac{b}{c}$
+\end_inset
+
+, kus 
+\emph on
+b
+\emph default
+ on lähiskaatet ja 
+\emph on
+c
+\emph default
+ on hüpotenuus.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Teravnurga 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ tangensiks
+\series default
+ nimetatakse tema vastaskaateti ja lähiskaateti suhet:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\tan\,\alpha=\frac{a}{b}$
+\end_inset
+
+, kus 
+\emph on
+a
+\emph default
+ on vastaskaatet ja 
+\emph on
+b
+\emph default
+ on lähiskaatet.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Teravnurga 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ kootangensiks
+\series default
+ nimetatakse tema lähiskaateti ja vastaskaateti suhet:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\cot\,\alpha=\frac{b}{a}$
+\end_inset
+
+, kus 
+\emph on
+a
+\emph default
+ on lähiskaatet ja 
+\emph on
+b
+\emph default
+ on vastaskaatet.
+\end_layout
+
+\begin_layout Subsubsection*
+mõõtkava // 9.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Mõõtkava
+\series default
+ on suhe, mis näitab, mitu korda on mudeli suurust vähendatud või suurendatud
+ võrreldes tõeliste suurustega.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks mõõtkava 1:100 tähendab, et joonisel olevale ühele ühikule vastab
+ tegelikkuses sada ühikut.
+\end_layout
+
+\begin_layout Subsubsection*
+silinder // 9.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/silinder.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Silinder
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Silinder 
+\series default
+on pöördkeha, mille moodustab ristkülik, mis pöörleb ümber oma ühe külje.
+ Ristküliku külge, mille ümber ristkülik pöörleb nimetatakse 
+\series bold
+silindri teljeks
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Silindri moodustajaks
+\series default
+ nimetatakse ristküliku külge, mille ümber pööreldes moodustus silinder.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Silindri kõrgust tähistatakse tähega 
+\emph on
+h
+\emph default
+ ja põhja raadiust tähega 
+\emph on
+r
+\emph default
+.
+ Silindri pindala võrdub kahe põhjapindala ja külgpindala summaga.
+ Silindri ruumala võrdub põhja pindala ja kõrguse korrutisega.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Silindri omadused:
+\end_layout
+
+\begin_layout Itemize
+põhja pindala 
+\begin_inset Formula $S_{p}=\pi r^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+külgpindala 
+\begin_inset Formula $S_{k}=2\pi rh$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+täispindala 
+\begin_inset Formula $S=S_{k}+2S_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ruumala 
+\begin_inset Formula $V=\pi r^{2}h$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+koonus // 9.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/koonus.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Koonus
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Koonuseks
+\series default
+ nimetatakse pöördkeha, mis tekib täisnurkse kolmnurga pöörlemisel ümber
+ kaateti.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Koonuse teljeks 
+\series default
+nimetatakse kaatetit, mille ümber pööreldes moodustub koonus.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Koonuse moodustajaks
+\series default
+ nimetatakse pöörleva kolmnurga hüpotenuusi.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Koonuse telglõikeks
+\series default
+ nimetatakse koonuse telge läbiva tasandi ja koonuse lõiget.
+ Seega on koonuse telglõikeks kolmnurk.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Koonuse ristlõikeks
+\series default
+ nimetatakse koonuse lõiget tema teljega ristuva tasandiga.
+ Seega on koonuse ristlõikeks ring.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Koonuse omadused:
+\end_layout
+
+\begin_layout Itemize
+põhja pindala 
+\begin_inset Formula $S_{p}=\pi r^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+külgpindala 
+\begin_inset Formula $S_{k}=\pi rm$
+\end_inset
+
+, kus m on moodustaja
+\end_layout
+
+\begin_layout Itemize
+täispindala 
+\begin_inset Formula $S=S_{k}+S_{p}=\pi r(r+m)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ruumala 
+\begin_inset Formula $V=\frac{1}{3}\pi r^{2}h$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+kera // 9.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/kera.png
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kera
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Kera 
+\series default
+on pöördkeha, mis tekib poolringi pöörlemisel ümber diameetri.
+ Kera piiravat pinda nimetatakse 
+\series bold
+sfääriks
+\series default
+.
+ Sfääril asuvat kaht punkti ühendavat lõiku, mis läbib kera keskpunkti nimetatak
+se kera 
+\series bold
+diameetriks
+\series default
+.
+ 
+\series bold
+Kera raadiust 
+\series default
+tähistatakse tähega R
+\series bold
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Kera suurringiks
+\series default
+ nimetatakse kera keskpunkti läbivat lõiget, sellele lõikele vastavat lõikejoont
+ nimetatakse 
+\series bold
+suurringjooneks
+\series default
+.
+ Kera pindala võrdub suurringi neljakordse pindalaga.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kera omadused:
+\end_layout
+
+\begin_layout Itemize
+pindala 
+\begin_inset Formula $S=4\pi R^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ruumala 
+\begin_inset Formula $V=\frac{4}{3}\pi R^{3}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

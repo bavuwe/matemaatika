@@ -1,0 +1,3572 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+5.
+ klass
+\end_layout
+
+\begin_layout Subsection*
+Arvud
+\end_layout
+
+\begin_layout Subsubsection*
+naturaalarvud // 5.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Naturaalarvud
+\series default
+ on nullist suuremad arvud: 1,2,3,...
+ .
+ Naturaalarvude abil on võimalik esemeid loendada.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Naturaalarvude hulka tähistatakse sümboliga 
+\begin_inset Formula $\mathbf{N}$
+\end_inset
+
+.
+ Mõnikord arvestatakse naturaalarvude sisse ka arv null, mida märgitakse
+ kui 
+\begin_inset Formula $\mathbf{N}_{0}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Naturaalarve saab jagada 
+\series bold
+paarisarvudeks
+\series default
+ ja 
+\series bold
+paarituteks
+\series default
+ arvudeks.
+ Paarisarvud jaguvad 2-ga ja paaritud arvud annavad kahega jadades jäägiks
+ ühe.
+\end_layout
+
+\begin_layout Subsubsection*
+arvu klassid
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Miljon
+\series default
+ (mln) on tuhat tuhandet ja selles arvus on kuus nulli.
+ 
+\series bold
+Miljard
+\series default
+ on tuhat miljonit, selles arvus on üheksa nulli.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+1 miljon = 1000000 = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10^6$ 
+\end_layout
+
+\end_inset
+
+= 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1000 
+\backslash
+cdot 1000$
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+1 miljard = 1000000000 = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10^9$ 
+\end_layout
+
+\end_inset
+
+= tuhat miljonitnaturaalarvud
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Arvu järgud on: ühelised, kümnelised, sajalised, tuhandelised, ...
+\end_layout
+
+\begin_layout Subsubsection*
+ümardamine
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ümardades
+\series default
+ arvu teatud järguni (ühelisteni, kümnelisteni, sajalisteni, tuhandelisteni,
+ ...) asendatakse sellest järgust paremal olevad numbrid nullidega ja suurendatakse
+ parempoolsemat allesjäävat järku ühe võrra või jäetakse see samaks.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Suurendamine või samaks jätmine sõltub vasakult esimesest nulliga asendatavast
+ numbrist.
+ Kui vastav number on 
+\series bold
+5, 6, 7, 8, 9
+\series default
+, siis suurendatakse kõige madalamat allesjäävat järku 1 võrra.
+ Kui vastav number on 
+\series bold
+0,1,2,3,4
+\series default
+ siis jäetaks kõige madalam allesjääv järk samaks.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ümardamist tähistatakse sümboliga 
+\begin_inset Formula $\approx$
+\end_inset
+
+.
+ Näiteks kümnelisteni ümardades 
+\begin_inset Formula $37\approx40$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks ümardame sajalisteni arve 341, 151 ja 504.
+ Arvu 341 korral näeme, et vasakult poolt esimene nulliga asendatav arv
+ on neli, seega jätame sajaliste järgu samaks ja saame tulemuseks 
+\begin_inset Formula $341\approx300$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Arvu 151 korral näeme, et vasakult poolt esimene nulliga asendatav arv on
+ viis, seega suurendame sajaliste järku ja saame tulemuseks 
+\begin_inset Formula $151\approx200$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Arvu 504 korral näeme, et vasakult poolt esimene nulliga asendatav arv on
+ null, seega jätame sajaliste järgu samaks ja saame tulemuseks 
+\begin_inset Formula $504\approx500$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+jaguvuse tunnused
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Arvu ristsummaks
+\series default
+ nimetatakse selle arvu numbrite summat.
+ Näiteks 341 ristsumma on 3+4+1=8.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+2-ga jaguvuse
+\series default
+ tunnus: Arv jagub 2-ga parajasti siis, kui ta lõpeb numbritega 0,2,4,6,8.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+3-ga jaguvuse 
+\series default
+tunnus: Arv jagub 3-ga parajasti siis, kui selle arvu ristsumma jagub 3-ga.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+4-ga jaguvuse
+\series default
+ tunnus: Arv jagub 4-ga parajasti siis, kui tema kahest viimasest numbrist
+ moodustuv arv jagub 4-ga.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+5-ga jaguvuse
+\series default
+ tunnus: Arv jagub 5-ga parajasti siis, kui ta lõpeb numbritega 5 või 0.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+6-ga jaguvuse
+\series default
+ tunnus: Arv jagub 6-ga parajasti siis, kui ta on paarisarv ja tema ristsumma
+ jagub kolmega.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+8-ga jaguvuse
+\series default
+ tunnus: Arv jagub 8-ga parajasti siis, kui tema kolmest viimasest numbrist
+ moodustuv arv jagub 8-ga.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+9-ga jaguvuse
+\series default
+ tunnus: Arv jagub 9-ga parajasti siis, kui tema ristsumma jagub 9-ga.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+10-ga jaguvuse
+\series default
+ tunnus: Arv jagub 10-ga parajasti siis, kui ta lõpeb numbriga 0.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+25-ga jaguvuse
+\series default
+ tunnus: Arv jagub 25-ga parajasti siis, kui ta kaks viimast numbrit on
+ nullid või moodustavad arvu 25,50,75.
+\end_layout
+
+\begin_layout Subsubsection*
+algarvud
+\end_layout
+
+\begin_layout Standard
+Iga naturaalarv jagub lõpliku hulga arvudega, v.a.
+ arv üks, mis jagub ainul iseendaga.
+ Naturaalarv 
+\emph on
+a
+\emph default
+ jagub naturaalarvuga 
+\emph on
+b
+\emph default
+, kui leidub naturaalarv 
+\emph on
+c
+\emph default
+, nii et 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$c 
+\backslash
+cdot b = a$
+\end_layout
+
+\end_inset
+
+.
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Kordarvudeks 
+\series default
+nimetatakse arve, millel on rohkem kui kaks tegurit ehk arve, mis jaguvad
+ peale iseenda ja ühe veel mõne arvuga.
+ 
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Algarvuks
+\series default
+ nimetatakse naturaalarvu, mis jagub ainult iseenda ja ühega.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Arv üks ei kuulu ei kordarvude ega algarvude hulka.
+ 
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Tuhandest väiksemad algarvud on: 
+\begin_inset Newline newline
+\end_inset
+
+2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67,
+ 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149,
+ 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229,
+ 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313,
+ 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409,
+ 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499,
+ 503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599, 601,
+ 607, 613, 617, 619, 631, 641, 643, 647, 653, 659, 661, 673, 677, 683, 691,
+ 701, 709, 719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797, 809,
+ 811, 821, 823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883, 887, 907,
+ 911, 919, 929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997.
+\end_layout
+
+\begin_layout Subsubsection*
+vähim ühiskordne
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Kahe arvu ühiskordne
+\series default
+ on arv, millega jaguvad mõlemad arvud.
+ Kahel arvul on lõpmata palju erinevaid ühiskordseid.
+ Näiteks arvude 25 ja 5 korral on üheks ühiskordseks 25 ning arvude 16 ja
+ 8 korral 32.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Väikseim ühiskordne 
+\series default
+(VÜK) on kahe või enama täisarvu ühiskordne, millega jaguvad nende arvude
+ kõik teised ühiskordsed.
+ Näiteks arvude 16 ja 8 korral on VÜK 16.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Vähimat ühiskordset läheb vaja erinimeliste murdude liitmisel.
+\end_layout
+
+\begin_layout Subsubsection*
+suurim ühistegur
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Kahe arvu ühistegur
+\series default
+ on arv, mis on mõlema arvu teguriks.
+ Näiteks arvude 16 ja 32 üheks ühisteguriks on arv 8.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Suurim ühistegur 
+\series default
+(SÜT) on kahe arvu suurim ühistegur.
+ Näiteks arvude 16 ja 32 suurimaks ühisteguriks on arv 16.
+\end_layout
+
+\begin_layout Subsubsection*
+rooma numbrid
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Rooma numbrid 
+\series default
+on Vana-Roomast pärit numbrisüsteem.
+ Antud süsteemis tähistatakse arve ja numbreid teisiti kui meil kasutatavas
+ kümnendsüsteemis.
+ Rooma numbreid peab oskama lugeda kuni 50-ni.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="15" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rooma numbrid
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+II
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+III
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IV
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VI
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VII
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VIII
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IX
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+murdarv
+\end_layout
+
+\begin_layout Standard
+Harilikuks murruks nimetatakse arvu, mis on kujul 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+, kus 
+\emph on
+a
+\emph default
+ on 
+\series bold
+murru lugeja 
+\series default
+ja 
+\emph on
+b
+\emph default
+ on 
+\series bold
+murru nimetaja
+\series default
+.
+ Neid eraldavat joont nimetatakse 
+\series bold
+murrujooneks
+\series default
+.
+ Hariliku murru nimetaja näitab mitmeks võrdseks osaks saab arvu jaotada
+ ja lugeja näitab mitu osa on parajasti valitud.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kümnendmurruks
+\series default
+ nimetatakse murdu, mis on kirjutatud kümnendsüsteemis nii, et täisosa ja
+ murdosa on eraldatud komaga.
+ 
+\series bold
+Näiteks
+\series default
+ arvud 3,25 ja 4,6 on kümnendmurrud.
+ Komast vasakul pool on täisosa ja paremal pool murdosa.
+ Kümnendmurrus vasakult paremale liikudes tähistab iga järgmine paremal
+ asetsev number eelmisest kümme korda väiksemat ühikut.
+ 
+\series bold
+Kümnendkohtadeks
+\series default
+ nimetatakse kümnendmurru murdosa numbreid.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kümnendmurdude võrdlemine 
+\series default
+on sarnane naturaalarvude võrdlemisele, kõigepealt võrreldakse kõige suuremaid
+ täisosa numbreid ja siis järjest väiksemaid.
+ Kui kümnendmurdude täisosad on võrdsed, siis võrreldakse järjest murdosade
+ kümnendkohti nii nagu seda tehti täisosade korral.
+ Ülesannete lahendamiseks on vaja teada, mida tähistavad tüvenumbrid.
+ Tüvenumbrid tähistavad arvu tüves olevaid numbreid.
+ Tüvenumbrite leidmiseks jäetakse ära arvu alguses ja lõpus olevad nullid.
+ 
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks
+\series default
+ arvu 23,5 tüvenumbrid on 2, 3 ja 5, arvu 250 tüvenumbrid on 2 ja 5 ning
+ arvu 0,045 tüvenumbrid on 4 ja 5.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Tabel kirjeldab kümnendmurdude ehitust.
+ Tabelis esitatud kümnendmurrud on järjestatud alates suurimast.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+täisosa
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+koma
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+murdosa
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sajalised
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+kümnelised
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ühelised
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+kümnendikud
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sajandikud
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+tuhandikud
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+,
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+,
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+,
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Arvutamine
+\end_layout
+
+\begin_layout Subsubsection*
+arvu ruut ja kuup
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Arvu 
+\emph on
+a
+\emph default
+ ruuduks
+\series default
+ nimetatakse arvu 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$a 
+\backslash
+cdot a$
+\end_layout
+
+\end_inset
+
+ ja kirjutatakse 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Arvu 
+\emph on
+a
+\emph default
+ kuubiks
+\series default
+ nimetatakse arvu 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$a 
+\backslash
+cdot a 
+\backslash
+cdot a$
+\end_layout
+
+\end_inset
+
+ ja kirjutatakse 
+\begin_inset Formula $a^{3}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks 
+\begin_inset Formula $5^{2}=25$
+\end_inset
+
+, sest 
+\begin_inset Formula $5\cdot5=25$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $5^{3}=125$
+\end_inset
+
+, sest 
+\begin_inset Formula $5\cdot5\cdot5=125$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.01
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.04
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.09
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.16
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.36
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.49
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.64
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.81
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+murdude liimine, lahutamine
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+Ühenimelistel
+\series default
+ murdudel on sama nimetaja ja 
+\series bold
+erinimelistel
+\series default
+ murdudel on erinev nimetaja.
+ Harilike murdude liitmiseks (lahutamiseks) viime murrud eelnevalt sarnasele
+ kujule, muudame nad ühenimelisteks ning alles seejärel liidame (lahutame)
+ murru lugejad.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Kui mõlemad murrud on 
+\series bold
+ühenimelised
+\series default
+, siis saame kohe lugejaid liitma asuda.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{a}{b}+\frac{c}{b}=\frac{a+c}{b}
+\]
+
+\end_inset
+
+Näiteks: 
+\begin_inset Formula 
+\[
+\frac{3}{5}+\frac{1}{5}=\frac{3+1}{5}=\frac{4}{5}
+\]
+
+\end_inset
+
+
+\series bold
+Erinimeliste
+\series default
+ murdude korral on kõigepealt vaja leida ühine nimetaja, selleks valime
+ tavaliselt arvude vähima ühiskordse (VÜK).
+\begin_inset Newline newline
+\end_inset
+
+Näiteks: 
+\begin_inset Formula $\frac{3}{7}+\frac{8}{3}=\frac{3\cdot3+7\cdot8}{21}=\frac{9+56}{21}=\frac{65}{21}=3\frac{2}{21}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+murdude korrutamine
+\end_layout
+
+\begin_layout Standard
+\noindent
+Harilike murdude korrutamiseks korrutatakse murdude lugejad omavahel ja
+ murdude nimetajad omavahel.
+ 
+\begin_inset Formula 
+\[
+\frac{a}{b}\cdot\frac{c}{b}=\frac{a\cdot c}{b\cdot b}
+\]
+
+\end_inset
+
+Näiteks 
+\begin_inset Formula 
+\[
+\frac{3}{5}\cdot\frac{4}{5}=\frac{3\cdot4}{5\cdot5}=\frac{12}{25}.
+\]
+
+\end_inset
+
+
+\series bold
+Täisarvu korrutamiseks hariliku murruga
+\series default
+ teisendatakse täisarv kõigepealt harilikuks murruks.
+ Täisarv 
+\emph on
+a
+\emph default
+ esitub hariliku murruna kujul 
+\begin_inset Formula $a=\frac{a}{1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Näiteks 
+\begin_inset Formula 
+\[
+4\cdot\frac{3}{5}=\frac{4}{1}\cdot\frac{3}{5}=\frac{4\cdot3}{1\cdot5}=\frac{12}{5}=2\frac{2}{5}.
+\]
+
+\end_inset
+
+Arvu kujul 
+\begin_inset Formula $a\,\frac{b}{c}$
+\end_inset
+
+ korrutamiseks hariliku murruga teisendatakse kõigepealt antud arv liigmurruks,
+ kujule 
+\begin_inset Formula $\frac{a\cdot c+b}{c}$
+\end_inset
+
+ ja alles siis korrutatakse.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks 
+\begin_inset Formula 
+\[
+4\frac{1}{2}\cdot\frac{3}{5}=\frac{4\cdot2+1}{2}\cdot\frac{3}{5}=\frac{9\cdot3}{2\cdot5}=\frac{27}{10}=2\frac{7}{10}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+murdude jagamine
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Hariliku murru jagamisel teise hariliku murruga
+\series default
+ korrutame jagatava arvu jagaja pöördarvuga.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{a}{b}\div\frac{c}{b}=\frac{a}{b}\cdot\frac{b}{c}=\frac{a\cdot b}{b\cdot c}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Täisarvu jagamiseks hariliku murruga
+\series default
+ teisendatakse täisarv kõigepealt harilikuks murruks ja siis jagatakse.
+ Näiteks 
+\begin_inset Formula $4\div\frac{3}{5}=\frac{4}{1}\cdot\frac{5}{3}=\frac{4\cdot5}{1\cdot3}=\frac{20}{3}=6\frac{2}{3}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Arvu kujul 
+\begin_inset Formula $a\frac{b}{c}$
+\end_inset
+
+ jagamiseks hariliku murruga või antud arvuga jagamiseks teisendatakse kõigepeal
+t antud arv liigmurruks, kujule 
+\begin_inset Formula $\frac{a\cdot c+b}{c}$
+\end_inset
+
+ ja alles siis jagatakse.
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Näiteks
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+4\frac{1}{2}\div\frac{3}{5}=\frac{4\cdot2+1}{2}\div\frac{3}{5}=\frac{9\cdot5}{2\cdot3}=\frac{45}{6}=7\frac{3}{6}=7\frac{1}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{3}{5}\div4\frac{1}{2}=\frac{3}{5}\div\frac{4\cdot2+1}{2}=\frac{3\cdot2}{5\cdot9}=\frac{6}{45}=\frac{2}{15}.
+\]
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+tehete järjekord // 5.
+ klass
+\end_layout
+
+\begin_layout Standard
+Kui avaldises on astendamine (ruut, kuup), korrutamine, jagamine, liitmine
+ ja lahutamine, siis tehakse tehteid järgmises järjekorras:
+\end_layout
+
+\begin_layout Enumerate
+sulgudes asuvad tehted
+\end_layout
+
+\begin_layout Enumerate
+astendamine
+\end_layout
+
+\begin_layout Enumerate
+korrutamine, jagamine
+\end_layout
+
+\begin_layout Enumerate
+liitmine lahutamine
+\end_layout
+
+\begin_layout Subsection*
+Mõõtühikud
+\end_layout
+
+\begin_layout Subsubsection*
+pindalaühikud // 5.
+ klass
+\end_layout
+
+\begin_layout Standard
+ruutmillimeeter, ruutsentimeeter, ruutdetsimeeter, ruutmeeter, aar, hektar
+ ja ruutkilomeeter on 
+\series bold
+pindalaühikud
+\series default
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+1 ruutmillimeeter =
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1 mm^2$
+\end_layout
+
+\end_inset
+
+ = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.0000001 m^2$
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+1 ruutsentimeeter = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1 cm^2$
+\end_layout
+
+\end_inset
+
+ = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.00001 m^2$
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+1 ruutdetsimeeter = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1 dm^2$
+\end_layout
+
+\end_inset
+
+ = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.001 m^2$
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+1 ruutmeeter = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1 m^2$
+\end_layout
+
+\end_inset
+
+ = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$100 dm^2$
+\end_layout
+
+\end_inset
+
+=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10000 cm^2$
+\end_layout
+
+\end_inset
+
+=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1000000 mm^2$
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+1 aar =
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1 a$
+\end_layout
+
+\end_inset
+
+ =
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$100 m^2$
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+1 hektar =
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1 ha$
+\end_layout
+
+\end_inset
+
+=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10000 m^2$
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+1 ruutkilomeeter =
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1 km^2$
+\end_layout
+
+\end_inset
+
+ =
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1000000 m^2$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+ruumalaühikud // 5.
+ klass
+\end_layout
+
+\begin_layout Standard
+Kuupmillimeeter, kuupsentimeeter, kuupdetsimeeter (liiter) ja kuupmeeter
+ on 
+\series bold
+ruumalaühikud
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+1 kuupmillimeeter =
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1 mm^3$
+\end_layout
+
+\end_inset
+
+ = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.0001 cm^3$
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+1 kuupsentimeeter =
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1 cm^3$
+\end_layout
+
+\end_inset
+
+ = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.0001 dm^3$
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+1 kuupdetsimeeter (1 liiter) = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1 dm^3$
+\end_layout
+
+\end_inset
+
+ = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.001 m^3$
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+1 kuupmeeter = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1 m^3$
+\end_layout
+
+\end_inset
+
+ = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1000 dm^3$
+\end_layout
+
+\end_inset
+
+=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1000000cm^3$
+\end_layout
+
+\end_inset
+
+=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1000000000 mm^3$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+plaanimõõt
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Plaanimõõt
+\series default
+ näitab mitu korda on joonise mõõtmeid vähendatud.
+ Plaanimõõtu tähistatakse jagatisena.
+ Plaanimõõt 1:10 tähendab, et ühele pikkusühikule joonisel või plaanil vastab
+ tegelikkuses 10 ühikut.
+ Näiteks plaanimõõt 1:100 tähendab seda, et ühele cm plaanil vastab 100
+ cm tegelikkuses ehk 1m.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kaardimõõduks ehk mõõtkavaks
+\series default
+ nimetatakse plaanimõõtu, kui on tegu kaardiga.
+ Näiteks, kui kaardil on mõõtkava 1:100000, siis see tähendab et kaardil
+ olev 1cm vastab looduses 100000cm ehk 1km.
+\end_layout
+
+\begin_layout Subsection*
+Andmed, diagrammid
+\end_layout
+
+\begin_layout Subsubsection*
+sagedus,sagedustabel // 5.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sagedus
+\series default
+ näitab, kui tihti mingi sündmus toimub.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Suhteline sagedus
+\series default
+ näitab, kui suure osa moodustab kindel sündmus kõikide vaadeldud sündmuste
+ arvust.
+ Suhtelist sagedust väljendatakse protsentides.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Sagedustabel
+\series default
+ kirjeldab sündmuste esinemise sagedust.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Sagedustabel õpilaste vanuste kohta, klassis on 30 õpilast.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vanus
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sagedus
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+suhteline sagedus
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{20}{30}\approx0.66\approx67\%$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{3}{30}=0.1=10\%$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{7}{30}\approx0.23=23\%$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+mood 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Mood
+\series default
+ on tunnuse kõige sagedamini esinev väärtus.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks, kui 20 õpilast on 15 aastased, 3 on 16 aastased ja 7 on 14 aastased,
+ siis õpilaste vanuste mood on 15, sest 15 aasta vanuseid õpilasi on kõige
+ rohkem.
+\begin_inset Newline newline
+\end_inset
+
+Kui kõik tunnuse väärtused on võrdsed, siis mood puudub.
+\end_layout
+
+\begin_layout Subsubsection*
+skaala
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Skaalat
+\series default
+ kasutatakse erinevatel mõõteriistadel, et märkida mõõdetavaid suurusi.
+ Skaala on jaotatud võrdseteks osadeks, mida nimetatakse jaotisteks.
+ Igale jaotise osale vastab mõõdetava suuruse väärtus.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks joonlaual on skaala, mis märgib sentimeetreid ja millimeetreid.
+ Joonlaua jaotisteks on tavaliselt sentimeetrid ja millimeetrid.
+\end_layout
+
+\begin_layout Subsubsection*
+aritmeetiline keskmine
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Aritmeetiliseks keskmiseks
+\series default
+ nimetatakse arvu, mis saadakse arvude liitmisel ja selle summa jagamisel
+ liidetavate arvuga.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks, kui on antud arvud 2,7,9,4,10 siis nende aritmeetilise keskmise
+ leidmiseks liidame 2+7+9+4+10=32 ja jagame vastava summa liidetavate arvuga
+ 
+\begin_inset Formula $32\div5=6.4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+diagrammid
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/tulpdiagramm.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Tulpdiagramm
+\series default
+ on diagramm, kus arve esitatakse tulpadena, mis asuvad samal sirgel.
+ Diagrammi 
+\emph on
+x
+\emph default
+ teljel on on antud näites tähed A, B, C, D ja E, mis võivad tähistada näiteks
+ erinevaid firmasid.
+ Diagrammi 
+\emph on
+y
+\emph default
+ teljel on arvskaala, mis näiteks võiks tähistada firmade töötajate arvu.
+ Seega tulp, mis asub tähe C kohal ning ulatub 
+\begin_inset Formula $y$
+\end_inset
+
+ teljel arv 17-ni tähendab, et firmas C töötab 17 inimest.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/sirgloikdiagramm.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Sirglõikdiagramm
+\series default
+ on diagramm, kus arve esitatakse lõikudena.
+ Diagrammi 
+\emph on
+y
+\emph default
+ teljel on on antud näites tähed A, B, C, D ja E, mis võivad tähistada näiteks
+ erinevaid firmasid.
+ Diagrammi 
+\emph on
+x
+\emph default
+ teljel on arvskaala, mis näiteks võiks tähistada firmade töötajate arvu.
+ Seega sirglõik, mis asub tähest C paremal ning ulatub 
+\begin_inset Formula $x$
+\end_inset
+
+ teljel arv 17-ni tähendab, et firmas C töötab 17 inimest.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Algebra ja funktsioonid 
+\end_layout
+
+\begin_layout Subsubsection*
+arvavaldis, tähtavaldis
+\end_layout
+
+\begin_layout Standard
+Avaldisi saab lihtsustada sulgude avamise ja ühisteguri sulgude ette toomisega.
+ Siinkohal tuleb kasutada reeglina assotsiatiivsuse, kommutatiivsuse ning
+ distributiivsuse seaduseid.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Näiteks kui meil me soovime avaldist 
+\begin_inset Formula $a(b+c)+b(2a+b)$
+\end_inset
+
+ lahti kirjutada, siis esimese asjana kasutame distributiivsuse seadust
+ ning avame sulud.
+ Saame 
+\begin_inset Formula $ab+ac+b2a+b^{2}$
+\end_inset
+
+.
+ Nüüd kasutame kommutatiivsuse seadust ning tõstame arvud ja tähed ümber
+ niimoodi, et neid oleks lihtsam jälgida.
+ Saame 
+\begin_inset Formula $ab+ac+2ab+b^{2}$
+\end_inset
+
+.
+ Nüüd võime tuua jällegi kasutades distributiivsuse seadust tähise 
+\begin_inset Formula $a$
+\end_inset
+
+ sulgude ette.
+ Saame 
+\begin_inset Formula $a(b+c+b)+b^{2}=a(2b+c)+b^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+valem
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\color black
+Valem
+\series default
+ on matemaatiliste sümbolite kombinatsioon, mis väljendab väidet või reeglit.
+ Seega võimaldab valem seoste kirjapanekut sümbolite abil.
+ Näiteks valem kahe arvu 
+\begin_inset Formula $a$
+\end_inset
+
+ ja 
+\begin_inset Formula $b$
+\end_inset
+
+ keskmise leidmiseks on 
+\begin_inset Formula 
+\[
+\frac{a+b}{2}\quad.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+võrrand
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Võrrand
+\series default
+ on võrdus, mis sisaldab ühte või mitut tundmatut.
+ Näiteks on võrrand 
+\begin_inset Formula $3x+4=10.$
+\end_inset
+
+ Võrrandi lahendiks on tundmatute suuruste väärtused, mis jätavad võrduse
+ kehtima.
+ Seega tuleb võrrandi lahendamiseks leida tundmatute väärtused nii, et võrdus
+ kehtiks.
+ Antud näite korral 
+\begin_inset Formula $3x=10-4$
+\end_inset
+
+ ehk 
+\begin_inset Formula $3x=6$
+\end_inset
+
+ ehk 
+\emph on
+x
+\emph default
+=2.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Lineaarvõrrandiks
+\series default
+ nimetatakse ühe tundmatuga võrrandit.
+ Näiteks 
+\begin_inset Formula $3x+4=10.$
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Lineaarvõrrandil 
+\series default
+on alati üks lahend.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Lineaarvõrrandi lahendamiseks
+\series default
+ tuleb tundmatu viia ühele poole võrdusmärki ja vabaliikmed teisele poole
+ võrdusmärki ning siis võrduse mõlemad pooled sobiva kordajaga läbi korrutada
+ või jagada, et tundmatu kordajaks saaks üks.
+ Võrdus peab alati kehtima jääma, seega tehakse kõik tehted mõlema võrduse
+ poolega.
+ Seetõttu tulebki avaldise liikme teisele poole võrdusmärki tõstmisel märki
+ muuta, kuna tegelikult tähistab see mõlema võrduse poole vastava arvuga
+ liitmist või lahutamist.
+ Eelmise näite korral 
+\begin_inset Formula 
+\[
+3x+4=10
+\]
+
+\end_inset
+
+lahutatakse mõlemalt poolt võrdusmärki neli 
+\begin_inset Formula 
+\[
+3x+4-4=10-4
+\]
+
+\end_inset
+
+ehk 
+\begin_inset Formula 
+\[
+3x=10-4
+\]
+
+\end_inset
+
+ehk 
+\begin_inset Formula 
+\[
+3x=6\quad.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Nüüd jagatakse võrduse mõlemad pooled kolmega, et saada tundmatu kordajaks
+ üks ning seega on leitud lahend x=2.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+arvkiir
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Arvkiir
+\series default
+ on kiir, mille alguspunktiks on null.
+ Kiir on jagatud kindla pikkusega lõikudeks ja iga lõigu lõppu on märgitud
+ arv nii, et iga järgnev arv on eelmisest ühe võrra suurem.
+ Nii kujutatakse arvkiirel järjestikuseid naturaalarve.
+\end_layout
+
+\begin_layout Subsection*
+Geomeetria
+\end_layout
+
+\begin_layout Subsubsection*
+punkt, tasand // 5.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Punkt
+\series default
+ on objekt, mida kirjeldab ainult tema asukoht.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Tasand
+\series default
+ ehk 
+\series bold
+tasapind
+\series default
+ on kahemõõtmeline tasane ruum.
+ Tasandit võib ette kujutada kui lõpmata paljudest punktidest moodustatud
+ hulka.
+\end_layout
+
+\begin_layout Subsubsection*
+jooned // 5.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/sirgloik.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sirge
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+Sirge
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ (sirgjoon) on lõpmata pikk kõverusteta joon.
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/sirgloik.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sirglõik
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+Sirglõik
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ moodustub kahe punkti sirgjoonega ühendamisel.
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/murdjoon.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Murdjoon
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Murdjoon
+\series default
+ koosneb punkte järjest ühendavatest lõikudest, kusjuures kolm järjestikust
+ punkti ei asu ühel sirgel.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/kiir.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kiir
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kiir
+\series default
+ saadakse sirglõigu pikendamisel üle ühe otspunkti.
+ Kiir võib olla lõpmatult pikk.
+\end_layout
+
+\begin_layout Subsubsection*
+nurk // 5.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/kolmnurk_nyri_terav_tais.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+teravnurk (vasakul), täisnurk (keskel) ja nürinurk (paremal).
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Nurk
+\series default
+ on moodustatud punktist (nurga tipust) ja kahest erinevast kiirest, mis
+ väljuvad antud punktist.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Nurga suurust 
+\series default
+mõõdetakse kraadides.
+ Üks kraad saadakse täisnurga jagamisel 90 võrdseks osaks.
+ Ühte kraadi tähistatakse 
+\begin_inset Formula $1^{\circ}$
+\end_inset
+
+.
+ Tähtsamatest nurkadest on vaja teada, et 
+\series bold
+täisnurk
+\series default
+ on 
+\begin_inset Formula $90^{\circ}$
+\end_inset
+
+, 
+\series bold
+sirgnurk
+\series default
+ 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+ja 
+\series bold
+täispööre
+\series default
+ 
+\begin_inset Formula $360^{\circ}$
+\end_inset
+
+.
+ 
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Teravnurgaks
+\series default
+ nimetatakse nurka, mis on väiksem kui 
+\begin_inset Formula $90^{\circ}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Nürinurgaks
+\series default
+ nimetatakse nurka, mis on suurem kui 
+\begin_inset Formula $90^{\circ}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Haar
+\series default
+ on üks nurga tipust väljuvatest kiirtest.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/korvunurgad.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Kõrvunurkadeks
+\series default
+ nimetatakse kahte nurka, mille üks haar on ühine ja mille teised haarad
+ moodustavad sirge.
+ 
+\series bold
+Kõrvunurkade summa on 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+
+\series default
+.
+ Ühe kõrvunurga abil saab arvutada teise, kuna nende summa peab olema 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+ 
+\begin_inset Graphics
+	filename img/tippnurgad.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Tippnurkadeks 
+\series default
+nimetatakse kahte nurka, kui ühe nurga haarad on teise nurga haarade pikendused
+ üle nurkade ühise tipu.
+ 
+\series bold
+Tippnurgad on võrdsed.
+
+\series default
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+sirgete omadused // 5.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sirged ristuvad
+\series default
+, kui nende vaheline nurk on 
+\begin_inset Formula $90^{\circ}$
+\end_inset
+
+.
+ Ristumist tähistatakse sümboliga
+\begin_inset Formula $\perp.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Sirged lõikuvad
+\series default
+, kui neil leidub ühine punkt.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Sirged on paralleelsed
+\series default
+, kui nad ei lõiku ehk neil ei leidu ühist punkti.
+\begin_inset Newline newline
+\end_inset
+
+Paralleelsust tähistatakse sümboliga 
+\begin_inset Formula $\mid\mid$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Subsubsection*
+risttahukas // 5.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/risttahukas.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Risttahuka tahud on ristkülikud.
+ 
+\series bold
+Risttahuka pindala
+\series default
+ on tema tahkude pindalade summa.
+ 
+\series bold
+Risttahuka ruumala
+\series default
+ on tema põhja pindala ja kõrguse korrutis.
+\end_layout
+
+\begin_layout Subsubsection*
+kuup // 5.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/kuup.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kuup
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Kuubi tahud on ruudud ja seetõttu on kõik servad on võrdse pikkusega.
+ Olgu kuubi serva pikkus a.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kuubi pindala
+\series default
+ on tema tahkude pindalade summa ehk 
+\begin_inset Formula $6\cdot a\cdot a=6\cdot a^{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kuubi ruumala
+\series default
+ on tema põhja pindala ja kõrguse korrutis ehk 
+\begin_inset Formula $a\cdot a\cdot a=a^{3}$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

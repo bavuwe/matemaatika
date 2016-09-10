@@ -1,0 +1,2376 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+7.
+ klass
+\end_layout
+
+\begin_layout Subsection*
+Arvud
+\end_layout
+
+\begin_layout Subsubsection*
+arvuhulgad // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Naturaalarvud
+\series default
+ on nullist suuremad arvud: 1,2,3,...
+ .
+ Naturaalarvude hulka tähistatakse sümboliga 
+\begin_inset Formula $\mathbf{N}$
+\end_inset
+
+
+\series bold
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Täisarvude hulga 
+\series default
+moodustavad naturaalarvud, null ja miinusmärgiga naturaalarvud: 
+\begin_inset Formula $\ldots-3,-2,-1,0,1,2,3\ldots$
+\end_inset
+
+.
+ Täisarvude hulka tähistatakse sümboliga 
+\begin_inset Formula $\mathbf{Z}$
+\end_inset
+
+.
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ratsionaalarvud
+\series default
+ on arvud, mida saab esitada kahe täisarvu jagatisena: 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+, kui 
+\emph on
+a
+\emph default
+ ja 
+\emph on
+b
+\emph default
+ on täisarvud ning 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+.
+ Ratsionaalarvude hulka tähistatakse sümboliga 
+\begin_inset Formula $\mathbf{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+arvu absoluutväärtus // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Arvu absoluutväärtus
+\series default
+ on antud arvu arvteljel kujutava punkti kaugus nullpunktist.
+ Seega on positiivsete arvude ja nulli absoluutväärtus võrdne endaga ja
+ negatiivsete arvude absoluutväärtus võrdne vastava negatiivse arvu vastandarvug
+a.
+ Arvu 
+\emph on
+a
+\emph default
+ absoluutväärtus tähistatakse 
+\begin_inset Formula $\mid a\mid.$
+\end_inset
+
+ 
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks 
+\begin_inset Formula $\mid-5\mid=5$
+\end_inset
+
+, 
+\begin_inset Formula $\mid12\mid=12$
+\end_inset
+
+ ja 
+\begin_inset Formula $\mid0\mid=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Protsentarvutus
+\end_layout
+
+\begin_layout Subsubsection*
+protsendi leidmine // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Üks protsent
+\series default
+ on sajandik tervikust ja seda tähistatakse 1%.
+ Tervikut tähistatakse 100%.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $1\%=\frac{1}{100}=0,01$
+\end_inset
+
+osa tervikust.
+\begin_inset Newline newline
+\end_inset
+
+ 25% tähistatakse neljandikku täisosast, 50% poolt täisosast ja 75% kolme
+ neljandikku täisosast.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Arvust protsendi leidmiseks 
+\series default
+tuleb arv antud protsendile vastava osaga läbi korrutada.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Näiteks
+\series default
+ 73% leidmiseks arvust 8 tuleb arv 8 läbi korrutada 
+\begin_inset Formula $\frac{73}{100}=0,73$
+\end_inset
+
+.
+ Seega 73% kaheksast on 
+\begin_inset Formula $0,73\cdot8=5,84$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+terviku leidmine // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Terviku leidmiseks protsendi järgi 
+\series default
+on mitu meetodit:
+\end_layout
+
+\begin_layout Enumerate
+leida 1% tervikust ja korrutada see sajaga
+\end_layout
+
+\begin_layout Enumerate
+jagada protsendile vastav osa kümnendmurruks teisendatud protsendiga
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Näiteks
+\series default
+, kui on teada, et 7% on 21, siis terviku leidmiseks leiame kõigepealt 1%
+ väärtuse.
+ Selleks 
+\begin_inset Formula $\frac{21}{7}=3$
+\end_inset
+
+ ja seega vastab 1% arv kolm.
+ Nüüd korrutame kolme sajaga 
+\begin_inset Formula $3\cdot100=300$
+\end_inset
+
+ ja saame terviku.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kasutades teist meetodit
+\series default
+, teisendame 7% kümnendmurruks ja jagame 21 saadud kümnendmurruga.
+ Seega 
+\begin_inset Formula $7\%=\frac{7}{100}$
+\end_inset
+
+ ja 
+\begin_inset Formula 
+\[
+21\div\frac{7}{100}=\frac{21}{1}\cdot\frac{100}{7}=\frac{2100}{7}=300.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+suhe, võrdeline seos // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Suhe
+\series default
+ on kahe arvu jagatis ja seda saab väljendada protsentides.
+ Näiteks 
+\begin_inset Formula $\frac{2}{8}=25\%.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Võrdeliseks seoseks
+\series default
+ nimetatakse muutujate võrdelisust.
+ Muutujat 
+\emph on
+y
+\emph default
+ nimetatakse võrdeliseks muutujaga 
+\emph on
+x
+\emph default
+, kui nende muutujate kõikide väärtuste korral kehtib seos 
+\begin_inset Formula $y=ax$
+\end_inset
+
+, kus a on nullist erinev konstant.
+\end_layout
+
+\begin_layout Subsubsection*
+pöördvõrdeline seos // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/poordvordeline_seos.png
+	lyxscale 50
+	scale 45
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Pöördvõrdelisus
+\series default
+ on muutujate 
+\emph on
+x
+\emph default
+ ja 
+\emph on
+y
+\emph default
+ vaheline seos, kus ühe suuruse kasvades väheneb teine suurus proportsionaalselt.
+ Seda saab kirjeldada valemiga 
+\begin_inset Formula $y=\frac{a}{x}$
+\end_inset
+
+, kus a on konstant.
+\end_layout
+
+\begin_layout Subsubsection*
+kasvamine, kahanemine // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+Esialgse suuruse kasvamist ja kahanemist saab esitada protsentides.
+ Kui esialgset suurust tähistada 100%, siis saab öelda, mitu protsenti esialgne
+ suurus kasvas või kahanes.
+ Näiteks kui arv 100 kasvas arvuks 150, siis saame öelda, et arv kasvas
+ 50% või et arv kasvas 150% peale.
+\end_layout
+
+\begin_layout Subsection*
+Astendamine
+\end_layout
+
+\begin_layout Subsubsection*
+astendamine // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Astendamiseks
+\series default
+ nimetatakse astme 
+\begin_inset Formula $a^{n}$
+\end_inset
+
+ leidmist, kus 
+\emph on
+a
+\emph default
+ on 
+\series bold
+astendatav
+\series default
+ ja 
+\emph on
+n
+\emph default
+ on 
+\series bold
+astendaja
+\series default
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Astendaja näitab mitu korda on vaja astendatavat iseendaga korrutada.
+ Kui astendaja on üks, siis on tulemuseks astendatav ehk 
+\begin_inset Formula $a^{1}=a$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Kui astendatav on negatiivne, siis astendamise tulemus on negatiivne vaid
+ siis, kui astendaja on paaritu arv, kuna siis korrutatakse paaritu arv
+ kordi negatiivset arvu.
+ Näiteks, kui astendatav on -3, siis 
+\begin_inset Formula $(-3)^{2}=9$
+\end_inset
+
+ ja 
+\begin_inset Formula $(-3)^{3}=27$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\color black
+astmed 
+\color inherit
+// 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Kümne astmed:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $10^{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $10^{0}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $10^{1}=10$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $10^{2}=100$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $10^{3}=1000$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $10^{4}=10000$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $10^{5}=100000$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $10^{6}=1000000$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Kahe astmed:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $2^{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $2^{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $2^{0}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $2^{6}=64$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $2^{1}=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $2^{7}=128$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $2^{2}=4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $2^{8}=256$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $2^{3}=8$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $2^{9}=512$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $2^{4}=16$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $2^{10}=1024$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $2^{5}=32$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $2^{11}=2048$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\color red
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+tehete järjekord // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+Kui avaldises on astendamine (ruut, kuup), korrutamine, jagamine, liitmine
+ ja lahutamine, siis tehakse tehteid järgmises järjekorras:
+\end_layout
+
+\begin_layout Enumerate
+sulgudes asuvad tehted
+\end_layout
+
+\begin_layout Enumerate
+astendamine
+\end_layout
+
+\begin_layout Enumerate
+korrutamine, jagamine
+\end_layout
+
+\begin_layout Enumerate
+liitmine lahutamine
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Näiteks:
+\series default
+ 
+\begin_inset Formula $3\cdot4+2^{2}\cdot(2^{3}+3)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2^{3}=8$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $8+3=11$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2^{2}=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $4\cdot11=44$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3\cdot4=12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $12+44=56$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Seega 
+\begin_inset Formula $3\cdot4+2^{2}\cdot(2^{3}+3)=56$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Statistika, andmed
+\end_layout
+
+\begin_layout Subsubsection*
+sagedus,sagedustabel // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sagedus
+\series default
+ näitab, kui tihti mingi sündmus toimub.
+ 
+\series bold
+Suhteline sagedus
+\series default
+ näitab, kui suure osa moodustab kindel sündmus kõikide vaadeldud sündmuste
+ arvust.
+ Suhtelist sagedust väljendatakse protsentides.
+ 
+\series bold
+Sagedustabel
+\series default
+ kirjeldab sündmuste esinemise sagedust.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Sagedustabel õpilaste vanuste kohta, klassis on 30 õpilast.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vanus
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sagedus
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+suhteline sagedus
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{20}{30}\approx0,66\approx67\%$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{3}{30}=0,1=10\%$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{7}{30}\approx0,23=23\%$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+mood // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Mood
+\series default
+ on tunnuse kõige sagedamini esinev väärtus.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks, kui 20 õpilast on 15 aastased, 3 on 16 aastased ja 7 on 14 aastased,
+ siis õpilaste vanuste mood on 15, sest 15 aasta vanuseid õpilasi on kõige
+ rohkem.
+\begin_inset Newline newline
+\end_inset
+
+Kui kõik tunnuse väärtused on võrdsed, siis mood puudub.
+\end_layout
+
+\begin_layout Subsubsection*
+aritmeetiline keskmine // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Aritmeetiliseks keskmiseks
+\series default
+ nimetatakse arvu, mis saadakse arvude liitmisel ja selle summa jagamisel
+ liidetavate arvuga.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Näiteks, kui on antud arvud 2, 7, 9, 4, 10 siis nende aritmeetilise keskmise
+ leidmiseks liidame 2+7+9+4+10=32 ja jagame vastava summa liidetavate arvuga
+ 
+\begin_inset Formula $32\div5=6,4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Võrrandid
+\end_layout
+
+\begin_layout Subsubsection*
+võrdekujuline võrrand, võrre
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Võrre
+\series default
+ on võrdus, mille mõlemal poolel on suhted ehk jagatised.
+ Näiteks 
+\begin_inset Formula $\frac{2}{3}=\frac{4}{6}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Võrde põhiomaduseks
+\series default
+ on see,
+\series bold
+ 
+\series default
+et jagatisena esitatud võrduse korral on diagonaalide korrutised võrdsed.
+ Näiteks 
+\begin_inset Formula $\frac{2}{3}=\frac{4}{6}$
+\end_inset
+
+
+\series bold
+ 
+\series default
+näeme, et 
+\begin_inset Formula $2\cdot6=3\cdot4$
+\end_inset
+
+.
+ 
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Võrdekujuliseks võrrandiks
+\series default
+ nimetatakse võrdust, mis on võrde kujul ja mille üks liige on tundmatu.
+ Näiteks 
+\begin_inset Formula $\frac{2}{3}=\frac{4}{x}$
+\end_inset
+
+.
+ Niisuguse võrrandi lahendamiseks kasutatakse võrde põhiomadust 
+\begin_inset Formula $2\cdot x=3\cdot4$
+\end_inset
+
+ ehk 
+\begin_inset Formula $2\cdot x=12$
+\end_inset
+
+ ehk 
+\begin_inset Formula $x=6.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Võrde põhiomadust kutsutakse mõnikord ka 
+\series bold
+ristkorrutiseks
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+murdarvuline lineaarvõrrand
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Murdarvuliste kordajatega lineaarvõrrandi lahendamine
+\series default
+ on analoogne täisarvuliste kordajatega murdvõrrandi lahendamisele.
+ Vastava võrrandi lahendamiseks saab kasutada võrde põhiomadust.
+ 
+\end_layout
+
+\begin_layout Standard
+Näiteks kui meil on võrrand 
+\begin_inset Formula 
+\[
+\frac{2}{3}=\frac{4}{x}\quad,
+\]
+
+\end_inset
+
+siis niisuguse võrrandi lahendamiseks kasutatakse võrde põhiomadust: 
+\begin_inset Formula $2\cdot x=3\cdot4$
+\end_inset
+
+ ehk 
+\begin_inset Formula $2\cdot x=12$
+\end_inset
+
+ ehk 
+\begin_inset Formula $x=6.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Funktsioonid
+\end_layout
+
+\begin_layout Subsubsection*
+funktsioon // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Funktsiooniks 
+\series default
+ehk funktsionaalseks seoseks nimetatakse seost 
+\series bold
+\emph on
+y = f(x)
+\series default
+\emph default
+ hulgal 
+\emph on
+X
+\emph default
+, kui muutuja 
+\emph on
+x
+\emph default
+ igale väärtusele hulgast 
+\emph on
+X
+\emph default
+ vastab ainult üks muutuja 
+\emph on
+y
+\emph default
+ väärtus hulgast 
+\emph on
+Y
+\emph default
+.
+ Seega on funktsioon seos kahe muutuja vahel, kus ühe muutuja igale väärtusele
+ vastab üks kindel teise muutuja väärtus.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Funktsiooni argumendiks
+\series default
+ nimetatakse funktsioonis 
+\emph on
+y=f(x)
+\emph default
+ olevat muutujat 
+\emph on
+x
+\emph default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Funktsiooni 
+\emph on
+y=f(x)
+\emph default
+ määramispiirkonnaks
+\series default
+ nimetatakse argumendi 
+\emph on
+x
+\emph default
+ väärtuste hulka 
+\emph on
+X
+\emph default
+ ehk 
+\emph on
+x
+\emph default
+ võimalikke väärtusi.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Funktsiooni 
+\emph on
+y=f(x)
+\emph default
+ väärtuste piirkonnaks
+\series default
+ ehk 
+\series bold
+muutumispiirkonnaks
+\series default
+ nimetatakse funktsiooni 
+\emph on
+y
+\emph default
+ väärtuste hulka 
+\emph on
+Y
+\emph default
+ ehk funktsiooni võimalikke väärtusi.
+\end_layout
+
+\begin_layout Subsubsection*
+võrdeline seos // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/vordeline_seos.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Võrdeliseks seoseks
+\series default
+ nimetatakse muutujate võrdelisust.
+ Muutujat 
+\emph on
+y
+\emph default
+ nimetatakse võrdeliseks muutujaga 
+\emph on
+x
+\emph default
+, kui nende muutujate kõikide väärtuste korral kehtib seos 
+\begin_inset Formula $y=a\cdot x$
+\end_inset
+
+, kus 
+\emph on
+a
+\emph default
+ on nullist erinev konstant.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Võrdeteguriks 
+\series default
+nimetatakse seoses 
+\begin_inset Formula $y=a\cdot x$
+\end_inset
+
+ asuvat konstanti 
+\emph on
+a
+\emph default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+lineaarne seos // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/lineaarvorrand.png
+	lyxscale 40
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Lineaarseks seoseks 
+\series default
+nimetatakse muutujate 
+\emph on
+x
+\emph default
+ ja 
+\emph on
+y
+\emph default
+ vahelist seost, kui 
+\begin_inset Formula $y=a\cdot x+b$
+\end_inset
+
+ ning kus 
+\emph on
+a
+\emph default
+ ja 
+\emph on
+b
+\emph default
+ on konstandid.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Lineaarliikmeks
+\series default
+ nimetatakse seose 
+\begin_inset Formula $y=a\cdot x+b$
+\end_inset
+
+ liiget 
+\begin_inset Formula $a\cdot x$
+\end_inset
+
+ ja vabaliikmeks liiget 
+\emph on
+b
+\emph default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Lineaarse seose graafikuks on sirge ja igat sirget on võimalik esitada lineaarse
+ seosena.
+ Lineaarse seose vabaliige lõikab y-telge punktis (0;
+\emph on
+b
+\emph default
+), x-teljega lõikumispunkti leidmiseks tuleb leida 
+\emph on
+x
+\emph default
+ väärtus, mille korral 
+\emph on
+y
+\emph default
+ võrdub nulliga ehk 
+\begin_inset Formula $ax+b=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Geomeetria
+\end_layout
+
+\begin_layout Subsubsection*
+hulknurk // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/hulknurk_korraparane.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Hulknurgaks
+\series default
+ nimetatakse kinnist murdjoont.
+ 
+\series bold
+Korrapäraseks hulknurgaks
+\series default
+ nimetatakse kinnist murdjoont, kus kõik lõigud on võrdsete pikkustega.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Hulknurga apoteemiks
+\series default
+ nimetatakse lõiku hulknurga keskpunktist külje keskpunkti.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Hulknurga ümbermõõt
+\series default
+ võrdub tema külgede pikkuste summaga.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Hulknurga sisenurkade summa
+\series default
+ arvutatakse valemiga 
+\begin_inset Formula $s=(n-2)\cdot180^{\circ}$
+\end_inset
+
+, kus 
+\emph on
+n
+\emph default
+ on nurkade arv hulknurgas.
+ Näiteks kolmnurgas on sisenurkade summa 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+, ja nelinurgas 
+\begin_inset Formula $360^{\circ}$
+\end_inset
+
+.
+ Korrapärase hulknurga kõik nurgad on võrdsete suurustega, seega on ühe
+ nurga suurus 
+\begin_inset Formula 
+\[
+\frac{(n-2)\cdot180^{\circ}}{n}\quad.
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Hulknurga omadusi:
+\end_layout
+
+\begin_layout Itemize
+ümbermõõt = külgede pikkuste summa
+\end_layout
+
+\begin_layout Itemize
+sisenurkade summa 
+\begin_inset Formula $s=(n-2)\cdot180^{\circ}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+korrapärase hulknurga ühe nurga suurus 
+\begin_inset Formula $\frac{(n-2)\cdot180^{\circ}}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+rööpkülik // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/roopkylik.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Rööpkülikuks
+\series default
+ nimetatakse nelinurka, mille vastasküljed on paralleelsed.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Rööpküliku omadusi: 
+\end_layout
+
+\begin_layout Itemize
+rööpküliku vastasküljed on võrdse pikkusega
+\end_layout
+
+\begin_layout Itemize
+rööpküliku vastasnurgad on võrdsed
+\end_layout
+
+\begin_layout Itemize
+lähisnurkade summa on 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+diagonaalid poolitavad teineteist
+\end_layout
+
+\begin_layout Itemize
+pindala 
+\begin_inset Formula $S=a\cdot h,$
+\end_inset
+
+ kus 
+\emph on
+a
+\emph default
+ on alus ja 
+\emph on
+h
+\emph default
+ on kõrgus
+\end_layout
+
+\begin_layout Itemize
+ümbermõõt võrdub küljepikkuste summaga
+\end_layout
+
+\begin_layout Subsubsection*
+romb // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/romb.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Romb
+\series default
+ on nelinurk, mille kõik küljed on võrdsed.
+ Romb on rööpküliku erijuht ja seetõttu on 
+\series bold
+rombil kõik rööpküliku omadused
+\series default
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Rombi omadusi:
+\end_layout
+
+\begin_layout Itemize
+rombi diagonaalid on risti 
+\end_layout
+
+\begin_layout Itemize
+diagonaalid poolitavad teineteist ja nurki
+\end_layout
+
+\begin_layout Itemize
+pindala 
+\begin_inset Formula $S=a\cdot h$
+\end_inset
+
+, kus a on alus ja h on kõrgus
+\end_layout
+
+\begin_layout Itemize
+pindala 
+\begin_inset Formula $S=\frac{d_{1}\cdot d_{2}}{2}$
+\end_inset
+
+, kus 
+\begin_inset Formula $d_{1},d_{2}$
+\end_inset
+
+ on diagonaalide pikkused
+\end_layout
+
+\begin_layout Subsubsection*
+trapets // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/trapets.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Trapets
+\series default
+ on nelinurk, mille kaks külge on omavahel paralleelsed ja kaks ülejäänud
+ külge ei ole omavahel paralleelsed.
+ Paralleelseid külgi nimetatakse 
+\series bold
+trapetsi alusteks
+\series default
+.
+ Trapetsi kõrgus on aluste vaheline kaugus.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Trapetsi omadusi:
+\end_layout
+
+\begin_layout Itemize
+ümbermõõt on võrdne külgede pikkuste summaga
+\end_layout
+
+\begin_layout Itemize
+pindala 
+\begin_inset Formula $S=\frac{a+b}{2}\cdot h$
+\end_inset
+
+, kus 
+\emph on
+a
+\emph default
+, 
+\emph on
+b
+\emph default
+ on alused ja 
+\emph on
+h
+\emph default
+ on kõrgus
+\end_layout
+
+\begin_layout Itemize
+haarade lähisnurkade summa on 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+võrdhaarse trapetsi alusnurgad on võrdsed
+\end_layout
+
+\begin_layout Subsubsection*
+nelinurksed püstprismad // 7.
+ klass
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/risttahukas.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Risttahukas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Risttahukas
+\series default
+ on rööptahukas, kus kõik ühise tipuga servad on paarikaupa risti ehk nende
+ vahel on 
+\begin_inset Formula $90^{\circ}$
+\end_inset
+
+nurk.
+ Risttahuka tahud on ristkülikud.
+ 
+\series bold
+Risttahuka pindala
+\series default
+ on tema tahkude pindalade summa.
+ 
+\series bold
+Risttahuka ruumala
+\series default
+ on tema põhja pindala ja kõrguse korrutis.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/kuup.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kuup
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Kuup
+\series default
+ on risttahukas, mille kõik servad on võrdse pikkusega.
+ Kuubi tahud on ruudud ja seetõttu ongi kõik servad on võrdse pikkusega.
+ Olgu kuubi serva pikkus a.
+
+\series bold
+ Kuubi pindala
+\series default
+ on tema tahkude pindalade summa ehk 
+\begin_inset Formula $6\cdot a^{2}$
+\end_inset
+
+.
+ 
+\series bold
+Kuubi ruumala
+\series default
+ on tema põhja pindala ja kõrguse korrutis ehk 
+\begin_inset Formula $a^{3}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/pystrooptahukas.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\color black
+Püströöptahukaks
+\series default
+ nimetatakse
+\color red
+ 
+\color inherit
+püstprismat, mille põhjad on rööpnelinurgad (paarikaupa paralleelsete külgedega
+ nelinurk).
+
+\series bold
+ Püströöptahuka pindala 
+\series default
+on tema tahkude pindalade summa.
+ 
+\series bold
+Püströöptahuka ruumala
+\series default
+ on tema põhja pindala ja kõrguse korrutis.
+\end_layout
+
+\end_body
+\end_document
