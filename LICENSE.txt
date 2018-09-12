@@ -1,6 +1,0 @@
-Matemaatika Minileksikon
-========================
-
-The software code is licensed under GPLv3 (see LICENSE_GPL3.txt).
-All the materials, graphics and other assets are licensed under Creative Commons ShareAlike 4.0 International License (see LICENSE_BYSA4.0.txt)
-
