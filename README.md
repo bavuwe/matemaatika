@@ -24,7 +24,7 @@ Erinevate klasside materjalid asuvad kataloogis `materjalid/lyx`.
 Kuigi Lyx on suurepärane valemite toimetamiseks, on mõnikord tarvis kuvada ka graafikuid ja pilte, mis on loodud teiste programmidega
 ja asuvad kataloogis `materjalid/lyx/img`.
 Kõik pildid ja graafikud peavad olema `.svg` formaadis.
-SVG on vektorformaat ja võimaldab graafikuid joonistada erineva DPI-ga ekraanidel teravalt.
+SVG on vektorformaat ja võimaldab graafikuid joonistada erineva ekraanitihedusega seadmetel teravalt.
 
 ![Lyx tekstiredaktor](readme_files/lyxscreenshot.png)
 
@@ -32,19 +32,14 @@ Antud struktuuri järgmine on oluline, et oleks võimalik materjale automaatselt
 
 # Materjalide teisendamine appi jaoks sobivale kujule
 
-## Lyx -> HTML
-Esiteks teisendame materjalid Lyx formaadist HTML kujule.
-`--imageformat copy` väldib piltide konverteerimist PNG.
-Järgnev käsk tuleks käivitada `/materials/lyx` kataloogis.
+Kataloogis `/materials/lyx` tuleb käivitada käsk:
 
 ```
-elyxer --imageformat copy latex_content.lyx html/index.html
+./prepare_materials.sh
 ```
 
-Tulemusena tehakse fail index.html kataloogi `/materials/lyx/html`.
-Lisaks kopeeritakse pildid `/materials/lyx/html/img` kausta.
-
-
+Antud käsk teisendab Lyx sisu HTML kujule ning käivitab indekseerija.
+Tulemused paigaldatakse automaatselt õigetesse kaustadesse, kus äpp saab neid kasutada.
 
 
 

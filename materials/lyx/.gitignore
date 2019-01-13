@@ -1,2 +1,5 @@
 .directory
-html/*
+mata.html
+*.lyx~
+mata.index
+mata.structure
