@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -12,13 +12,13 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -28,15 +28,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -213,29 +222,29 @@ tabel: arvude liitmine kahekümne piires
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="22" columns="22">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -4745,29 +4754,29 @@ lahutatakse veergu tähistav arv.
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="22" columns="22">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -9268,19 +9277,19 @@ tabel: täiskümnete liitmine 100 piires
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="12">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -10661,19 +10670,19 @@ tabel: täiskümnete lahutamine saja piires
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="12">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -12037,10 +12046,10 @@ pikkus, kaal, ruum, aeg ja raha // 1.
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="14" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -12466,9 +12475,9 @@ kujundid // 1.
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="15" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -12495,7 +12504,7 @@ Kirjeldus
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/punkt.png
+	filename img/punkt.svg
 	lyxscale 50
 	scale 55
 
@@ -12522,7 +12531,7 @@ Punkt
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/sirge.png
+	filename img/sirge.svg
 	lyxscale 50
 	scale 55
 
@@ -12549,7 +12558,7 @@ Sirge
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/sirgloik.png
+	filename img/sirglõik.svg
 	lyxscale 50
 	scale 55
 
@@ -12576,7 +12585,7 @@ Sirglõik
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/ruut.png
+	filename img/ruut.svg
 	lyxscale 50
 	scale 55
 
@@ -12603,7 +12612,7 @@ Ruut
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/ristkylik.png
+	filename img/ristkülik.svg
 	lyxscale 50
 	scale 55
 
@@ -12630,7 +12639,7 @@ Ristkülik
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/kolmnurk_taisnurkne_tipud_servad.png
+	filename img/kolmnurk+tipud+servad.svg
 	lyxscale 50
 	scale 55
 
@@ -12657,7 +12666,7 @@ Kolmnurk
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/ringjoon.png
+	filename img/ringjoon.svg
 	lyxscale 50
 	scale 55
 
@@ -12684,7 +12693,7 @@ Ringjoon
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/ring.png
+	filename img/ring.svg
 	lyxscale 50
 	scale 55
 
@@ -12711,7 +12720,7 @@ Ring
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/kera.png
+	filename img/kera.svg
 	lyxscale 50
 	scale 55
 
@@ -12738,7 +12747,7 @@ Kera
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/kuup.png
+	filename img/kuup.svg
 	lyxscale 55
 	scale 55
 
@@ -12765,7 +12774,7 @@ Kuup
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/risttahukas.png
+	filename img/risttahukas.svg
 	lyxscale 55
 	scale 55
 
@@ -12792,7 +12801,7 @@ Risttahukas
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/silinder.png
+	filename img/silinder.svg
 	lyxscale 55
 	scale 55
 
@@ -12819,7 +12828,7 @@ Silinder
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/koonus.png
+	filename img/koonus.svg
 	lyxscale 55
 	scale 55
 
@@ -12846,7 +12855,7 @@ Koonus
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/pyramiis.png
+	filename img/püramiid.svg
 	lyxscale 50
 	scale 55
 

@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -12,13 +12,13 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -28,15 +28,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -432,8 +441,8 @@ a.
 
  ja 
 \begin_inset Formula $\left|a\right|=\begin{cases}
-a,\, kui\, a\geq0\\
--a,\, kui\, a<0
+a,\,kui\,a\geq0\\
+-a,\,kui\,a<0
 \end{cases}$
 \end_inset
 
@@ -729,9 +738,9 @@ Kahendsüsteemis saab suvalist arvu
 \series bold
 \begin_inset Tabular
 <lyxtabular version="3" rows="13" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -1104,8 +1113,8 @@ Ruutjuure omadused:
 
 \begin_layout Itemize
 \begin_inset Formula $\sqrt{a}=\mid a\mid=\begin{cases}
-a,\, kui\, a\geq0\\
--a,\, kui\, a<0
+a,\,kui\,a\geq0\\
+-a,\,kui\,a<0
 \end{cases}$
 \end_inset
 
@@ -1142,8 +1151,8 @@ n-da ruudu omadused:
 
 \begin_layout Itemize
 \begin_inset Formula $\sqrt[2k]{a^{2k}}=\mid a\mid=\begin{cases}
-a,\, kui\, a\geq0\\
--a,\, kui\, a<0,\,\, k\,\, on & \,\, positiivne\,\, täisarv
+a,\,kui\,a\geq0\\
+-a,\,kui\,a<0,\,\,k\,\,on & \,\,positiivne\,\,täisarv
 \end{cases}$
 \end_inset
 
@@ -1483,7 +1492,7 @@ võrrandi pooli võib korrutada või jagada ühe ja sama nullist erineva arvuga
 \end_inset
 
 
-\begin_inset Formula $f(x)=g(x)\Leftrightarrow cf(x)=cg(x),\,\, c\neq0$
+\begin_inset Formula $f(x)=g(x)\Leftrightarrow cf(x)=cg(x),\,\,c\neq0$
 \end_inset
 
 
@@ -1491,7 +1500,7 @@ võrrandi pooli võib korrutada või jagada ühe ja sama nullist erineva arvuga
 \end_inset
 
 
-\begin_inset Formula $f(x)=g(x)\Leftrightarrow\frac{f(x)}{c}=\frac{g(x)}{c},\,\, c\neq0$
+\begin_inset Formula $f(x)=g(x)\Leftrightarrow\frac{f(x)}{c}=\frac{g(x)}{c},\,\,c\neq0$
 \end_inset
 
 
@@ -1543,7 +1552,7 @@ Lineaarvõrrandite
 
 
 \begin_inset Graphics
-	filename img/lineaarvorrand.png
+	filename img/lineaarvõrrand.svg
 	lyxscale 40
 	scale 55
 
@@ -1676,7 +1685,7 @@ Ruutvõrrandi
 
 
 \begin_inset Graphics
-	filename img/ruutfunktsioon2.png
+	filename img/ruutvõrrand2.svg
 	lyxscale 50
 	scale 55
 
@@ -2037,14 +2046,14 @@ mitteranged võrratused
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $a\geq0\Leftrightarrow a>0\, või\, a=0$
+\begin_inset Formula $a\geq0\Leftrightarrow a>0\,või\,a=0$
 \end_inset
 
  ehk a on mittenegatiivne
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $a\leq0\Leftrightarrow a<0\, või\, a=0$
+\begin_inset Formula $a\leq0\Leftrightarrow a<0\,või\,a=0$
 \end_inset
 
  ehk a on mittepositiivne
@@ -2207,7 +2216,7 @@ erinevad võrratused
  
 \series default
 Võrratusi kujul 
-\begin_inset Formula $ax<b,\, ax>b\, ax\geq b,\, ax\leq b$
+\begin_inset Formula $ax<b,\,ax>b\,ax\geq b,\,ax\leq b$
 \end_inset
 
  saab viia eelnevalt kirjeldatud kujule, kui võrratuse mõlemale poolt liita
@@ -2439,7 +2448,7 @@ siinuseks
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename img/kolmnurk_taisnurkne_tipud_servad.png
+	filename img/kolmnurk_täisnurkne+tipud+servad.svg
 	lyxscale 50
 	scale 55
 
@@ -2460,13 +2469,13 @@ Siinuse väärtused:
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="6">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2661,7 +2670,7 @@ koosinuseks
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename img/kolmnurk_taisnurkne_tipud_servad.png
+	filename img/kolmnurk_täisnurkne+tipud+servad.svg
 	lyxscale 50
 	scale 55
 
@@ -2682,13 +2691,13 @@ Koosinuse väärtused:
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="6">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2906,7 +2915,7 @@ tangensiks
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename img/kolmnurk_taisnurkne_tipud_servad.png
+	filename img/kolmnurk_täisnurkne+tipud+servad.svg
 	lyxscale 50
 	scale 55
 
@@ -2927,13 +2936,13 @@ Tangensi väärtused:
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="6">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -3296,12 +3305,12 @@ sõltub nurga veerandist, I ja II veerandis on siinuse väärtus positiivne,
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="5">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -3438,12 +3447,12 @@ sõltub nurga veerandist, I ja II veerandis on siinuse väärtus positiivne,
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="5">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -3582,12 +3591,12 @@ On võimalik defineerida siinuse, koosinuse ja tangensi väärtused suvaliste
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="5">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -3724,12 +3733,12 @@ On võimalik defineerida siinuse, koosinuse ja tangensi väärtused suvaliste
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="5">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -3872,12 +3881,12 @@ On võimalik defineerida siinuse, koosinuse ja tangensi väärtused suvaliste
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="5">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -4011,12 +4020,12 @@ On võimalik defineerida siinuse, koosinuse ja tangensi väärtused suvaliste
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="5">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -6305,8 +6314,8 @@ valemi
 \begin_inset Formula 
 \[
 f(x)=\begin{cases}
-1 & kui\; x\geq0\\
--1 & kui\; x<0\quad.
+1 & kui\;x\geq0\\
+-1 & kui\;x<0\quad.
 \end{cases}
 \]
 
@@ -6385,7 +6394,7 @@ Kui meil on määramispiirkond
 \end_inset
 
 , siis funktsiooni graafik on arvupaaride hulk 
-\begin_inset Formula $(x,f(x))\; x\in\mathcal{X}$
+\begin_inset Formula $(x,f(x))\;x\in\mathcal{X}$
 \end_inset
 
 .
@@ -6466,7 +6475,7 @@ kasvavaks
  vahemikus 
 \series bold
 
-\begin_inset Formula $(a;\; b)$
+\begin_inset Formula $(a;\;b)$
 \end_inset
 
 
@@ -6475,7 +6484,7 @@ kasvavaks
  teisisõnu kui 
 \series bold
 
-\begin_inset Formula $x_{2}>x_{1},\; x_{1},x_{2}\in\mathcal{X}$
+\begin_inset Formula $x_{2}>x_{1},\;x_{1},x_{2}\in\mathcal{X}$
 \end_inset
 
 
@@ -6503,7 +6512,7 @@ kahanevaks
  vahemikus 
 \series bold
 
-\begin_inset Formula $(a;\; b)$
+\begin_inset Formula $(a;\;b)$
 \end_inset
 
 
@@ -6512,7 +6521,7 @@ kahanevaks
  teisisõnu kui 
 \series bold
 
-\begin_inset Formula $x_{2}>x_{1},\; x_{1},x_{2}\in\mathcal{X}$
+\begin_inset Formula $x_{2}>x_{1},\;x_{1},x_{2}\in\mathcal{X}$
 \end_inset
 
 
@@ -6755,7 +6764,7 @@ võrdeline seos
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename img/vordeline_seos.png
+	filename img/võrdeline_seos.svg
 	lyxscale 50
 	scale 45
 
@@ -6797,7 +6806,7 @@ pöördvõrdeline seos
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename img/poordvordeline_seos.png
+	filename img/pöördvõrdeline_seos.svg
 	lyxscale 50
 	scale 45
 
@@ -6834,7 +6843,7 @@ lineaarne seos
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename img/lineaarvorrand.png
+	filename img/lineaarvõrrand.svg
 	lyxscale 50
 	scale 45
 
@@ -6888,7 +6897,7 @@ ruutfunktsioon
 \begin_layout Standard
 \noindent
 \begin_inset Graphics
-	filename img/ruutfunktsioon2.png
+	filename img/ruutvõrrand2.svg
 	lyxscale 50
 	scale 55
 
@@ -7075,7 +7084,7 @@ siis saame jada kus,
 \noindent
 \begin_inset Formula 
 \[
-a_{1}=\frac{1}{1},\: a_{2}=\frac{1}{2},\: a_{3}=\frac{1}{3},\:\ldots\quad.
+a_{1}=\frac{1}{1},\:a_{2}=\frac{1}{2},\:a_{3}=\frac{1}{3},\:\ldots\quad.
 \]
 
 \end_inset
@@ -7136,7 +7145,7 @@ n
 \end_inset
 
 Näiteks jada 
-\begin_inset Formula $1,\:2,\:4,\: n^{2},\ldots$
+\begin_inset Formula $1,\:2,\:4,\:n^{2},\ldots$
 \end_inset
 
  on tõkestamatu ning on 
@@ -7634,7 +7643,7 @@ Kui leiduvad lõplikud piirväärtused
 \noindent
 \begin_inset Formula 
 \[
-\lim_{n\rightarrow\infty}(a_{n}:\: b_{n})=\lim_{n\rightarrow\infty}a_{n}:\lim_{n\rightarrow\infty}b_{n}=A:\: B
+\lim_{n\rightarrow\infty}(a_{n}:\:b_{n})=\lim_{n\rightarrow\infty}a_{n}:\lim_{n\rightarrow\infty}b_{n}=A:\:B
 \]
 
 \end_inset
@@ -7656,7 +7665,7 @@ astmefunktsioon
 
 \begin_layout Standard
 Funktsioone kujul 
-\begin_inset Formula $y=x^{a},\; a\in R$
+\begin_inset Formula $y=x^{a},\;a\in R$
 \end_inset
 
  nimetatakse 
@@ -7743,7 +7752,7 @@ kuupfunktsioon
 
 \begin_layout Itemize
 Funktsioonid kujul 
-\begin_inset Formula $y=x^{2n},\; n\in Z^{+}$
+\begin_inset Formula $y=x^{2n},\;n\in Z^{+}$
 \end_inset
 
  ehk positiivse paarisarvulise astendajaga arvud..
@@ -7776,7 +7785,7 @@ Funktsioonid kujul
 
 \begin_layout Itemize
 Funktsioonid kujul 
-\begin_inset Formula $y=x^{2n-1},\; n\in Z^{+}$
+\begin_inset Formula $y=x^{2n-1},\;n\in Z^{+}$
 \end_inset
 
  .
@@ -7876,8 +7885,8 @@ tükki), kui
 \begin_inset Formula 
 \[
 a^{\frac{m}{n}}=\begin{cases}
-\sqrt[n]{a^{m}} & kui\; a>0,\; m\in Z\; ja\; n\in Z^{+},\\
-0 & kui\; a=0,\; m\in Z^{+}\; ja\; n\in Z^{+}.
+\sqrt[n]{a^{m}} & kui\;a>0,\;m\in Z\;ja\;n\in Z^{+},\\
+0 & kui\;a=0,\;m\in Z^{+}\;ja\;n\in Z^{+}.
 \end{cases}
 \]
 
@@ -8039,7 +8048,7 @@ kus liitmistehte asemel lihtsalt lahutame.
  Näiteks, kui võtame mõnelt kahtlaselt sõbralt laenu 100 EUR intressiga
  10% päevas ja võtame laenu kaheks nädalaks, siis peame lõpuks tagasi maksma
  
-\begin_inset Formula $c=100,\; p=10,\; n=14$
+\begin_inset Formula $c=100,\;p=10,\;n=14$
 \end_inset
 
 
@@ -8158,7 +8167,7 @@ Funktsiooni kujul
 \end_inset
 
 , kus 
-\begin_inset Formula $a>0,\; a\neq1$
+\begin_inset Formula $a>0,\;a\neq1$
 \end_inset
 
  ja 
@@ -8391,7 +8400,7 @@ Logaritmfunktsiooniks
 
  Logaritmfunktsiooni määramispiirkonnaks on kogu positiivsete reaalarvude
  hulk 
-\begin_inset Formula $\{x\in R,\; kus\; x>0\}$
+\begin_inset Formula $\{x\in R,\;kus\;x>0\}$
 \end_inset
 
 .
@@ -8617,7 +8626,7 @@ Nullkohtadeks on argumendid
 \end_inset
 
  ehk 
-\begin_inset Formula $\{n\pi\;|\; n\in Z\}$
+\begin_inset Formula $\{n\pi\;|\;n\in Z\}$
 \end_inset
 
 .
@@ -8643,7 +8652,7 @@ Positiivsuspiirkondadeks on vahemikud
 \noindent
 \begin_inset Formula 
 \[
-=\{2n\pi<x<2(n+1)\pi\;|\; n\in Z\}.
+=\{2n\pi<x<2(n+1)\pi\;|\;n\in Z\}.
 \]
 
 \end_inset
@@ -8668,7 +8677,7 @@ Negatiivsuspiirkondadeks on vahemikud
 \noindent
 \begin_inset Formula 
 \[
-=\{2(n-1)\pi<x<2n\pi\;|\; n\in Z\}.
+=\{2(n-1)\pi<x<2n\pi\;|\;n\in Z\}.
 \]
 
 \end_inset
@@ -8693,7 +8702,7 @@ Funktsiooni kasvamisvahemikud on
 \noindent
 \begin_inset Formula 
 \[
-=\{-\frac{\pi}{2}+2n\pi<x<\frac{\pi}{2}+2n\pi\;|\; n\in Z\}.
+=\{-\frac{\pi}{2}+2n\pi<x<\frac{\pi}{2}+2n\pi\;|\;n\in Z\}.
 \]
 
 \end_inset
@@ -8727,7 +8736,7 @@ Funktsiooni kahanemisvahemikud on
 \color none
 \begin_inset Formula 
 \[
-=\{\frac{\pi}{2}+2n\pi<x<\frac{3\pi}{2}+2n\pi\;|\; n\in Z\}.
+=\{\frac{\pi}{2}+2n\pi<x<\frac{3\pi}{2}+2n\pi\;|\;n\in Z\}.
 \]
 
 \end_inset
@@ -8796,7 +8805,7 @@ mille abil saame ka tuletada tema nullkohad, positiivsus-, negatiivus-,
 \end_inset
 
  ehk 
-\begin_inset Formula $\{n\pi+\frac{\pi}{2}\;|\; n\in Z\}$
+\begin_inset Formula $\{n\pi+\frac{\pi}{2}\;|\;n\in Z\}$
 \end_inset
 
 .
@@ -8822,7 +8831,7 @@ Positiivsuspiirkondadeks on vahemikud
 \noindent
 \begin_inset Formula 
 \[
-=\{2n\pi+\frac{\pi}{2}<x<2(n+1)\pi+\frac{\pi}{2}\;|\; n\in Z\}.
+=\{2n\pi+\frac{\pi}{2}<x<2(n+1)\pi+\frac{\pi}{2}\;|\;n\in Z\}.
 \]
 
 \end_inset
@@ -8842,7 +8851,7 @@ Negatiivsuspiirkondadeks on vahemikud
 \noindent
 \begin_inset Formula 
 \[
-=\{2(n-1)\pi+\frac{\pi}{2}<x<2n\pi+\frac{\pi}{2}\;|\; n\in Z\}.
+=\{2(n-1)\pi+\frac{\pi}{2}<x<2n\pi+\frac{\pi}{2}\;|\;n\in Z\}.
 \]
 
 \end_inset
@@ -8861,7 +8870,7 @@ Funktsiooni kasvamisvahemikud on
 \begin_layout Standard
 \begin_inset Formula 
 \[
-=\{2n\pi<x<2(n+1)\pi\;|\; n\in Z\}.
+=\{2n\pi<x<2(n+1)\pi\;|\;n\in Z\}.
 \]
 
 \end_inset
@@ -8886,7 +8895,7 @@ Funktsiooni kahanemisvahemikud on
 \noindent
 \begin_inset Formula 
 \[
-=\{2(n-1)\pi<x<2n\pi\;|\; n\in Z\}.
+=\{2(n-1)\pi<x<2n\pi\;|\;n\in Z\}.
 \]
 
 \end_inset
@@ -8900,7 +8909,7 @@ Funktsiooni
 \end_inset
 
 , kus 
-\begin_inset Formula $x\neq(2n+1)\frac{\pi}{2},\; n\in Z$
+\begin_inset Formula $x\neq(2n+1)\frac{\pi}{2},\;n\in Z$
 \end_inset
 
  nimetatakse 
@@ -8909,7 +8918,7 @@ tangensfunktsiooniks
 \series default
 .
  Tangensfunktsiooni määramispiirkonnaks on hulk 
-\begin_inset Formula $R\backslash(2n+1)\frac{\pi}{2},\; n\in Z$
+\begin_inset Formula $R\backslash(2n+1)\frac{\pi}{2},\;n\in Z$
 \end_inset
 
 .
@@ -9125,7 +9134,7 @@ piirväärtuseks
 või ka 
 \begin_inset Formula 
 \[
-f(x)\rightarrow A,\; kui\; x\rightarrow a.
+f(x)\rightarrow A,\;kui\;x\rightarrow a.
 \]
 
 \end_inset
@@ -9244,7 +9253,7 @@ parempoolseks piirväärtuseks
 või ka 
 \begin_inset Formula 
 \[
-f(x)\rightarrow A,\; kui\; x\rightarrow a^{+}.
+f(x)\rightarrow A,\;kui\;x\rightarrow a^{+}.
 \]
 
 \end_inset
@@ -9298,7 +9307,7 @@ vasakpoolseks piirväärtuseks
 või ka 
 \begin_inset Formula 
 \[
-f(x)\rightarrow A,\; kui\; x\rightarrow a^{-}.
+f(x)\rightarrow A,\;kui\;x\rightarrow a^{-}.
 \]
 
 \end_inset
@@ -9356,7 +9365,7 @@ piirväärtuseks argumendi lähenemisel lõpmatusele
 või ka 
 \begin_inset Formula 
 \[
-f(x)\rightarrow A,\; kui\; x\rightarrow\infty.
+f(x)\rightarrow A,\;kui\;x\rightarrow\infty.
 \]
 
 \end_inset
@@ -9414,7 +9423,7 @@ piirväärtuseks argumendi lähenemisel miinus lõpmatusele
 või ka 
 \begin_inset Formula 
 \[
-f(x)\rightarrow A,\; kui\; x\rightarrow-\infty.
+f(x)\rightarrow A,\;kui\;x\rightarrow-\infty.
 \]
 
 \end_inset
@@ -10268,9 +10277,9 @@ tuletiste tabel
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="18" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -11033,7 +11042,7 @@ määramata integraaliks
 Määramata integraali tähistatakse sümboliga 
 \begin_inset Formula 
 \[
-\int\, f(x)dx\,.
+\int\,f(x)dx\,.
 \]
 
 \end_inset
@@ -11252,7 +11261,7 @@ Ruumivektoriks
 poolt nii, et 
 \begin_inset Formula 
 \[
-\overrightarrow{AB}=(x_{2}-x_{1};\, y_{2}-y_{1};\, z_{2}-z_{1}).
+\overrightarrow{AB}=(x_{2}-x_{1};\,y_{2}-y_{1};\,z_{2}-z_{1}).
 \]
 
 \end_inset
@@ -11270,7 +11279,7 @@ Ruumivektori
 \end_inset
 
 kus 
-\begin_inset Formula $a_{1},\, a_{2},\, a_{3}$
+\begin_inset Formula $a_{1},\,a_{2},\,a_{3}$
 \end_inset
 
  on vektori komponendid.
@@ -11328,7 +11337,7 @@ z
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename img/kordinaatteljestik_3D.png
+	filename img/kordinaatteljestik_3D.svg
 	lyxscale 50
 	scale 55
 
@@ -11440,7 +11449,7 @@ Kolmemõõtmelises ruumis vektori on analoogne kahemõõtmelises ruumis oleva
 , siis vektor 
 \begin_inset Formula 
 \[
-\overrightarrow{AB}=(x_{2}-x_{1};\, y_{2}-y_{1};\, z_{2}-z_{1}).
+\overrightarrow{AB}=(x_{2}-x_{1};\,y_{2}-y_{1};\,z_{2}-z_{1}).
 \]
 
 \end_inset
@@ -11455,11 +11464,11 @@ lineaartehted vektoritega
 \begin_layout Standard
 \noindent
 Kui meil on vektorid 
-\begin_inset Formula $\overrightarrow{a}=(x_{1};\, y_{1})$
+\begin_inset Formula $\overrightarrow{a}=(x_{1};\,y_{1})$
 \end_inset
 
  ja 
-\begin_inset Formula $\overrightarrow{b}=(x_{2};\, y_{2})$
+\begin_inset Formula $\overrightarrow{b}=(x_{2};\,y_{2})$
 \end_inset
 
 , siis nende summa on 
@@ -11492,11 +11501,11 @@ kollineaarsus ja komplanaarsus
 \begin_layout Standard
 \noindent
 Vektorid 
-\begin_inset Formula $\overrightarrow{a}=(x_{1};\, y_{1})$
+\begin_inset Formula $\overrightarrow{a}=(x_{1};\,y_{1})$
 \end_inset
 
  ja 
-\begin_inset Formula $\overrightarrow{b}=(x_{2};\, y_{2})$
+\begin_inset Formula $\overrightarrow{b}=(x_{2};\,y_{2})$
 \end_inset
 
  on 
@@ -11583,7 +11592,7 @@ Näiteks kui meil on kolm vektorit
 \end_inset
 
 , siis saame avaldada suvalise ristkordinaadistikus asuva vektori 
-\begin_inset Formula $\overrightarrow{a}=(x_{1};\, y_{1};\, z_{1})$
+\begin_inset Formula $\overrightarrow{a}=(x_{1};\,y_{1};\,z_{1})$
 \end_inset
 
  vektorite 

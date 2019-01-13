@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -12,13 +12,13 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -28,15 +28,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -574,9 +583,9 @@ on Vana-Roomast pärit numbrisüsteem.
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="15" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -986,14 +995,14 @@ Tabel kirjeldab kümnendmurdude ehitust.
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="7">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -1060,7 +1069,7 @@ murdosa
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1069,7 +1078,7 @@ sajalised
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1078,7 +1087,7 @@ kümnelised
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1087,7 +1096,7 @@ kümnelised
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1096,7 +1105,7 @@ kümnelised
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1105,7 +1114,7 @@ kümnendikud
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1114,7 +1123,7 @@ sajandikud
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1434,9 +1443,9 @@ Näiteks
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="10" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2350,10 +2359,10 @@ Sagedustabel õpilaste vanuste kohta, klassis on 30 õpilast.
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2569,7 +2578,7 @@ diagrammid
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename img/tulpdiagramm.png
+	filename img/tulpdiagramm.svg
 	lyxscale 50
 	scale 50
 
@@ -2588,18 +2597,14 @@ Tulpdiagramm
 \emph on
 x
 \emph default
- teljel on on antud näites tähed A, B, C, D ja E, mis võivad tähistada näiteks
- erinevaid firmasid.
+ teljel on on antud näites tähed Eesti makonnad.
  Diagrammi 
 \emph on
 y
 \emph default
- teljel on arvskaala, mis näiteks võiks tähistada firmade töötajate arvu.
- Seega tulp, mis asub tähe C kohal ning ulatub 
-\begin_inset Formula $y$
-\end_inset
-
- teljel arv 17-ni tähendab, et firmas C töötab 17 inimest.
+ teljel on arvskaala, mis antud näites tähistab elanike arvu maakonnas.
+ Näiteks võib diagrammilt lugeda, et Tartu makonnas elab ligikaudu 150 000
+ inimest.
 \begin_inset Newline newline
 \end_inset
 
@@ -2609,7 +2614,7 @@ y
 
 
 \begin_inset Graphics
-	filename img/sirgloikdiagramm.png
+	filename img/sirglõikdiagramm.svg
 	lyxscale 50
 	scale 50
 
@@ -2628,18 +2633,12 @@ Sirglõikdiagramm
 \emph on
 y
 \emph default
- teljel on on antud näites tähed A, B, C, D ja E, mis võivad tähistada näiteks
- erinevaid firmasid.
+ teljel on on antud näites tähed Eesti maakonnad.
  Diagrammi 
 \emph on
 x
 \emph default
- teljel on arvskaala, mis näiteks võiks tähistada firmade töötajate arvu.
- Seega sirglõik, mis asub tähest C paremal ning ulatub 
-\begin_inset Formula $x$
-\end_inset
-
- teljel arv 17-ni tähendab, et firmas C töötab 17 inimest.
+ teljel on arvskaala, mis antud näites tähistab elanike arvu maakonnas.
 \begin_inset Newline newline
 \end_inset
 
@@ -2910,16 +2909,16 @@ jooned // 5.
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/sirgloik.png
+	filename img/sirge.svg
 	lyxscale 40
 	scale 55
 
@@ -2986,16 +2985,16 @@ Sirge
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/sirgloik.png
+	filename img/sirglõik.svg
 	lyxscale 40
 	scale 55
 
@@ -3072,16 +3071,16 @@ Sirglõik
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/murdjoon.png
+	filename img/murdjoon.svg
 	lyxscale 40
 	scale 55
 
@@ -3145,16 +3144,16 @@ Murdjoon
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/kiir.png
+	filename img/kiir.svg
 	lyxscale 40
 	scale 55
 
@@ -3207,7 +3206,7 @@ nurk // 5.
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename img/kolmnurk_nyri_terav_tais.png
+	filename img/kolmnurk+nüri+terav+täis.svg
 	lyxscale 40
 	scale 55
 
@@ -3312,7 +3311,7 @@ Haar
 
 
 \begin_inset Graphics
-	filename img/korvunurgad.png
+	filename img/kõrvunurgad.svg
 	lyxscale 40
 	scale 55
 
@@ -3357,7 +3356,7 @@ Kõrvunurkade summa on
 \series bold
  
 \begin_inset Graphics
-	filename img/tippnurgad.png
+	filename img/tippnurgad.svg
 	lyxscale 40
 	scale 55
 
@@ -3449,15 +3448,15 @@ risttahukas // 5.
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/risttahukas.png
+	filename img/risttahukas.svg
 	lyxscale 55
 	scale 55
 
@@ -3498,16 +3497,16 @@ kuup // 5.
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/kuup.png
+	filename img/kuup.svg
 	lyxscale 55
 	scale 55
 

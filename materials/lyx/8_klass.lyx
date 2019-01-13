@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -12,13 +12,13 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -28,15 +28,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -285,12 +294,12 @@ Arvude 0-15 ruudud ja juured.
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="5">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -1600,7 +1609,7 @@ Põiknurkadeks
 
 
 \begin_inset Graphics
-	filename img/poiknurgad.png
+	filename img/poiknurgad.svg
 	lyxscale 50
 	scale 55
 
@@ -1624,7 +1633,7 @@ Lähisnurkadeks
 
 
 \begin_inset Graphics
-	filename img/lahisnurgad.png
+	filename img/lahistnurgad.svg
 	lyxscale 50
 	scale 55
 
@@ -1665,7 +1674,7 @@ kolmnurk // 8.
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename img/kolmnurk_sesering_valisring.png
+	filename img/kolmnurk+sesering+välisring.svg
 	lyxscale 50
 	scale 55
 
@@ -1806,7 +1815,7 @@ rööpkülik // 8.
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename img/roopkylik.png
+	filename img/rööpkülik.svg
 	lyxscale 50
 	scale 55
 
@@ -1881,7 +1890,7 @@ romb // 8.
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename img/romb.png
+	filename img/romb.svg
 	lyxscale 50
 	scale 55
 
@@ -1957,7 +1966,7 @@ trapets // 8.
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename img/trapets.png
+	filename img/trapets.svg
 	lyxscale 50
 	scale 55
 
@@ -2044,16 +2053,16 @@ ringjoon // 8.
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/ring_sektor.png
+	filename img/ring+sektor.svg
 	lyxscale 50
 	scale 55
 
@@ -2228,7 +2237,7 @@ püstprisma // 8.
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename img/kolmnurkne_pystprisma.png
+	filename img/kolmnurkne_püstprisma.svg
 	lyxscale 50
 	scale 55
 
@@ -2288,16 +2297,16 @@ püramiid // 8.
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/pyramiis.png
+	filename img/püramiid.svg
 	lyxscale 50
 	scale 55
 
