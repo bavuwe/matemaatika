@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Matemaatika</string>
+    <string name="app_name">Matemaatika minileksikon</string>
+    <string name="action_favorite">Lisa lemmikuks</string>
+    <string name="action_search">Otsi</string>
+    <string name="drawer_item_settings">tesasdf</string>
+    <string name="drawer_item_home">hhhooome</string>
 </resources>
