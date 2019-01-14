@@ -1,6 +1,6 @@
 package com.bavuwe.matemaatika;
 
-import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -9,31 +9,43 @@ import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 
-import com.mikepenz.crossfader.Crossfader;
-import com.mikepenz.crossfader.util.UIUtils;
-import com.mikepenz.fontawesome_typeface_library.FontAwesome;
-import com.mikepenz.google_material_typeface_library.GoogleMaterial;
-import com.mikepenz.materialdrawer.Drawer;
-import com.mikepenz.materialdrawer.DrawerBuilder;
-import com.mikepenz.materialdrawer.MiniDrawer;
-import com.mikepenz.materialdrawer.holder.BadgeStyle;
-import com.mikepenz.materialdrawer.interfaces.OnCheckedChangeListener;
-import com.mikepenz.materialdrawer.model.DividerDrawerItem;
-import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
-import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
-import com.mikepenz.materialdrawer.model.SectionDrawerItem;
-import com.mikepenz.materialdrawer.model.SwitchDrawerItem;
-import com.mikepenz.materialdrawer.model.ToggleDrawerItem;
-import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
-import com.mikepenz.materialdrawer.model.interfaces.Nameable;
-import com.mikepenz.octicons_typeface_library.Octicons;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 
-public class MataActivity extends AppCompatActivity {
+import com.bavuwe.matemaatika.dummy.DummyContent;
+import com.mikepenz.crossfader.Crossfader;
+import com.mikepenz.crossfader.util.UIUtils;
+import com.mikepenz.google_material_typeface_library.GoogleMaterial;
+import com.mikepenz.materialdrawer.Drawer;
+import com.mikepenz.materialdrawer.DrawerBuilder;
+import com.mikepenz.materialdrawer.MiniDrawer;
+import com.mikepenz.materialdrawer.interfaces.OnCheckedChangeListener;
+import com.mikepenz.materialdrawer.model.DividerDrawerItem;
+import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
+import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
+import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
+import com.mikepenz.materialdrawer.model.interfaces.Nameable;
+
+public class MataActivity extends AppCompatActivity implements TopicFragment.OnListFragmentInteractionListener, ContentFragment.OnFragmentInteractionListener {
     static final int LOAD_DIALOG = 0;
+
+    static final int DRAWER_FAVOURITES_IDENTIFIER = 0;
+    static final int DRAWER_CLASS1_IDENTIFIER = 1;
+    static final int DRAWER_CLASS2_IDENTIFIER = 2;
+    static final int DRAWER_CLASS3_IDENTIFIER = 3;
+    static final int DRAWER_CLASS4_IDENTIFIER = 4;
+    static final int DRAWER_CLASS5_IDENTIFIER = 5;
+    static final int DRAWER_CLASS6_IDENTIFIER = 6;
+    static final int DRAWER_CLASS7_IDENTIFIER = 7;
+    static final int DRAWER_CLASS8_IDENTIFIER = 8;
+    static final int DRAWER_CLASS9_IDENTIFIER = 9;
+    static final int DRAWER_GYMNASIUM_IDENTIFIER = 10;
+    static final int DRAWER_COMPUND_INTEREST_IDENTIFIER = 11;
+    static final int DRAWER_QUADRATIC_IDENTIFIER = 12;
+    static final int DRAWER_REPORT_IDENTIFIER = 13;
+    static final int DRAWER_ABOUT_IDENTIFIER = 14;
+
     ContentLoader loader = null;
     Drawer drawer = null;
     MiniDrawer miniDrawer = null;
@@ -51,29 +63,46 @@ public class MataActivity extends AppCompatActivity {
             loader.execute();
         }
 
-        // Handle Toolbar
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        onCreateToolbar();
+        onCreateActionbar();
+        onCreateDrawer(savedInstanceState);
+    }
+
+    void onCreateToolbar() {
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        //set the back arrow in the toolbar
+    }
+
+    void onCreateActionbar() {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle(R.string.app_name);
+    }
 
+    void onCreateDrawer(Bundle savedInstanceState) {
+        Toolbar toolbar = findViewById(R.id.toolbar);
         drawer = new DrawerBuilder()
                 .withActivity(this)
                 .withToolbar(toolbar)
                 .withTranslucentStatusBar(false)
                 .addDrawerItems(
-                        new PrimaryDrawerItem().withName(R.string.app_name).withIcon(GoogleMaterial.Icon.gmd_brightness_5).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(R.string.app_name).withIcon(FontAwesome.Icon.faw_home).withBadge("22").withBadgeStyle(new BadgeStyle(Color.RED, Color.RED)).withIdentifier(2).withSelectable(false),
-                        new PrimaryDrawerItem().withName(R.string.app_name).withIcon(FontAwesome.Icon.faw_gamepad).withIdentifier(3),
-                        new PrimaryDrawerItem().withName(R.string.app_name).withIcon(FontAwesome.Icon.faw_eye).withIdentifier(4),
-                        new PrimaryDrawerItem().withDescription("A more complex sample").withName(R.string.app_name).withIcon(GoogleMaterial.Icon.gmd_adb).withIdentifier(5),
-                        new SectionDrawerItem().withName(R.string.app_name),
-                        new SecondaryDrawerItem().withName(R.string.app_name).withIcon(FontAwesome.Icon.faw_github),
-                        new SecondaryDrawerItem().withName(R.string.app_name).withIcon(GoogleMaterial.Icon.gmd_format_color_fill).withTag("Bullhorn"),
+                        new PrimaryDrawerItem().withName("Lemmikud").withIcon(GoogleMaterial.Icon.gmd_star).withIdentifier(DRAWER_FAVOURITES_IDENTIFIER),
                         new DividerDrawerItem(),
-                        new SwitchDrawerItem().withName("Switch").withIcon(Octicons.Icon.oct_tools).withChecked(true).withOnCheckedChangeListener(onCheckedChangeListener),
-                        new ToggleDrawerItem().withName("Toggle").withIcon(Octicons.Icon.oct_tools).withChecked(true).withOnCheckedChangeListener(onCheckedChangeListener)
+                        new SecondaryDrawerItem().withName("1. klass").withIcon(GoogleMaterial.Icon.gmd_filter_1).withIdentifier(DRAWER_CLASS1_IDENTIFIER),
+                        new SecondaryDrawerItem().withName("2. klass").withIcon(GoogleMaterial.Icon.gmd_filter_2).withIdentifier(DRAWER_CLASS2_IDENTIFIER),
+                        new SecondaryDrawerItem().withName("3. klass").withIcon(GoogleMaterial.Icon.gmd_filter_3).withIdentifier(DRAWER_CLASS3_IDENTIFIER),
+                        new SecondaryDrawerItem().withName("4. klass").withIcon(GoogleMaterial.Icon.gmd_filter_4).withIdentifier(DRAWER_CLASS4_IDENTIFIER),
+                        new SecondaryDrawerItem().withName("5. klass").withIcon(GoogleMaterial.Icon.gmd_filter_5).withIdentifier(DRAWER_CLASS5_IDENTIFIER),
+                        new SecondaryDrawerItem().withName("6. klass").withIcon(GoogleMaterial.Icon.gmd_filter_6).withIdentifier(DRAWER_CLASS6_IDENTIFIER),
+                        new PrimaryDrawerItem().withName("7. klass").withIcon(GoogleMaterial.Icon.gmd_filter_7).withIdentifier(DRAWER_CLASS7_IDENTIFIER),
+                        new PrimaryDrawerItem().withName("8. klass").withIcon(GoogleMaterial.Icon.gmd_filter_8).withIdentifier(DRAWER_CLASS8_IDENTIFIER),
+                        new PrimaryDrawerItem().withName("9. klass").withIcon(GoogleMaterial.Icon.gmd_filter_9).withIdentifier(DRAWER_CLASS9_IDENTIFIER),
+                        new PrimaryDrawerItem().withName("Gümnaasium").withIcon(GoogleMaterial.Icon.gmd_school).withIdentifier(DRAWER_GYMNASIUM_IDENTIFIER),
+                        new DividerDrawerItem(),
+                        new SecondaryDrawerItem().withName("Liitintresside kalkulaator").withIcon(GoogleMaterial.Icon.gmd_trending_up).withIdentifier(DRAWER_COMPUND_INTEREST_IDENTIFIER), // need better icon here
+                        new SecondaryDrawerItem().withName("Ruutvõrrandi lahendaja").withIcon(GoogleMaterial.Icon.gmd_swap_calls).withIdentifier(DRAWER_QUADRATIC_IDENTIFIER), // need better icon here
+                        new DividerDrawerItem(),
+                        new SecondaryDrawerItem().withName("Teavita veast").withIcon(GoogleMaterial.Icon.gmd_notifications_active).withIdentifier(DRAWER_REPORT_IDENTIFIER),
+                        new PrimaryDrawerItem().withName("Programmist").withIcon(GoogleMaterial.Icon.gmd_pets).withIdentifier(DRAWER_ABOUT_IDENTIFIER)
                 ) // add the items we want to use with our Drawer
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
@@ -99,7 +128,7 @@ public class MataActivity extends AppCompatActivity {
         //create and build our crossfader (see the MiniDrawer is also builded in here, as the build method returns the view to be used in the crossfader)
         //the crossfader library can be found here: https://github.com/mikepenz/Crossfader
         crossFader = new Crossfader()
-                .withContent(findViewById(R.id.crossfade_content))
+                .withContent(findViewById(R.id.main_container))
                 .withFirst(drawer.getSlider(), firstWidth)
                 .withSecond(miniDrawer.build(this), secondWidth)
                 .withSavedInstance(savedInstanceState)
@@ -141,6 +170,16 @@ public class MataActivity extends AppCompatActivity {
         // Configure the search info and add any event listeners...
 
         return true;
+    }
+
+    // for interaction with list fragment
+    public void onListFragmentInteraction(DummyContent.TopicItem item) {
+
+    }
+
+    // for interaction with content fragment
+    public void onFragmentInteraction(Uri uri) {
+
     }
 
 

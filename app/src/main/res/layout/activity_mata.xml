@@ -13,17 +13,29 @@
         tools:ignore="UnusedAttribute" />
 
     <FrameLayout
+        android:id="@+id/main_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar">
 
-        <TextView
-            android:id="@+id/crossfade_content"
+        <LinearLayout
+            android:id="@+id/main_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="@string/action_search"
-            android:textSize="16sp" />
+            android:orientation="horizontal">
+
+            <fragment
+                android:name="com.bavuwe.matemaatika.TopicFragment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <fragment
+                android:name="com.bavuwe.matemaatika.ContentFragment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
     </FrameLayout>
 </RelativeLayout>
