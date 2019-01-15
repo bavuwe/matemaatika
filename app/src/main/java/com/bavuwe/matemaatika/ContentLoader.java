@@ -1,5 +1,6 @@
 package com.bavuwe.matemaatika;
 
+import android.content.res.AssetManager;
 import android.os.AsyncTask;
 import android.os.Handler;
 
@@ -7,17 +8,20 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * Class used to load the matemaatika content and index asyncronously.
+ * Class used to load the content and index asyncronously.
  */
 class ContentLoader extends AsyncTask<String, Integer, String> {
-    MataActivity activity;
+    private ContentLoaderListener listener ;
+    private AssetManager manager;
 
     /**
-     * Constructor.
-     * @param activity The activity to notify when the loading is done!
+     * Set up a ContentLoader
+     * @param listener The instance to notify loading related events.
+     * @param manager For retrieving assets.
      */
-    public ContentLoader(MataActivity activity) {
-        this.activity = activity;
+    ContentLoader(ContentLoaderListener listener, AssetManager manager) {
+        this.listener = listener;
+        this.manager = manager;
     }
 
     @Override
@@ -26,9 +30,9 @@ class ContentLoader extends AsyncTask<String, Integer, String> {
             //read content from mata.html
             MataHTMLParser parser = null;
             try {
-                InputStream structIs = activity.getAssets().open("mata.structure");
-                InputStream htmlIs = activity.getAssets().open("mata.html");
-                InputStream indexIs = activity.getAssets().open("mata.index");
+                InputStream structIs = manager.open("mata.structure");
+                InputStream htmlIs = manager.open("mata.html");
+                InputStream indexIs = manager.open("mata.index");
 
                 parser = new MataHTMLParser(structIs, htmlIs);
                 // get the titles
@@ -37,18 +41,18 @@ class ContentLoader extends AsyncTask<String, Integer, String> {
                 Matemaatika.subTopicTitles = parser.getSubTopicTitles();
                 // get the tree structure
                 Matemaatika.classTopics = new int[Matemaatika.classTitles.length][];
-                for (int classIdx=0 ; classIdx < Matemaatika.classTitles.length ; ++classIdx) {
-                    Matemaatika.classTopics[classIdx] = parser.getClassTopics(classIdx);
+                for (int idx=0 ; idx < Matemaatika.classTitles.length ; ++idx) {
+                    Matemaatika.classTopics[idx] = parser.getClassTopics(idx);
                 }
                 Matemaatika.topicSubTopics = new int[Matemaatika.topicTitles.length][];
-                for (int topicIdx=0 ; topicIdx < Matemaatika.topicTitles.length ; ++topicIdx) {
-                    Matemaatika.topicSubTopics[topicIdx] = parser.getTopicSubTopics(topicIdx);
+                for (int idx=0 ; idx < Matemaatika.topicTitles.length ; ++idx) {
+                    Matemaatika.topicSubTopics[idx] = parser.getTopicSubTopics(idx);
                 }
                 // get the subtopic contents
                 Matemaatika.subTopicContents = new String[Matemaatika.subTopicTitles.length];
 
-                for (int subTopicIdx=0 ; subTopicIdx < Matemaatika.subTopicTitles.length ; ++subTopicIdx) {
-                    Matemaatika.subTopicContents[subTopicIdx] = parser.getSubTopicHTML(subTopicIdx);
+                for (int idx=0 ; idx < Matemaatika.subTopicTitles.length ; ++idx) {
+                    Matemaatika.subTopicContents[idx] = parser.getSubTopicHTML(idx);
                 }
                 htmlIs.close();
                 structIs.close();
@@ -61,13 +65,7 @@ class ContentLoader extends AsyncTask<String, Integer, String> {
                 throw new RuntimeException(e);
             }
         }
-        new Handler(activity.getMainLooper()).post(new Runnable() {
-            @Override
-            public void run() {
-                activity.contentLoaded();
-                activity.removeDialog(MataActivity.LOAD_DIALOG);
-            }
-        });
+        listener.contentLoaded();
         return null;
     }
 }

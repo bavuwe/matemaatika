@@ -1,7 +1,7 @@
 package com.bavuwe.matemaatika;
 
-import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 
-import com.bavuwe.matemaatika.dummy.DummyContent;
 import com.mikepenz.crossfader.Crossfader;
 import com.mikepenz.crossfader.util.UIUtils;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
@@ -27,9 +26,13 @@ import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 
-public class MataActivity extends AppCompatActivity implements TopicFragment.OnListFragmentInteractionListener, ContentFragment.OnFragmentInteractionListener {
+public class MataActivity extends AppCompatActivity implements
+        ContentLoaderListener {
+
+    // dialogs
     static final int LOAD_DIALOG = 0;
 
+    // drawer identifiers
     static final int DRAWER_FAVOURITES_IDENTIFIER = 0;
     static final int DRAWER_CLASS1_IDENTIFIER = 1;
     static final int DRAWER_CLASS2_IDENTIFIER = 2;
@@ -46,26 +49,29 @@ public class MataActivity extends AppCompatActivity implements TopicFragment.OnL
     static final int DRAWER_REPORT_IDENTIFIER = 13;
     static final int DRAWER_ABOUT_IDENTIFIER = 14;
 
+    // various UI elements
     ContentLoader loader = null;
     Drawer drawer = null;
     MiniDrawer miniDrawer = null;
     Crossfader crossFader = null;
+    // handler to topics
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mata);
 
-        // make sure we have always materials loaded
-        if (Matemaatika.classTitles == null) {
-            showDialog(LOAD_DIALOG);
-            loader = new ContentLoader(this);
-            loader.execute();
-        }
-
         onCreateToolbar();
         onCreateActionbar();
         onCreateDrawer(savedInstanceState);
+
+        // kick off contentloader
+        if (Matemaatika.classTitles == null) {
+            showDialog(LOAD_DIALOG);
+            loader = new ContentLoader(this, getAssets());
+            loader.execute();
+        }
     }
 
     void onCreateToolbar() {
@@ -144,19 +150,22 @@ public class MataActivity extends AppCompatActivity implements TopicFragment.OnL
     private OnCheckedChangeListener onCheckedChangeListener = new OnCheckedChangeListener() {
         @Override
         public void onCheckedChanged(IDrawerItem drawerItem, CompoundButton buttonView, boolean isChecked) {
-            if (drawerItem instanceof Nameable) {
-                Log.i("material-drawer", "DrawerItem: " + ((Nameable) drawerItem).getName() + " - toggleChecked: " + isChecked);
-            } else {
-                Log.i("material-drawer", "toggleChecked: " + isChecked);
+            if (drawerItem.getIdentifier() == DRAWER_GYMNASIUM_IDENTIFIER) {
+
             }
+            Log.i("material-drawer", "DrawerItem: " + ((Nameable) drawerItem).getName() + " - toggleChecked: " + isChecked);
         }
     };
 
-    /**
-     * Let the activity know that we are ready with loading content.
-     */
+    // this method will be called from another thread
     public void contentLoaded() {
-        Toast.makeText(getApplicationContext(), "content loaded", Toast.LENGTH_LONG).show();
+        new Handler(getMainLooper()).post(new Runnable() {
+            @Override
+            public void run() {
+                removeDialog(MataActivity.LOAD_DIALOG);
+                Toast.makeText(getApplicationContext(), "content loaded", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override
@@ -171,17 +180,6 @@ public class MataActivity extends AppCompatActivity implements TopicFragment.OnL
 
         return true;
     }
-
-    // for interaction with list fragment
-    public void onListFragmentInteraction(DummyContent.TopicItem item) {
-
-    }
-
-    // for interaction with content fragment
-    public void onFragmentInteraction(Uri uri) {
-
-    }
-
 
 }
 
