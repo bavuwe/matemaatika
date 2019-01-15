@@ -40,9 +40,9 @@ public class MataHTMLParser {
     private List<Integer> subTopicStarts;
     private List<Integer> subTopicEnds;
 
-    // the topics of a class
+    // the listView of a class
     private List<ArrayList<Integer>> classTopics;
-    // subtopics of topics
+    // subtopics of listView
     private List<ArrayList<Integer>> topics;
 
     /**
@@ -281,7 +281,7 @@ public class MataHTMLParser {
 
     /**
      * @param classIndex The index of the class.
-     * @return Return the array of integers of topics.
+     * @return Return the array of integers of listView.
      */
     public int[] getClassTopics(int classIndex) {
         int[] topics = new int[this.classTopics.get(classIndex).size()];

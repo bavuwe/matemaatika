@@ -16,12 +16,12 @@ public class Matemaatika extends Application {
     public static String[] subTopicContents = null;
 
     /**
-     * Denotes, which topics belong to which classes.
+     * Denotes, which listView belong to which classes.
      */
     public static int[][] classTopics = null;
 
     /**
-     * Denotes, which subtopics belong to which topics.
+     * Denotes, which subtopics belong to which listView.
      */
     public static int[][] topicSubTopics = null;
 

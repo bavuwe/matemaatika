@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,34 +34,37 @@ public class MataActivity extends AppCompatActivity implements
     static final int LOAD_DIALOG = 0;
 
     // drawer identifiers
-    static final int DRAWER_FAVOURITES_IDENTIFIER = 0;
-    static final int DRAWER_CLASS1_IDENTIFIER = 1;
-    static final int DRAWER_CLASS2_IDENTIFIER = 2;
-    static final int DRAWER_CLASS3_IDENTIFIER = 3;
-    static final int DRAWER_CLASS4_IDENTIFIER = 4;
-    static final int DRAWER_CLASS5_IDENTIFIER = 5;
-    static final int DRAWER_CLASS6_IDENTIFIER = 6;
-    static final int DRAWER_CLASS7_IDENTIFIER = 7;
-    static final int DRAWER_CLASS8_IDENTIFIER = 8;
-    static final int DRAWER_CLASS9_IDENTIFIER = 9;
-    static final int DRAWER_GYMNASIUM_IDENTIFIER = 10;
-    static final int DRAWER_COMPUND_INTEREST_IDENTIFIER = 11;
-    static final int DRAWER_QUADRATIC_IDENTIFIER = 12;
-    static final int DRAWER_REPORT_IDENTIFIER = 13;
-    static final int DRAWER_ABOUT_IDENTIFIER = 14;
+    // NB! they must be consequent, otherwise the app will crash at some point
+    static final int DRAWER_FAVOURITES_IDENTIFIER = 1;
+    static final int DRAWER_CLASS1_IDENTIFIER = 2;
+    static final int DRAWER_CLASS2_IDENTIFIER = 3;
+    static final int DRAWER_CLASS3_IDENTIFIER = 4;
+    static final int DRAWER_CLASS4_IDENTIFIER = 5;
+    static final int DRAWER_CLASS5_IDENTIFIER = 6;
+    static final int DRAWER_CLASS6_IDENTIFIER = 7;
+    static final int DRAWER_CLASS7_IDENTIFIER = 8;
+    static final int DRAWER_CLASS8_IDENTIFIER = 9;
+    static final int DRAWER_CLASS9_IDENTIFIER = 10;
+    static final int DRAWER_GYMNASIUM_IDENTIFIER = 11;
+    static final int DRAWER_COMPUND_INTEREST_IDENTIFIER = 12;
+    static final int DRAWER_QUADRATIC_IDENTIFIER = 13;
+    static final int DRAWER_REPORT_IDENTIFIER = 14;
+    static final int DRAWER_ABOUT_IDENTIFIER = 15;
 
     // various UI elements
     ContentLoader loader = null;
     Drawer drawer = null;
     MiniDrawer miniDrawer = null;
     Crossfader crossFader = null;
-    // handler to topics
+    ListView listView = null;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mata);
+
+        listView = findViewById(R.id.list_view);
 
         onCreateToolbar();
         onCreateActionbar();
@@ -114,7 +118,11 @@ public class MataActivity extends AppCompatActivity implements
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
                         if (drawerItem instanceof Nameable) {
-                            Toast.makeText(MataActivity.this, ((Nameable) drawerItem).getName().getText(MataActivity.this), Toast.LENGTH_SHORT).show();
+                            int identifier = (int)drawerItem.getIdentifier();
+                            if (identifier >= DRAWER_CLASS1_IDENTIFIER && identifier <= DRAWER_GYMNASIUM_IDENTIFIER) {
+                                selectClass(identifier - DRAWER_CLASS1_IDENTIFIER);
+                                Toast.makeText(MataActivity.this, ((Nameable) drawerItem).getName().getText(MataActivity.this), Toast.LENGTH_SHORT).show();
+                            }
                         }
                         return false;
                     }
@@ -147,15 +155,14 @@ public class MataActivity extends AppCompatActivity implements
         crossFader.getCrossFadeSlidingPaneLayout().setShadowResourceLeft(R.drawable.material_drawer_shadow_left);
     }
 
-    private OnCheckedChangeListener onCheckedChangeListener = new OnCheckedChangeListener() {
-        @Override
-        public void onCheckedChanged(IDrawerItem drawerItem, CompoundButton buttonView, boolean isChecked) {
-            if (drawerItem.getIdentifier() == DRAWER_GYMNASIUM_IDENTIFIER) {
+    /**
+     * Select a class and update UI accordingly.
+     * @param classIdx The class index, 0 denotes first class etc.
+     */
+    void selectClass(final int classIdx) {
+        listView.setAdapter(new TopicAdapter(getApplicationContext(), classIdx));
+    }
 
-            }
-            Log.i("material-drawer", "DrawerItem: " + ((Nameable) drawerItem).getName() + " - toggleChecked: " + isChecked);
-        }
-    };
 
     // this method will be called from another thread
     public void contentLoaded() {
