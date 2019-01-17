@@ -30,4 +30,8 @@ public class Matemaatika extends Application {
      */
     public static ContentIndex index = null;
 
+    // We are going to also need flattened subtopics for display purposes.
+    public static Integer[][] flattenedSubtopics = null;
+    public static Boolean[][] isFlattenedHeader = null;
+    public static String[][] flattenedTitles = null;
 }

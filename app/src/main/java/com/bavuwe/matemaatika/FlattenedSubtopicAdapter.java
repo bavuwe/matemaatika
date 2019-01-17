@@ -9,28 +9,28 @@ import android.widget.TextView;
 /**
  * Topic adapter, which takes data directly from Matemaatika global state.
  */
-public class TopicAdapter extends BaseAdapter {
+public class FlattenedSubtopicAdapter extends BaseAdapter {
     private final int classIdx;
     private Context context;
 
-    TopicAdapter(final Context context, final int classIdx) {
+    FlattenedSubtopicAdapter(final Context context, final int classIdx) {
         this.context = context;
         this.classIdx = classIdx;
     }
 
     @Override
     public int getCount() {
-        return Matemaatika.classTopics[classIdx].length;
+        return Matemaatika.flattenedSubtopics[classIdx].length;
     }
 
     @Override
     public Object getItem(int position) {
-        return Matemaatika.topicTitles[Matemaatika.classTopics[classIdx][position]];
+        return Matemaatika.flattenedTitles[classIdx][position];
     }
 
     @Override
     public long getItemId(int position) {
-        return Matemaatika.classTopics[classIdx][position];
+        return Matemaatika.flattenedSubtopics[classIdx][position];
     }
 
     @Override
@@ -40,7 +40,7 @@ public class TopicAdapter extends BaseAdapter {
             view = (TextView) convertView;
         } else {
             view = new TextView(context);
-            view.setText(Matemaatika.topicTitles[Matemaatika.classTopics[classIdx][position]]);
+            view.setText(Matemaatika.flattenedTitles[classIdx][position]);
         }
         return view;
     }

@@ -2,10 +2,11 @@ package com.bavuwe.matemaatika;
 
 import android.content.res.AssetManager;
 import android.os.AsyncTask;
-import android.os.Handler;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Class used to load the content and index asyncronously.
@@ -65,7 +66,43 @@ class ContentLoader extends AsyncTask<String, Integer, String> {
                 throw new RuntimeException(e);
             }
         }
+        // for display purposes, we need flattened topics, compute them here
+        computeFlattenedTopics();
         listener.contentLoaded();
         return null;
+    }
+
+    private void computeFlattenedTopics() {
+        Matemaatika.flattenedSubtopics = new Integer[Matemaatika.classTitles.length][];
+        Matemaatika.isFlattenedHeader = new Boolean[Matemaatika.classTitles.length][];
+        Matemaatika.flattenedTitles = new String[Matemaatika.classTitles.length][];
+
+        for (int classIdx=0 ; classIdx<Matemaatika.classTitles.length ; ++classIdx) {
+            computeFlattenedTopicsForClass(classIdx);
+        }
+    }
+
+    private void computeFlattenedTopicsForClass(int classIdx) {
+        List<Integer> subtopics = new ArrayList<>();
+        List<Boolean> isHeader = new ArrayList<>();
+        List<String> titles = new ArrayList<>();
+
+        int[] topics = Matemaatika.classTopics[classIdx];
+        for (int topicIdx=0 ; topicIdx < topics.length ; ++topicIdx) {
+            // first, add the header
+            subtopics.add(-topics[topicIdx]);  // use negative topicIdx here to avoid mixup with subtopics
+            isHeader.add(true);
+            titles.add(Matemaatika.topicTitles[topics[topicIdx]]);
+
+            // second, add subtopics
+            for (int subtopicIdx=0 ; subtopicIdx<Matemaatika.topicSubTopics[topicIdx].length ; ++subtopicIdx) {
+                subtopics.add(Matemaatika.topicSubTopics[topicIdx][subtopicIdx]);
+                isHeader.add(false);
+                titles.add(Matemaatika.subTopicTitles[Matemaatika.topicSubTopics[topicIdx][subtopicIdx]]);
+            }
+        }
+        Matemaatika.flattenedSubtopics[classIdx] = subtopics.toArray(new Integer[0]);
+        Matemaatika.isFlattenedHeader[classIdx] = isHeader.toArray(new Boolean[0]);
+        Matemaatika.flattenedTitles[classIdx] = titles.toArray(new String[0]);
     }
 }
