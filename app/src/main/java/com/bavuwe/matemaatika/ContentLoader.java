@@ -95,10 +95,10 @@ class ContentLoader extends AsyncTask<String, Integer, String> {
             titles.add(Matemaatika.topicTitles[topics[topicIdx]]);
 
             // second, add subtopics
-            for (int subtopicIdx=0 ; subtopicIdx<Matemaatika.topicSubTopics[topicIdx].length ; ++subtopicIdx) {
-                subtopics.add(Matemaatika.topicSubTopics[topicIdx][subtopicIdx]);
+            for (int subtopicIdx=0 ; subtopicIdx<Matemaatika.topicSubTopics[topics[topicIdx]].length ; ++subtopicIdx) {
+                subtopics.add(Matemaatika.topicSubTopics[topics[topicIdx]][subtopicIdx]);
                 isHeader.add(false);
-                titles.add(Matemaatika.subTopicTitles[Matemaatika.topicSubTopics[topicIdx][subtopicIdx]]);
+                titles.add(Matemaatika.subTopicTitles[Matemaatika.topicSubTopics[topics[topicIdx]][subtopicIdx]]);
             }
         }
         Matemaatika.flattenedSubtopics[classIdx] = subtopics.toArray(new Integer[0]);
