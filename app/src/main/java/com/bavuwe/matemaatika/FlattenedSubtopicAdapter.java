@@ -6,6 +6,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.bavuwe.matemaatika.views.FlattenedSubTopicView;
+import com.bavuwe.matemaatika.views.FlattenedTopicView;
+
 /**
  * Topic adapter, which takes data directly from Matemaatika global state.
  */
@@ -24,7 +27,7 @@ public class FlattenedSubtopicAdapter extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int position) {
+    public String getItem(int position) {
         return Matemaatika.flattenedTitles[classIdx][position];
     }
 
@@ -35,13 +38,9 @@ public class FlattenedSubtopicAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        TextView view;
-        if (convertView != null) {
-            view = (TextView) convertView;
-        } else {
-            view = new TextView(context);
-            view.setText(Matemaatika.flattenedTitles[classIdx][position]);
-        }
-        return view;
+        // TODO: don't ignore convertView here and create new instance every time
+        return Matemaatika.isFlattenedHeader[classIdx][position]
+                ? new FlattenedTopicView(context, getItem(position))
+                : new FlattenedSubTopicView(context, getItem(position));
     }
 }
