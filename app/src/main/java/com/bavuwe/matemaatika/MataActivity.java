@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -66,7 +67,17 @@ public class MataActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_mata);
 
         listView = findViewById(R.id.list_view);
+
+        // set up webview and its settings
         webView = findViewById(R.id.webview);
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                return false;
+            }
+        });
+        webView.getSettings().setBuiltInZoomControls(true);
+        webView.getSettings().setSupportZoom(true);
 
         onCreateToolbar();
         onCreateActionbar();
@@ -198,11 +209,9 @@ public class MataActivity extends AppCompatActivity implements
 
     @Override
     public void handleEmittedSubtopic(int subTopicIdx) {
-        webView.getSettings().setJavaScriptEnabled(true);
         String content = Matemaatika.subTopicContents[subTopicIdx];
-        webView.loadDataWithBaseURL("", content, "text/html","UTF-8", "");
-        webView.getSettings().setBuiltInZoomControls(true);
-        webView.getSettings().setSupportZoom(true);
+        webView.loadDataWithBaseURL("file:///android_asset/", content, "text/html","utf-8", null);
+
     }
 }
 
