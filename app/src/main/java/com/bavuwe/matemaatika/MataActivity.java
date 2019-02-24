@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -12,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 
+import com.bavuwe.matemaatika.listeners.SubTopicOnListClickListenerImpl;
+import com.bavuwe.matemaatika.listeners.SubtopicEmitterListener;
 import com.mikepenz.crossfader.Crossfader;
 import com.mikepenz.crossfader.util.UIUtils;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
@@ -25,7 +28,7 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 
 public class MataActivity extends AppCompatActivity implements
-        ContentLoaderListener {
+        ContentLoaderListener, SubtopicEmitterListener {
 
     // dialogs
     static final int LOAD_DIALOG = 0;
@@ -54,6 +57,7 @@ public class MataActivity extends AppCompatActivity implements
     MiniDrawer miniDrawer = null;
     Crossfader crossFader = null;
     ListView listView = null;
+    WebView webView = null;
 
 
     @Override
@@ -62,6 +66,7 @@ public class MataActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_mata);
 
         listView = findViewById(R.id.list_view);
+        webView = findViewById(R.id.webview);
 
         onCreateToolbar();
         onCreateActionbar();
@@ -115,7 +120,7 @@ public class MataActivity extends AppCompatActivity implements
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
                         if (drawerItem instanceof Nameable) {
-                            int identifier = (int)drawerItem.getIdentifier();
+                            int identifier = (int) drawerItem.getIdentifier();
                             if (identifier >= DRAWER_CLASS1_IDENTIFIER && identifier <= DRAWER_GYMNASIUM_IDENTIFIER) {
                                 selectClass(identifier - DRAWER_CLASS1_IDENTIFIER);
                                 Toast.makeText(MataActivity.this, ((Nameable) drawerItem).getName().getText(MataActivity.this), Toast.LENGTH_SHORT).show();
@@ -154,10 +159,12 @@ public class MataActivity extends AppCompatActivity implements
 
     /**
      * Select a class and update UI accordingly.
+     *
      * @param classIdx The class index, 0 denotes first class etc.
      */
     void selectClass(final int classIdx) {
         listView.setAdapter(new FlattenedSubtopicAdapter(getApplicationContext(), classIdx));
+        listView.setOnItemClickListener(new SubTopicOnListClickListenerImpl(this, classIdx));
     }
 
 
@@ -168,6 +175,10 @@ public class MataActivity extends AppCompatActivity implements
             public void run() {
                 removeDialog(MataActivity.LOAD_DIALOG);
                 Toast.makeText(getApplicationContext(), "content loaded", Toast.LENGTH_LONG).show();
+
+                // by default, show the first topic of the first class
+                selectClass(0);
+                handleEmittedSubtopic(0);
             }
         });
     }
@@ -185,5 +196,13 @@ public class MataActivity extends AppCompatActivity implements
         return true;
     }
 
+    @Override
+    public void handleEmittedSubtopic(int subTopicIdx) {
+        webView.getSettings().setJavaScriptEnabled(true);
+        String content = Matemaatika.subTopicContents[subTopicIdx];
+        webView.loadDataWithBaseURL("", content, "text/html","UTF-8", "");
+        webView.getSettings().setBuiltInZoomControls(true);
+        webView.getSettings().setSupportZoom(true);
+    }
 }
 
