@@ -70,12 +70,6 @@ public class MataActivity extends AppCompatActivity implements
 
         // set up webview and its settings
         webView = findViewById(R.id.webview);
-        webView.setWebViewClient(new WebViewClient() {
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                return false;
-            }
-        });
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setSupportZoom(true);
 
@@ -134,7 +128,8 @@ public class MataActivity extends AppCompatActivity implements
                             int identifier = (int) drawerItem.getIdentifier();
                             if (identifier >= DRAWER_CLASS1_IDENTIFIER && identifier <= DRAWER_GYMNASIUM_IDENTIFIER) {
                                 selectClass(identifier - DRAWER_CLASS1_IDENTIFIER);
-                                Toast.makeText(MataActivity.this, ((Nameable) drawerItem).getName().getText(MataActivity.this), Toast.LENGTH_SHORT).show();
+                            } else if (identifier == DRAWER_ABOUT_IDENTIFIER) {
+                                loadAboutHtml();
                             }
                         }
                         return false;
@@ -210,8 +205,23 @@ public class MataActivity extends AppCompatActivity implements
     @Override
     public void handleEmittedSubtopic(int subTopicIdx) {
         String content = Matemaatika.subTopicContents[subTopicIdx];
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                return false;
+            }
+        });
         webView.loadDataWithBaseURL("file:///android_asset/", content, "text/html","utf-8", null);
+    }
 
+    void loadAboutHtml() {
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                return true;
+            }
+        });
+        webView.loadUrl("file:///android_asset/about.html");
     }
 }
 
