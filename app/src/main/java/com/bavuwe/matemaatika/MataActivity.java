@@ -36,6 +36,7 @@ import androidx.appcompat.widget.Toolbar;
 import com.bavuwe.matemaatika.adapters.FlattenedSubtopicAdapter;
 import com.bavuwe.matemaatika.adapters.SearchResultsAdapter;
 import com.bavuwe.matemaatika.listeners.ContentLoaderListener;
+import com.bavuwe.matemaatika.listeners.SearchResultOnClickListener;
 import com.bavuwe.matemaatika.listeners.SubTopicOnListClickListenerImpl;
 import com.bavuwe.matemaatika.listeners.SubtopicEmitterListener;
 import com.mikepenz.crossfader.Crossfader;
@@ -82,6 +83,8 @@ public class MataActivity extends AppCompatActivity implements
     WebView webView = null;
     ListView searchResults = null;
     SearchResultsAdapter searchResultsAdapter = null;
+    SearchView searchView = null;
+    Toolbar toolbar = null;
 
 
     @Override
@@ -93,6 +96,7 @@ public class MataActivity extends AppCompatActivity implements
         searchResults = findViewById(R.id.search_results);
         searchResultsAdapter = new SearchResultsAdapter(getApplicationContext());
         searchResults.setAdapter(searchResultsAdapter);
+        searchResults.setOnItemClickListener(new SearchResultOnClickListener(this));
 
         // Set up webview and its settings.
         webView = findViewById(R.id.webview);
@@ -112,7 +116,7 @@ public class MataActivity extends AppCompatActivity implements
     }
 
     void onCreateToolbar() {
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
 
@@ -221,17 +225,24 @@ public class MataActivity extends AppCompatActivity implements
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.toolbarmenu, menu);
         MenuItem searchItem = menu.findItem(R.id.action_search);
-        SearchView searchView =
-                (SearchView) searchItem.getActionView();
+        searchView = (SearchView) searchItem.getActionView();
         searchView.setOnQueryTextListener(searchResultsAdapter);
         searchResultsAdapter.setSearchResultsView(searchResults);
+
 
         return true;
     }
 
     @Override
+    public void onOptionsMenuClosed(Menu menu) {
+        super.onOptionsMenuClosed(menu);
+        searchView = null;
+    }
+
+    @Override
     public void handleEmittedSubtopic(int subTopicIdx) {
         String content = Matemaatika.subTopicContents[subTopicIdx];
+
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -239,6 +250,15 @@ public class MataActivity extends AppCompatActivity implements
             }
         });
         webView.loadDataWithBaseURL("file:///android_asset/", content, "text/html","utf-8", null);
+
+        // clear the search
+        if (searchView != null) {
+            searchView.setQuery("", true);
+            searchView.clearFocus();
+        }
+
+        // set toolbar back to home
+        toolbar.collapseActionView();
     }
 
     void loadAboutHtml() {

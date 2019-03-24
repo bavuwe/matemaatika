@@ -14,13 +14,14 @@ import java.util.List;
  * Class used to load the content and index asyncronously.
  */
 class ContentLoader extends AsyncTask<String, Integer, String> {
-    private ContentLoaderListener listener ;
+    private ContentLoaderListener listener;
     private AssetManager manager;
 
     /**
      * Set up a ContentLoader
+     *
      * @param listener The instance to notify loading related events.
-     * @param manager For retrieving assets.
+     * @param manager  For retrieving assets.
      */
     ContentLoader(ContentLoaderListener listener, AssetManager manager) {
         this.listener = listener;
@@ -45,17 +46,17 @@ class ContentLoader extends AsyncTask<String, Integer, String> {
 
                 // get the tree structure
                 Matemaatika.classTopics = new int[Matemaatika.classTitles.length][];
-                for (int idx=0 ; idx < Matemaatika.classTitles.length ; ++idx) {
+                for (int idx = 0; idx < Matemaatika.classTitles.length; ++idx) {
                     Matemaatika.classTopics[idx] = parser.getClassTopics(idx);
                 }
                 Matemaatika.topicSubTopics = new int[Matemaatika.topicTitles.length][];
-                for (int idx=0 ; idx < Matemaatika.topicTitles.length ; ++idx) {
+                for (int idx = 0; idx < Matemaatika.topicTitles.length; ++idx) {
                     Matemaatika.topicSubTopics[idx] = parser.getTopicSubTopics(idx);
                 }
                 // get the subtopic contents
                 Matemaatika.subTopicContents = new String[Matemaatika.subTopicTitles.length];
 
-                for (int idx=0 ; idx < Matemaatika.subTopicTitles.length ; ++idx) {
+                for (int idx = 0; idx < Matemaatika.subTopicTitles.length; ++idx) {
                     Matemaatika.subTopicContents[idx] = parser.getSubTopicHTML(idx);
                 }
                 htmlIs.close();
@@ -77,10 +78,10 @@ class ContentLoader extends AsyncTask<String, Integer, String> {
 
     private void computeSearchTitles() {
         List<String> searchTitles = new ArrayList<>();
-        for (int classIdx=0 ; classIdx<Matemaatika.classTitles.length ; ++classIdx) {
-            for (int topicIdx=0 ; topicIdx<Matemaatika.classTopics[classIdx].length ; ++topicIdx) {
+        for (int classIdx = 0; classIdx < Matemaatika.classTitles.length; ++classIdx) {
+            for (int topicIdx = 0; topicIdx < Matemaatika.classTopics[classIdx].length; ++topicIdx) {
                 int topic = Matemaatika.classTopics[classIdx][topicIdx];
-                for (int subTopicIdx =0 ; subTopicIdx<Matemaatika.topicSubTopics[topic].length ; ++subTopicIdx) {
+                for (int subTopicIdx = 0; subTopicIdx < Matemaatika.topicSubTopics[topic].length; ++subTopicIdx) {
                     int subTopic = Matemaatika.topicSubTopics[topic][subTopicIdx];
                     searchTitles.add(String.format("%s > %s > %s",
                             Matemaatika.classTitles[classIdx],
@@ -97,7 +98,7 @@ class ContentLoader extends AsyncTask<String, Integer, String> {
         Matemaatika.isFlattenedHeader = new Boolean[Matemaatika.classTitles.length][];
         Matemaatika.flattenedTitles = new String[Matemaatika.classTitles.length][];
 
-        for (int classIdx=0 ; classIdx<Matemaatika.classTitles.length ; ++classIdx) {
+        for (int classIdx = 0; classIdx < Matemaatika.classTitles.length; ++classIdx) {
             computeFlattenedTopicsForClass(classIdx);
         }
     }
@@ -108,14 +109,14 @@ class ContentLoader extends AsyncTask<String, Integer, String> {
         List<String> titles = new ArrayList<>();
 
         int[] topics = Matemaatika.classTopics[classIdx];
-        for (int topicIdx=0 ; topicIdx < topics.length ; ++topicIdx) {
-            // first, add the header
-            subtopics.add(-topics[topicIdx]);  // use negative topicIdx here to avoid mixup with subtopics
+        for (int topicIdx = 0; topicIdx < topics.length; ++topicIdx) {
+            // Use negative topicIdx here to avoid mixup withsubtopics
+            subtopics.add(-topics[topicIdx]);
             isHeader.add(true);
             titles.add(Matemaatika.topicTitles[topics[topicIdx]]);
 
             // second, add subtopics
-            for (int subtopicIdx=0 ; subtopicIdx<Matemaatika.topicSubTopics[topics[topicIdx]].length ; ++subtopicIdx) {
+            for (int subtopicIdx = 0; subtopicIdx < Matemaatika.topicSubTopics[topics[topicIdx]].length; ++subtopicIdx) {
                 subtopics.add(Matemaatika.topicSubTopics[topics[topicIdx]][subtopicIdx]);
                 isHeader.add(false);
                 titles.add(Matemaatika.subTopicTitles[Matemaatika.topicSubTopics[topics[topicIdx]][subtopicIdx]]);
