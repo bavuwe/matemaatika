@@ -1,4 +1,4 @@
-package com.bavuwe.matemaatika;
+package com.bavuwe.matemaatika.listeners;
 
 public interface ContentLoaderListener {
 

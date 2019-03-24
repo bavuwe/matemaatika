@@ -3,6 +3,8 @@ package com.bavuwe.matemaatika;
 import android.content.res.AssetManager;
 import android.os.AsyncTask;
 
+import com.bavuwe.matemaatika.listeners.ContentLoaderListener;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;

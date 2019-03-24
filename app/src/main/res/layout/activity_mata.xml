@@ -39,6 +39,13 @@
                 android:layout_height="match_parent">
             </WebView>
         </LinearLayout>
-
     </FrameLayout>
+
+    <ListView
+        android:id="@+id/search_results"
+        android:layout_width="match_parent"
+        android:layout_alignTop="@id/toolbar"
+        android:layout_height="wrap_content"
+        android:background="@color/md_light_background"
+        />
 </RelativeLayout>

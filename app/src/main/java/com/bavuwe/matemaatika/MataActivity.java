@@ -1,3 +1,22 @@
+/*
+ * This file is part of the Matemaatika Minileksikon.
+ * https://github.com/bavuwe/matemaatika
+ *
+ * Copyright (c) 2019 Bavuwe Software and contributors.
+ * See CONTRIBUTORS.txt for details.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, version 3.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
 package com.bavuwe.matemaatika;
 
 import android.os.Bundle;
@@ -14,6 +33,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 
+import com.bavuwe.matemaatika.adapters.FlattenedSubtopicAdapter;
+import com.bavuwe.matemaatika.adapters.SearchResultsAdapter;
+import com.bavuwe.matemaatika.listeners.ContentLoaderListener;
 import com.bavuwe.matemaatika.listeners.SubTopicOnListClickListenerImpl;
 import com.bavuwe.matemaatika.listeners.SubtopicEmitterListener;
 import com.mikepenz.crossfader.Crossfader;
@@ -52,13 +74,14 @@ public class MataActivity extends AppCompatActivity implements
     static final int DRAWER_REPORT_IDENTIFIER = 14;
     static final int DRAWER_ABOUT_IDENTIFIER = 15;
 
-    // various UI elements
     ContentLoader loader = null;
     Drawer drawer = null;
     MiniDrawer miniDrawer = null;
     Crossfader crossFader = null;
     ListView listView = null;
     WebView webView = null;
+    ListView searchResults = null;
+    SearchResultsAdapter searchResultsAdapter = null;
 
 
     @Override
@@ -67,8 +90,11 @@ public class MataActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_mata);
 
         listView = findViewById(R.id.list_view);
+        searchResults = findViewById(R.id.search_results);
+        searchResultsAdapter = new SearchResultsAdapter(getApplicationContext());
+        searchResults.setAdapter(searchResultsAdapter);
 
-        // set up webview and its settings
+        // Set up webview and its settings.
         webView = findViewById(R.id.webview);
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setSupportZoom(true);
@@ -77,7 +103,7 @@ public class MataActivity extends AppCompatActivity implements
         onCreateActionbar();
         onCreateDrawer(savedInstanceState);
 
-        // kick off contentloader
+        // Kick off contentloader.
         if (Matemaatika.classTitles == null) {
             showDialog(LOAD_DIALOG);
             loader = new ContentLoader(this, getAssets());
@@ -120,7 +146,7 @@ public class MataActivity extends AppCompatActivity implements
                         new DividerDrawerItem(),
                         new SecondaryDrawerItem().withName("Teavita veast").withIcon(GoogleMaterial.Icon.gmd_notifications_active).withIdentifier(DRAWER_REPORT_IDENTIFIER),
                         new PrimaryDrawerItem().withName("Programmist").withIcon(GoogleMaterial.Icon.gmd_pets).withIdentifier(DRAWER_ABOUT_IDENTIFIER)
-                ) // add the items we want to use with our Drawer
+                ) // Add the items we want to use with our Drawer.
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
@@ -137,18 +163,20 @@ public class MataActivity extends AppCompatActivity implements
                 })
                 .withGenerateMiniDrawer(true)
                 .withSavedInstance(savedInstanceState)
-                // build only the view of the Drawer (don't inflate it automatically in our layout which is done with .build())
+                // Build only the view of the Drawer (don't inflate it automatically in our
+                // layout which is done with .build())
                 .buildView();
 
-        //the MiniDrawer is managed by the Drawer and we just get it to hook it into the Crossfader
+        // The MiniDrawer is managed by the Drawer and we just get it to hook it into the Crossfader
         miniDrawer = drawer.getMiniDrawer();
 
-        //get the widths in px for the first and second panel
+        // Get the widths in px for the first and second panel
         int firstWidth = (int) UIUtils.convertDpToPixel(300, this);
         int secondWidth = (int) UIUtils.convertDpToPixel(72, this);
 
-        //create and build our crossfader (see the MiniDrawer is also builded in here, as the build method returns the view to be used in the crossfader)
-        //the crossfader library can be found here: https://github.com/mikepenz/Crossfader
+        // Create and build our crossfader (see the MiniDrawer is also builded in here, as the
+        // build method returns the view to be used in the crossfader)
+        // the crossfader library can be found here: https://github.com/mikepenz/Crossfader
         crossFader = new Crossfader()
                 .withContent(findViewById(R.id.main_container))
                 .withFirst(drawer.getSlider(), firstWidth)
@@ -192,12 +220,11 @@ public class MataActivity extends AppCompatActivity implements
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.toolbarmenu, menu);
-
         MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchView searchView =
                 (SearchView) searchItem.getActionView();
-
-        // Configure the search info and add any event listeners...
+        searchView.setOnQueryTextListener(searchResultsAdapter);
+        searchResultsAdapter.setSearchResultsView(searchResults);
 
         return true;
     }

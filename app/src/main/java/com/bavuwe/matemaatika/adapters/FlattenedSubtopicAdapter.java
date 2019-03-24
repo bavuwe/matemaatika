@@ -1,4 +1,4 @@
-package com.bavuwe.matemaatika;
+package com.bavuwe.matemaatika.adapters;
 
 import android.content.Context;
 import android.view.View;
@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.bavuwe.matemaatika.Matemaatika;
 import com.bavuwe.matemaatika.views.FlattenedSubTopicView;
 import com.bavuwe.matemaatika.views.FlattenedTopicView;
 
@@ -16,7 +17,7 @@ public class FlattenedSubtopicAdapter extends BaseAdapter {
     private final int classIdx;
     private Context context;
 
-    FlattenedSubtopicAdapter(final Context context, final int classIdx) {
+    public FlattenedSubtopicAdapter(final Context context, final int classIdx) {
         this.context = context;
         this.classIdx = classIdx;
     }
