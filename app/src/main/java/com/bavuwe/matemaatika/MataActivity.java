@@ -21,6 +21,7 @@ package com.bavuwe.matemaatika;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -85,6 +86,7 @@ public class MataActivity extends AppCompatActivity implements
     SearchResultsAdapter searchResultsAdapter = null;
     SearchView searchView = null;
     Toolbar toolbar = null;
+    Integer selectedClass = null;
 
 
     @Override
@@ -158,9 +160,11 @@ public class MataActivity extends AppCompatActivity implements
                             int identifier = (int) drawerItem.getIdentifier();
                             if (identifier >= DRAWER_CLASS1_IDENTIFIER && identifier <= DRAWER_GYMNASIUM_IDENTIFIER) {
                                 selectClass(identifier - DRAWER_CLASS1_IDENTIFIER);
+                                return true;
                             } else if (identifier == DRAWER_ABOUT_IDENTIFIER) {
                                 loadAboutHtml();
                             }
+                            selectedClass = null;
                         }
                         return false;
                     }
@@ -203,6 +207,14 @@ public class MataActivity extends AppCompatActivity implements
     void selectClass(final int classIdx) {
         listView.setAdapter(new FlattenedSubtopicAdapter(getApplicationContext(), classIdx));
         listView.setOnItemClickListener(new SubTopicOnListClickListenerImpl(this, classIdx));
+        selectedClass = classIdx;
+    }
+
+    void selectClassAndUpdateDrawerSelection(final int classIdx) {
+        drawer.deselect();
+        drawer.setSelection(DRAWER_CLASS1_IDENTIFIER + classIdx);
+        miniDrawer.setSelection(DRAWER_CLASS1_IDENTIFIER + classIdx);
+        selectClass(classIdx);
     }
 
 
@@ -241,6 +253,8 @@ public class MataActivity extends AppCompatActivity implements
 
     @Override
     public void handleEmittedSubtopic(int subTopicIdx) {
+        toolbar.setTitle(Matemaatika.searchTitles[subTopicIdx]);
+
         String content = Matemaatika.subTopicContents[subTopicIdx];
 
         webView.setWebViewClient(new WebViewClient() {
@@ -256,9 +270,17 @@ public class MataActivity extends AppCompatActivity implements
             searchView.setQuery("", true);
             searchView.clearFocus();
         }
+        if (toolbar != null) {
+            toolbar.collapseActionView();
+        }
 
-        // set toolbar back to home
-        toolbar.collapseActionView();
+
+        int classIdx = Matemaatika.subTopicClass[subTopicIdx];
+        if (selectedClass == null || selectedClass != classIdx) {
+            selectClassAndUpdateDrawerSelection(classIdx);
+            //int flattened = Matemaatika.findFlattenedIndex(classIdx, subTopicIdx);
+        }
+        selectedClass = classIdx;
     }
 
     void loadAboutHtml() {

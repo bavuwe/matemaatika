@@ -39,7 +39,6 @@ public class FlattenedSubtopicAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        // TODO: don't ignore convertView here and create new instance every time
         return Matemaatika.isFlattenedHeader[classIdx][position]
                 ? new FlattenedTopicView(context, getItem(position))
                 : new FlattenedSubTopicView(context, getItem(position));

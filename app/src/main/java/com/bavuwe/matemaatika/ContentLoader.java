@@ -71,21 +71,30 @@ class ContentLoader extends AsyncTask<String, Integer, String> {
             }
         }
         computeFlattenedTopics();
-        computeSearchTitles();
+        computeSearchTitlesAndReverseIndex();
         listener.contentLoaded();
         return null;
     }
 
-    private void computeSearchTitles() {
+    private void computeSearchTitlesAndReverseIndex() {
+        Matemaatika.subTopicClass = new int[Matemaatika.subTopicTitles.length];
+        Matemaatika.subTopicTopic = new int[Matemaatika.subTopicTitles.length];
+
         List<String> searchTitles = new ArrayList<>();
         for (int classIdx = 0; classIdx < Matemaatika.classTitles.length; ++classIdx) {
             for (int topicIdx = 0; topicIdx < Matemaatika.classTopics[classIdx].length; ++topicIdx) {
                 int topic = Matemaatika.classTopics[classIdx][topicIdx];
                 for (int subTopicIdx = 0; subTopicIdx < Matemaatika.topicSubTopics[topic].length; ++subTopicIdx) {
                     int subTopic = Matemaatika.topicSubTopics[topic][subTopicIdx];
+
+                    // create search label
                     searchTitles.add(String.format("%s > %s > %s",
                             Matemaatika.classTitles[classIdx],
                             Matemaatika.topicTitles[topic], Matemaatika.subTopicTitles[subTopic]));
+
+                    // update the reverse index
+                    Matemaatika.subTopicClass[subTopic] = classIdx;
+                    Matemaatika.subTopicTopic[subTopic] = topic;
                 }
             }
         }

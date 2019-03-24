@@ -11,6 +11,10 @@ public class Matemaatika extends Application {
     public static String[] subTopicTitles = null;
     public static String[] searchTitles = null;
 
+    // Reverse indexes for mapping subtopic into class and topic.
+    public static int[] subTopicClass = null;
+    public static int[] subTopicTopic = null;
+
     /**
      * HTML contents of the subtopics, all loaded in memory.
      */
@@ -35,4 +39,14 @@ public class Matemaatika extends Application {
     public static Integer[][] flattenedSubtopics = null;
     public static Boolean[][] isFlattenedHeader = null;
     public static String[][] flattenedTitles = null;
+
+    // TODO: refactor using Optional instead of return -1
+    static int findFlattenedIndex(int classIdx, int subtopic) {
+        for (int idx=0 ; idx<Matemaatika.flattenedSubtopics[classIdx].length ; ++idx) {
+            if (!Matemaatika.isFlattenedHeader[classIdx][idx] && Matemaatika.flattenedSubtopics[classIdx][idx] == subtopic) {
+                return idx;
+            }
+        }
+        return -1;
+    }
 }
