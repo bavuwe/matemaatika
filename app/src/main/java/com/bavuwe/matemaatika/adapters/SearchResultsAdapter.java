@@ -65,7 +65,7 @@ public class SearchResultsAdapter extends BaseAdapter implements SearchView.OnQu
 
     @Override
     public String getItem(int position) {
-        return Matemaatika.subTopicTitles[matches[position]];
+        return Matemaatika.searchTitles[matches[position]];
     }
 
     @Override
@@ -76,6 +76,6 @@ public class SearchResultsAdapter extends BaseAdapter implements SearchView.OnQu
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // TODO: don't ignore convertView here and create new instance every time
-        return new SearchResult(context, Matemaatika.subTopicTitles[matches[position]]);
+        return new SearchResult(context, Matemaatika.searchTitles[matches[position]]);
     }
 }

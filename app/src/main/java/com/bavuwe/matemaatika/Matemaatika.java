@@ -9,6 +9,7 @@ public class Matemaatika extends Application {
     public static String[] classTitles = null;
     public static String[] topicTitles = null;
     public static String[] subTopicTitles = null;
+    public static String[] searchTitles = null;
 
     /**
      * HTML contents of the subtopics, all loaded in memory.

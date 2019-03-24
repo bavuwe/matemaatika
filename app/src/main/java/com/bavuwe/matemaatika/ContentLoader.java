@@ -42,6 +42,7 @@ class ContentLoader extends AsyncTask<String, Integer, String> {
                 Matemaatika.classTitles = parser.getClassTitles();
                 Matemaatika.topicTitles = parser.getTopicTitles();
                 Matemaatika.subTopicTitles = parser.getSubTopicTitles();
+
                 // get the tree structure
                 Matemaatika.classTopics = new int[Matemaatika.classTitles.length][];
                 for (int idx=0 ; idx < Matemaatika.classTitles.length ; ++idx) {
@@ -68,10 +69,27 @@ class ContentLoader extends AsyncTask<String, Integer, String> {
                 throw new RuntimeException(e);
             }
         }
-        // for display purposes, we need flattened topics, compute them here
         computeFlattenedTopics();
+        computeSearchTitles();
         listener.contentLoaded();
         return null;
+    }
+
+    private void computeSearchTitles() {
+        List<String> searchTitles = new ArrayList<>();
+        for (int classIdx=0 ; classIdx<Matemaatika.classTitles.length ; ++classIdx) {
+            for (int topicIdx=0 ; topicIdx<Matemaatika.classTopics[classIdx].length ; ++topicIdx) {
+                int topic = Matemaatika.classTopics[classIdx][topicIdx];
+                for (int subTopicIdx =0 ; subTopicIdx<Matemaatika.topicSubTopics[topic].length ; ++subTopicIdx) {
+                    int subTopic = Matemaatika.topicSubTopics[topic][subTopicIdx];
+                    searchTitles.add(String.format("%s > %s > %s",
+                            Matemaatika.classTitles[classIdx],
+                            Matemaatika.topicTitles[topic], Matemaatika.subTopicTitles[subTopic]));
+                }
+            }
+        }
+        Matemaatika.searchTitles = searchTitles.toArray(new String[0]);
+        assert (Matemaatika.searchTitles.length == Matemaatika.topicTitles.length);
     }
 
     private void computeFlattenedTopics() {
