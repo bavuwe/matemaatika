@@ -121,8 +121,7 @@ Astendamisel kehtivad järgmised reeglid:
 \end_layout
 
 \begin_layout Subsubsection*
-kümne astmed // 8.
- klass
+kümne astmed 
 \end_layout
 
 \begin_layout Standard
@@ -214,8 +213,7 @@ Näiteks:
 \end_layout
 
 \begin_layout Subsubsection*
-ruutjuur // 8.
- klass
+ruutjuur 
 \end_layout
 
 \begin_layout Standard
@@ -278,8 +276,7 @@ Näiteks:
 \end_layout
 
 \begin_layout Subsubsection*
-arvude ruudud, juured // 8.
- klass
+arvude ruudud, juured 
 \end_layout
 
 \begin_layout Standard
@@ -950,8 +947,7 @@ Teine valem saadakse nii:
 \end_layout
 
 \begin_layout Subsubsection*
-lihtsustamine // 8.
- klass
+lihtsustamine 
 \end_layout
 
 \begin_layout Standard
@@ -1450,8 +1446,7 @@ Sündmus
 \end_layout
 
 \begin_layout Subsubsection*
-tõenäosus // 8.
- klass
+tõenäosus 
 \end_layout
 
 \begin_layout Standard
@@ -1489,8 +1484,7 @@ Geomeetria
 \end_layout
 
 \begin_layout Subsubsection*
-mõisted // 8.
- klass
+mõisted 
 \end_layout
 
 \begin_layout Standard
@@ -1568,8 +1562,7 @@ Eeldus
 \end_layout
 
 \begin_layout Subsubsection*
-paralleelsed sirged // 8.
- klass
+paralleelsed sirged 
 \end_layout
 
 \begin_layout Standard
@@ -1668,8 +1661,7 @@ kui kaks sirget on risti ühe ja sama sirgega, siis need sirged on teineteisega
 \end_layout
 
 \begin_layout Subsubsection*
-kolmnurk // 8.
- klass
+kolmnurk 
 \end_layout
 
 \begin_layout Standard
@@ -1809,8 +1801,7 @@ kolmnurga mediaanide ristumiskohas on kolmnurga raskuskese
 \end_layout
 
 \begin_layout Subsubsection*
-rööpkülik // 8.
- klass
+rööpkülik 
 \end_layout
 
 \begin_layout Standard
@@ -1884,8 +1875,7 @@ h
 \end_layout
 
 \begin_layout Subsubsection*
-romb // 8.
- klass
+romb 
 \end_layout
 
 \begin_layout Standard
@@ -1960,8 +1950,7 @@ pindala
 \end_layout
 
 \begin_layout Subsubsection*
-trapets // 8.
- klass
+trapets 
 \end_layout
 
 \begin_layout Standard
@@ -2046,8 +2035,7 @@ võrdhaarse trapetsi alusnurgad on võrdsed
 \end_layout
 
 \begin_layout Subsubsection*
-ringjoon // 8.
- klass
+ringjoon 
 \end_layout
 
 \begin_layout Standard
@@ -2231,8 +2219,7 @@ Thales'i teoreem:
 \end_layout
 
 \begin_layout Subsubsection*
-püstprisma // 8.
- klass
+püstprisma 
 \end_layout
 
 \begin_layout Standard
@@ -2245,7 +2232,7 @@ püstprisma // 8.
 
 
 \begin_inset Graphics
-	filename img/kuup.png
+	filename img/kuup.svg
 	lyxscale 50
 	scale 55
 
@@ -2290,8 +2277,7 @@ ruumala võrdub põhja pindala ja kõrguse korrutisega
 \end_layout
 
 \begin_layout Subsubsection*
-püramiid // 8.
- klass
+püramiid 
 \end_layout
 
 \begin_layout Standard

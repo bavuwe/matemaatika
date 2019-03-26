@@ -78,8 +78,7 @@ Arvud
 \end_layout
 
 \begin_layout Subsubsection*
-arvuhulgad // 7.
- klass
+arvuhulgad 
 \end_layout
 
 \begin_layout Standard
@@ -151,8 +150,7 @@ b
 \end_layout
 
 \begin_layout Subsubsection*
-arvu absoluutväärtus // 7.
- klass
+arvu absoluutväärtus 
 \end_layout
 
 \begin_layout Standard
@@ -202,8 +200,7 @@ Protsentarvutus
 \end_layout
 
 \begin_layout Subsubsection*
-protsendi leidmine // 7.
- klass
+protsendi leidmine 
 \end_layout
 
 \begin_layout Standard
@@ -262,8 +259,7 @@ Näiteks
 \end_layout
 
 \begin_layout Subsubsection*
-terviku leidmine // 7.
- klass
+terviku leidmine 
 \end_layout
 
 \begin_layout Standard
@@ -327,8 +323,7 @@ Kasutades teist meetodit
 \end_layout
 
 \begin_layout Subsubsection*
-suhe, võrdeline seos // 7.
- klass
+suhe, võrdeline seos 
 \end_layout
 
 \begin_layout Standard
@@ -370,8 +365,7 @@ x
 \end_layout
 
 \begin_layout Subsubsection*
-pöördvõrdeline seos // 7.
- klass
+pöördvõrdeline seos 
 \end_layout
 
 \begin_layout Standard
@@ -407,8 +401,7 @@ y
 \end_layout
 
 \begin_layout Subsubsection*
-kasvamine, kahanemine // 7.
- klass
+kasvamine, kahanemine 
 \end_layout
 
 \begin_layout Standard
@@ -424,8 +417,7 @@ Astendamine
 \end_layout
 
 \begin_layout Subsubsection*
-astendamine // 7.
- klass
+astendamine 
 \end_layout
 
 \begin_layout Standard
@@ -493,9 +485,6 @@ Kui astendatav on negatiivne, siis astendamise tulemus on negatiivne vaid
 
 \color black
 astmed 
-\color inherit
-// 7.
- klass
 \end_layout
 
 \begin_layout Standard
@@ -1138,8 +1127,7 @@ Kahe astmed:
 \end_layout
 
 \begin_layout Subsubsection*
-tehete järjekord // 7.
- klass
+tehete järjekord 
 \end_layout
 
 \begin_layout Standard
@@ -1230,8 +1218,7 @@ Statistika, andmed
 \end_layout
 
 \begin_layout Subsubsection*
-sagedus,sagedustabel // 7.
- klass
+sagedus,sagedustabel 
 \end_layout
 
 \begin_layout Standard
@@ -1404,8 +1391,7 @@ suhteline sagedus
 \end_layout
 
 \begin_layout Subsubsection*
-mood // 7.
- klass
+mood 
 \end_layout
 
 \begin_layout Standard
@@ -1431,8 +1417,7 @@ Kui kõik tunnuse väärtused on võrdsed, siis mood puudub.
 \end_layout
 
 \begin_layout Subsubsection*
-aritmeetiline keskmine // 7.
- klass
+aritmeetiline keskmine 
 \end_layout
 
 \begin_layout Standard
@@ -1587,8 +1572,7 @@ Funktsioonid
 \end_layout
 
 \begin_layout Subsubsection*
-funktsioon // 7.
- klass
+funktsioon 
 \end_layout
 
 \begin_layout Standard
@@ -1705,8 +1689,7 @@ Y
 \end_layout
 
 \begin_layout Subsubsection*
-võrdeline seos // 7.
- klass
+võrdeline seos 
 \end_layout
 
 \begin_layout Standard
@@ -1766,8 +1749,7 @@ a
 \end_layout
 
 \begin_layout Subsubsection*
-lineaarne seos // 7.
- klass
+lineaarne seos 
 \end_layout
 
 \begin_layout Standard
@@ -1860,8 +1842,7 @@ Geomeetria
 \end_layout
 
 \begin_layout Subsubsection*
-hulknurk // 7.
- klass
+hulknurk 
 \end_layout
 
 \begin_layout Standard
@@ -1978,8 +1959,7 @@ korrapärase hulknurga ühe nurga suurus
 \end_layout
 
 \begin_layout Subsubsection*
-rööpkülik // 7.
- klass
+rööpkülik 
 \end_layout
 
 \begin_layout Standard
@@ -2053,8 +2033,7 @@ h
 \end_layout
 
 \begin_layout Subsubsection*
-romb // 7.
- klass
+romb 
 \end_layout
 
 \begin_layout Standard
@@ -2121,8 +2100,7 @@ pindala
 \end_layout
 
 \begin_layout Subsubsection*
-trapets // 7.
- klass
+trapets 
 \end_layout
 
 \begin_layout Standard
@@ -2199,8 +2177,7 @@ võrdhaarse trapetsi alusnurgad on võrdsed
 \end_layout
 
 \begin_layout Subsubsection*
-nelinurksed püstprismad // 7.
- klass
+nelinurksed püstprismad 
 \end_layout
 
 \begin_layout Standard

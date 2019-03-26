@@ -78,8 +78,7 @@ Arvud
 \end_layout
 
 \begin_layout Subsubsection*
-naturaalarvud // 5.
- klass
+naturaalarvud 
 \end_layout
 
 \begin_layout Standard
@@ -1884,8 +1883,7 @@ Näiteks
 \end_layout
 
 \begin_layout Subsubsection*
-tehete järjekord // 5.
- klass
+tehete järjekord 
 \end_layout
 
 \begin_layout Standard
@@ -1914,8 +1912,7 @@ Mõõtühikud
 \end_layout
 
 \begin_layout Subsubsection*
-pindalaühikud // 5.
- klass
+pindalaühikud 
 \end_layout
 
 \begin_layout Standard
@@ -2137,8 +2134,7 @@ $1000000 m^2$
 \end_layout
 
 \begin_layout Subsubsection*
-ruumalaühikud // 5.
- klass
+ruumalaühikud 
 \end_layout
 
 \begin_layout Standard
@@ -2316,8 +2312,7 @@ Andmed, diagrammid
 \end_layout
 
 \begin_layout Subsubsection*
-sagedus,sagedustabel // 5.
- klass
+sagedus,sagedustabel 
 \end_layout
 
 \begin_layout Standard
@@ -2871,8 +2866,7 @@ Geomeetria
 \end_layout
 
 \begin_layout Subsubsection*
-punkt, tasand // 5.
- klass
+punkt, tasand 
 \end_layout
 
 \begin_layout Standard
@@ -2902,8 +2896,7 @@ tasapind
 \end_layout
 
 \begin_layout Subsubsection*
-jooned // 5.
- klass
+jooned 
 \end_layout
 
 \begin_layout Standard
@@ -3200,8 +3193,7 @@ Kiir
 \end_layout
 
 \begin_layout Subsubsection*
-nurk // 5.
- klass
+nurk 
 \end_layout
 
 \begin_layout Standard
@@ -3387,8 +3379,7 @@ Tippnurgad on võrdsed.
 \end_layout
 
 \begin_layout Subsubsection*
-sirgete omadused // 5.
- klass
+sirgete omadused 
 \end_layout
 
 \begin_layout Standard
@@ -3441,8 +3432,7 @@ Paralleelsust tähistatakse sümboliga
 \end_layout
 
 \begin_layout Subsubsection*
-risttahukas // 5.
- klass
+risttahukas 
 \end_layout
 
 \begin_layout Standard
@@ -3490,8 +3480,7 @@ Risttahuka ruumala
 \end_layout
 
 \begin_layout Subsubsection*
-kuup // 5.
- klass
+kuup 
 \end_layout
 
 \begin_layout Standard

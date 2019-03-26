@@ -132,8 +132,7 @@ Arvutamine
 \end_layout
 
 \begin_layout Subsubsection*
-tehete järjekord // 3.
- klass
+tehete järjekord 
 \end_layout
 
 \begin_layout Standard
@@ -1670,8 +1669,7 @@ Mõõtühikud
 \end_layout
 
 \begin_layout Subsubsection*
-ajaühikud // 3.
- klass
+ajaühikud 
 \end_layout
 
 \begin_layout Standard
@@ -1716,8 +1714,7 @@ ajaühikud
 \end_layout
 
 \begin_layout Subsubsection*
-raskusühikud // 3.
- klass
+raskusühikud 
 \end_layout
 
 \begin_layout Standard
@@ -1746,8 +1743,7 @@ raskusühikud
 \end_layout
 
 \begin_layout Subsubsection*
-pikkusühikud // 3.
- klass
+pikkusühikud 
 \end_layout
 
 \begin_layout Standard
@@ -1784,8 +1780,7 @@ pikkusühikud
 \end_layout
 
 \begin_layout Subsubsection*
-mahuühikud // 3.
- klass
+mahuühikud 
 \end_layout
 
 \begin_layout Standard
@@ -1869,8 +1864,7 @@ Geomeetria
 \end_layout
 
 \begin_layout Subsubsection*
-sirge, sirglõik, murdjoon // 3.
- klass
+sirge, sirglõik, murdjoon 
 \end_layout
 
 \begin_layout Standard
@@ -2114,8 +2108,7 @@ Murdjoon
 \end_layout
 
 \begin_layout Subsubsection*
-nelinurgad // 3.
- klass
+nelinurgad 
 \end_layout
 
 \begin_layout Standard
@@ -2242,8 +2235,7 @@ Ristküliku ümbermõõt
 \end_layout
 
 \begin_layout Subsubsection*
-kolmnurk // 3.
- klass
+kolmnurk 
 \end_layout
 
 \begin_layout Standard
@@ -2304,8 +2296,7 @@ Kolmnurga ümbermõõt
 \end_layout
 
 \begin_layout Subsubsection*
-nurk // 3.
- klass
+nurk 
 \end_layout
 
 \begin_layout Standard
@@ -2376,8 +2367,7 @@ Täisnurgaks
 \end_layout
 
 \begin_layout Subsubsection*
-ring ja ringjoon // 3.
- klass
+ring ja ringjoon 
 \end_layout
 
 \begin_layout Standard
@@ -2517,8 +2507,7 @@ O
 \end_layout
 
 \begin_layout Subsubsection*
-kuup // 3.
- klass
+kuup 
 \end_layout
 
 \begin_layout Standard
@@ -2572,8 +2561,7 @@ Kuup
 \end_layout
 
 \begin_layout Subsubsection*
-risttahukas // 3.
- klass
+risttahukas 
 \end_layout
 
 \begin_layout Standard
@@ -2626,8 +2614,7 @@ Risttahukas
 \end_layout
 
 \begin_layout Subsubsection*
-kera // 3.
- klass
+kera 
 \end_layout
 
 \begin_layout Standard
@@ -2671,8 +2658,7 @@ Kera
 \end_layout
 
 \begin_layout Subsubsection*
-silinder // 3.
- klass
+silinder 
 \end_layout
 
 \begin_layout Standard
@@ -2716,8 +2702,7 @@ Silinder
 \end_layout
 
 \begin_layout Subsubsection*
-koonus // 3.
- klass
+koonus 
 \end_layout
 
 \begin_layout Standard
@@ -2761,8 +2746,7 @@ Koonus
 \end_layout
 
 \begin_layout Subsubsection*
-püramiid // 3.
- klass
+püramiid 
 \end_layout
 
 \begin_layout Standard
