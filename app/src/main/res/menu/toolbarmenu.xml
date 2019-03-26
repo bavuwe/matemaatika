@@ -9,6 +9,7 @@
         app:showAsAction="always|collapseActionView"
         app:actionViewClass="androidx.appcompat.widget.SearchView" />
 
+    <!-- We probably want a favourites feature in future -->
     <!--<item-->
         <!--android:id="@+id/action_favorite"-->
         <!--android:icon="@android:drawable/star_off"-->
