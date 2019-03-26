@@ -137,6 +137,7 @@ public class MataActivity extends AppCompatActivity implements
         Toolbar toolbar = findViewById(R.id.toolbar);
         drawer = new DrawerBuilder()
                 .withActivity(this)
+                .withRootView(R.id.main_layout)
                 .withToolbar(toolbar)
                 .withHasStableIds(true)
                 .withItemAnimator(new AlphaCrossFadeAnimator())
