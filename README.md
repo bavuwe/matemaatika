@@ -11,7 +11,7 @@ Materjalid ja tarkvara on koostanud Kristjan Krips ja Timo Petmanson.
 
 # Litsents
 
-Programmi lähtekood on avalik [GNU GPL3 litsentsi](https://www.gnu.org/licenses/gpl-3.0.en.html) alusel
+Programmi lähtekood on avalik [GNU GPL litsentsi](https://www.gnu.org/licenses/gpl-3.0.en.html) alusel
 ja kõik õppemmaterjalid ja joonised on avaldatud [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/) alusel.
 
 Lühidalt tähendab see, et nii programmi lähtekoodi kui materjalid on avalikud. 

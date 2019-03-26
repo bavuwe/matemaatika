@@ -30,6 +30,8 @@ dependencies {
 
     // materialdrawer library
     implementation "com.mikepenz:materialdrawer:6.1.2"
+    implementation "com.mikepenz:itemanimators:1.0.2"
+    implementation "androidx.recyclerview:recyclerview:1.0.0"
 
     //required support lib modules
     implementation "androidx.appcompat:appcompat:1.0.2"

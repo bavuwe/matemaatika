@@ -21,7 +21,6 @@ package com.bavuwe.matemaatika;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -41,14 +40,12 @@ import com.bavuwe.matemaatika.listeners.SearchResultOnClickListener;
 import com.bavuwe.matemaatika.listeners.SubTopicOnListClickListenerImpl;
 import com.bavuwe.matemaatika.listeners.SubtopicEmitterListener;
 import com.mikepenz.crossfader.Crossfader;
-import com.mikepenz.crossfader.util.UIUtils;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
+import com.mikepenz.itemanimators.AlphaCrossFadeAnimator;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
-import com.mikepenz.materialdrawer.MiniDrawer;
 import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
-import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 
@@ -78,7 +75,7 @@ public class MataActivity extends AppCompatActivity implements
 
     ContentLoader loader = null;
     Drawer drawer = null;
-    MiniDrawer miniDrawer = null;
+    //MiniDrawer miniDrawer = null;
     Crossfader crossFader = null;
     ListView listView = null;
     WebView webView = null;
@@ -86,7 +83,6 @@ public class MataActivity extends AppCompatActivity implements
     SearchResultsAdapter searchResultsAdapter = null;
     SearchView searchView = null;
     Toolbar toolbar = null;
-    Integer selectedClass = null;
 
 
     @Override
@@ -132,25 +128,29 @@ public class MataActivity extends AppCompatActivity implements
         drawer = new DrawerBuilder()
                 .withActivity(this)
                 .withToolbar(toolbar)
+                .withHasStableIds(true)
+                .withItemAnimator(new AlphaCrossFadeAnimator())
+                .withDisplayBelowStatusBar(false)
                 .withTranslucentStatusBar(false)
+                .withDrawerLayout(R.layout.material_drawer_fits_not)
                 .addDrawerItems(
-                        new PrimaryDrawerItem().withName("Lemmikud").withIcon(GoogleMaterial.Icon.gmd_star).withIdentifier(DRAWER_FAVOURITES_IDENTIFIER),
-                        new DividerDrawerItem(),
-                        new SecondaryDrawerItem().withName("1. klass").withIcon(GoogleMaterial.Icon.gmd_filter_1).withIdentifier(DRAWER_CLASS1_IDENTIFIER),
-                        new SecondaryDrawerItem().withName("2. klass").withIcon(GoogleMaterial.Icon.gmd_filter_2).withIdentifier(DRAWER_CLASS2_IDENTIFIER),
-                        new SecondaryDrawerItem().withName("3. klass").withIcon(GoogleMaterial.Icon.gmd_filter_3).withIdentifier(DRAWER_CLASS3_IDENTIFIER),
-                        new SecondaryDrawerItem().withName("4. klass").withIcon(GoogleMaterial.Icon.gmd_filter_4).withIdentifier(DRAWER_CLASS4_IDENTIFIER),
-                        new SecondaryDrawerItem().withName("5. klass").withIcon(GoogleMaterial.Icon.gmd_filter_5).withIdentifier(DRAWER_CLASS5_IDENTIFIER),
-                        new SecondaryDrawerItem().withName("6. klass").withIcon(GoogleMaterial.Icon.gmd_filter_6).withIdentifier(DRAWER_CLASS6_IDENTIFIER),
+                        //new PrimaryDrawerItem().withName("Lemmikud").withIcon(GoogleMaterial.Icon.gmd_star).withIdentifier(DRAWER_FAVOURITES_IDENTIFIER),
+                        //new DividerDrawerItem(),
+                        new PrimaryDrawerItem().withName("1. klass").withIcon(GoogleMaterial.Icon.gmd_filter_1).withIdentifier(DRAWER_CLASS1_IDENTIFIER),
+                        new PrimaryDrawerItem().withName("2. klass").withIcon(GoogleMaterial.Icon.gmd_filter_2).withIdentifier(DRAWER_CLASS2_IDENTIFIER),
+                        new PrimaryDrawerItem().withName("3. klass").withIcon(GoogleMaterial.Icon.gmd_filter_3).withIdentifier(DRAWER_CLASS3_IDENTIFIER),
+                        new PrimaryDrawerItem().withName("4. klass").withIcon(GoogleMaterial.Icon.gmd_filter_4).withIdentifier(DRAWER_CLASS4_IDENTIFIER),
+                        new PrimaryDrawerItem().withName("5. klass").withIcon(GoogleMaterial.Icon.gmd_filter_5).withIdentifier(DRAWER_CLASS5_IDENTIFIER),
+                        new PrimaryDrawerItem().withName("6. klass").withIcon(GoogleMaterial.Icon.gmd_filter_6).withIdentifier(DRAWER_CLASS6_IDENTIFIER),
                         new PrimaryDrawerItem().withName("7. klass").withIcon(GoogleMaterial.Icon.gmd_filter_7).withIdentifier(DRAWER_CLASS7_IDENTIFIER),
                         new PrimaryDrawerItem().withName("8. klass").withIcon(GoogleMaterial.Icon.gmd_filter_8).withIdentifier(DRAWER_CLASS8_IDENTIFIER),
                         new PrimaryDrawerItem().withName("9. klass").withIcon(GoogleMaterial.Icon.gmd_filter_9).withIdentifier(DRAWER_CLASS9_IDENTIFIER),
                         new PrimaryDrawerItem().withName("Gümnaasium").withIcon(GoogleMaterial.Icon.gmd_school).withIdentifier(DRAWER_GYMNASIUM_IDENTIFIER),
+                        //new DividerDrawerItem(),
+                        //new PrimaryDrawerItem().withName("Liitintresside kalkulaator").withIcon(GoogleMaterial.Icon.gmd_trending_up).withIdentifier(DRAWER_COMPUND_INTEREST_IDENTIFIER), // need better icon here
+                        //new PrimaryDrawerItem().withName("Ruutvõrrandi lahendaja").withIcon(GoogleMaterial.Icon.gmd_swap_calls).withIdentifier(DRAWER_QUADRATIC_IDENTIFIER), // need better icon here
                         new DividerDrawerItem(),
-                        new SecondaryDrawerItem().withName("Liitintresside kalkulaator").withIcon(GoogleMaterial.Icon.gmd_trending_up).withIdentifier(DRAWER_COMPUND_INTEREST_IDENTIFIER), // need better icon here
-                        new SecondaryDrawerItem().withName("Ruutvõrrandi lahendaja").withIcon(GoogleMaterial.Icon.gmd_swap_calls).withIdentifier(DRAWER_QUADRATIC_IDENTIFIER), // need better icon here
-                        new DividerDrawerItem(),
-                        new SecondaryDrawerItem().withName("Teavita veast").withIcon(GoogleMaterial.Icon.gmd_notifications_active).withIdentifier(DRAWER_REPORT_IDENTIFIER),
+                        //new PrimaryDrawerItem().withName("Teavita veast").withIcon(GoogleMaterial.Icon.gmd_notifications_active).withIdentifier(DRAWER_REPORT_IDENTIFIER),
                         new PrimaryDrawerItem().withName("Programmist").withIcon(GoogleMaterial.Icon.gmd_pets).withIdentifier(DRAWER_ABOUT_IDENTIFIER)
                 ) // Add the items we want to use with our Drawer.
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
@@ -159,44 +159,20 @@ public class MataActivity extends AppCompatActivity implements
                         if (drawerItem instanceof Nameable) {
                             int identifier = (int) drawerItem.getIdentifier();
                             if (identifier >= DRAWER_CLASS1_IDENTIFIER && identifier <= DRAWER_GYMNASIUM_IDENTIFIER) {
-                                selectClass(identifier - DRAWER_CLASS1_IDENTIFIER);
-                                return true;
+                                final int classIdx = identifier - DRAWER_CLASS1_IDENTIFIER;
+                                selectClass(classIdx);
+                                handleEmittedSubtopic(Matemaatika.topicSubTopics[Matemaatika.classTopics[classIdx][0]][0]);
                             } else if (identifier == DRAWER_ABOUT_IDENTIFIER) {
                                 loadAboutHtml();
                             }
-                            selectedClass = null;
                         }
-                        return false;
+                        drawer.closeDrawer();
+                        return true;
                     }
                 })
-                .withGenerateMiniDrawer(true)
                 .withSavedInstance(savedInstanceState)
-                // Build only the view of the Drawer (don't inflate it automatically in our
-                // layout which is done with .build())
-                .buildView();
-
-        // The MiniDrawer is managed by the Drawer and we just get it to hook it into the Crossfader
-        miniDrawer = drawer.getMiniDrawer();
-
-        // Get the widths in px for the first and second panel
-        int firstWidth = (int) UIUtils.convertDpToPixel(300, this);
-        int secondWidth = (int) UIUtils.convertDpToPixel(72, this);
-
-        // Create and build our crossfader (see the MiniDrawer is also builded in here, as the
-        // build method returns the view to be used in the crossfader)
-        // the crossfader library can be found here: https://github.com/mikepenz/Crossfader
-        crossFader = new Crossfader()
-                .withContent(findViewById(R.id.main_container))
-                .withFirst(drawer.getSlider(), firstWidth)
-                .withSecond(miniDrawer.build(this), secondWidth)
-                .withSavedInstance(savedInstanceState)
+                .withShowDrawerOnFirstLaunch(true)
                 .build();
-
-        //define the crossfader to be used with the miniDrawer. This is required to be able to automatically toggle open / close
-        miniDrawer.withCrossFader(new CrossfadeWrapper(crossFader));
-
-        //define a shadow (this is only for normal LTR layouts if you have a RTL app you need to define the other one
-        crossFader.getCrossFadeSlidingPaneLayout().setShadowResourceLeft(R.drawable.material_drawer_shadow_left);
     }
 
     /**
@@ -207,13 +183,11 @@ public class MataActivity extends AppCompatActivity implements
     void selectClass(final int classIdx) {
         listView.setAdapter(new FlattenedSubtopicAdapter(getApplicationContext(), classIdx));
         listView.setOnItemClickListener(new SubTopicOnListClickListenerImpl(this, classIdx));
-        selectedClass = classIdx;
     }
 
     void selectClassAndUpdateDrawerSelection(final int classIdx) {
         drawer.deselect();
-        drawer.setSelection(DRAWER_CLASS1_IDENTIFIER + classIdx);
-        miniDrawer.setSelection(DRAWER_CLASS1_IDENTIFIER + classIdx);
+
         selectClass(classIdx);
     }
 
@@ -256,7 +230,6 @@ public class MataActivity extends AppCompatActivity implements
         toolbar.setTitle(Matemaatika.searchTitles[subTopicIdx]);
 
         String content = Matemaatika.subTopicContents[subTopicIdx];
-
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -273,14 +246,17 @@ public class MataActivity extends AppCompatActivity implements
         if (toolbar != null) {
             toolbar.collapseActionView();
         }
+    }
 
-
+    @Override
+    public void handleEmittedSubtopicAndSelectClass(int subTopicIdx) {
+        handleEmittedSubtopic(subTopicIdx);
         int classIdx = Matemaatika.subTopicClass[subTopicIdx];
-        if (selectedClass == null || selectedClass != classIdx) {
-            selectClassAndUpdateDrawerSelection(classIdx);
-            //int flattened = Matemaatika.findFlattenedIndex(classIdx, subTopicIdx);
-        }
-        selectedClass = classIdx;
+        selectClass(classIdx);
+
+        int flattenedIdx = Matemaatika.findFlattenedIndex(classIdx, subTopicIdx);
+        listView.setSelection(flattenedIdx);
+        listView.setItemChecked(flattenedIdx, true);
     }
 
     void loadAboutHtml() {
