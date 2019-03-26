@@ -28,9 +28,6 @@ import com.bavuwe.matemaatika.Matemaatika;
 import com.bavuwe.matemaatika.views.FlattenedSubTopicView;
 import com.bavuwe.matemaatika.views.FlattenedTopicView;
 
-/**
- * Topic adapter, which takes data directly from Matemaatika global state.
- */
 public class FlattenedSubtopicAdapter extends BaseAdapter {
     private final int classIdx;
     private Context context;

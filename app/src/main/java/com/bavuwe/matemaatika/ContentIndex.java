@@ -211,10 +211,6 @@ public class ContentIndex {
         return prefixes;
     }
 
-    /**
-     * Query the index against a querystring.
-     * @param queryString
-     */
     public int[] query(String queryString) {
         String[] queries = queryString.split(" ");
         float[] docWeights = new float[numDocuments];

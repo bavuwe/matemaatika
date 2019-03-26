@@ -64,12 +64,6 @@ public class MataHTMLParser {
     // subtopics of listView
     private List<ArrayList<Integer>> topics;
 
-    /**
-     * Constructor.
-     *
-     * @param is The input stream to the HTML file. NB! it will be closed by the class.
-     * @throws IOException In case the parser is unable to find the HTML file.
-     */
     MataHTMLParser(InputStream is) throws IOException {
         classTitles = new ArrayList<>();
         topicTitles = new ArrayList<>();
@@ -86,13 +80,6 @@ public class MataHTMLParser {
         parse();
     }
 
-    /**
-     * Load the stuff from already preprocessed data.
-     *
-     * @param structIs
-     * @param htmlIs
-     * @throws IOException
-     */
     public MataHTMLParser(InputStream structIs, InputStream htmlIs) throws IOException {
         DataInputStream dis = new DataInputStream(structIs);
         int n, m;
@@ -210,13 +197,6 @@ public class MataHTMLParser {
         }
     }
 
-    /**
-     * Read the contents of the InputStream and replace newlines with space characters.
-     *
-     * @param is
-     * @return
-     * @throws IOException
-     */
     protected String readFile(InputStream is) throws IOException {
         final char[] buffer = new char[0x10000];
         StringBuilder out = new StringBuilder();
@@ -233,10 +213,6 @@ public class MataHTMLParser {
         return out.toString();
     }
 
-    /**
-     * Parse the HTML file and organize content.
-     * h1 with name THE_END must be the last thing in the HTML file.
-     */
     protected void parse() {
         Matcher matcher = headerPat.matcher(content);
         boolean inSubTopic = false;
@@ -271,37 +247,24 @@ public class MataHTMLParser {
         }
     }
 
-    /**
-     * @return The class titles as a String array.
-     */
     public String[] getClassTitles() {
         String[] classTitles = new String[this.classTitles.size()];
         classTitles = this.classTitles.toArray(classTitles);
         return classTitles;
     }
 
-    /**
-     * @return The topic titles as a String array.
-     */
     public String[] getTopicTitles() {
         String[] topicTitles = new String[this.topicTitles.size()];
         topicTitles = this.topicTitles.toArray(topicTitles);
         return topicTitles;
     }
 
-    /**
-     * @return The topic titles as a String array.
-     */
     public String[] getSubTopicTitles() {
         String[] subTopicTitles = new String[this.subTopicTitles.size()];
         subTopicTitles = this.subTopicTitles.toArray(subTopicTitles);
         return subTopicTitles;
     }
 
-    /**
-     * @param classIndex The index of the class.
-     * @return Return the array of integers of listView.
-     */
     public int[] getClassTopics(int classIndex) {
         int[] topics = new int[this.classTopics.get(classIndex).size()];
         for (int index = 0; index < this.classTopics.get(classIndex).size(); ++index) {
@@ -310,10 +273,6 @@ public class MataHTMLParser {
         return topics;
     }
 
-    /**
-     * @param topicIndex The index of the topic.
-     * @return The array of integers of subtopics of topic with index 'topixIndex'.
-     */
     public int[] getTopicSubTopics(int topicIndex) {
         int[] subTopics = new int[this.topics.get(topicIndex).size()];
         for (int index = 0; index < this.topics.get(topicIndex).size(); ++index) {
@@ -339,9 +298,6 @@ public class MataHTMLParser {
 
     private final String htmlFooter = "</div></body></html>";
 
-    /**
-     * Main function for testing.
-     */
     public static void main(String[] args) {
         File f = new File("assets/mata.html");
         InputStream is;

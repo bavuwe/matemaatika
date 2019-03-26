@@ -39,7 +39,6 @@ import com.bavuwe.matemaatika.listeners.ContentLoaderListener;
 import com.bavuwe.matemaatika.listeners.SearchResultOnClickListener;
 import com.bavuwe.matemaatika.listeners.SubTopicOnListClickListenerImpl;
 import com.bavuwe.matemaatika.listeners.SubtopicEmitterListener;
-import com.mikepenz.crossfader.Crossfader;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.itemanimators.AlphaCrossFadeAnimator;
 import com.mikepenz.materialdrawer.Drawer;
@@ -52,11 +51,9 @@ import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 public class MataActivity extends AppCompatActivity implements
         ContentLoaderListener, SubtopicEmitterListener {
 
-    // dialogs
     static final int LOAD_DIALOG = 0;
+    static final String SELECTED_CLASS_KEY = "selected_class";
 
-    // drawer identifiers
-    // NB! they must be consequent, otherwise the app will crash at some point
     static final int DRAWER_FAVOURITES_IDENTIFIER = 1;
     static final int DRAWER_CLASS1_IDENTIFIER = 2;
     static final int DRAWER_CLASS2_IDENTIFIER = 3;
@@ -75,15 +72,28 @@ public class MataActivity extends AppCompatActivity implements
 
     ContentLoader loader = null;
     Drawer drawer = null;
-    //MiniDrawer miniDrawer = null;
-    Crossfader crossFader = null;
     ListView listView = null;
     WebView webView = null;
     ListView searchResults = null;
     SearchResultsAdapter searchResultsAdapter = null;
     SearchView searchView = null;
     Toolbar toolbar = null;
+    Integer selectedSubTopic = null;
 
+    @Override
+    protected void onSaveInstanceState(Bundle state) {
+        super.onSaveInstanceState(state);
+        state.putInt(SELECTED_CLASS_KEY, selectedSubTopic);
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle state) {
+        Object value = state.get(SELECTED_CLASS_KEY);
+        if (value != null) {
+            selectedSubTopic = (Integer)value;
+            handleEmittedSubtopicAndSelectClass(selectedSubTopic);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -162,12 +172,14 @@ public class MataActivity extends AppCompatActivity implements
                                 final int classIdx = identifier - DRAWER_CLASS1_IDENTIFIER;
                                 selectClass(classIdx);
                                 handleEmittedSubtopic(Matemaatika.topicSubTopics[Matemaatika.classTopics[classIdx][0]][0]);
+                                drawer.closeDrawer();
+                                return true;
                             } else if (identifier == DRAWER_ABOUT_IDENTIFIER) {
                                 loadAboutHtml();
                             }
                         }
-                        drawer.closeDrawer();
-                        return true;
+                        selectedSubTopic = null;
+                        return false;
                     }
                 })
                 .withSavedInstance(savedInstanceState)
@@ -175,22 +187,10 @@ public class MataActivity extends AppCompatActivity implements
                 .build();
     }
 
-    /**
-     * Select a class and update UI accordingly.
-     *
-     * @param classIdx The class index, 0 denotes first class etc.
-     */
     void selectClass(final int classIdx) {
         listView.setAdapter(new FlattenedSubtopicAdapter(getApplicationContext(), classIdx));
         listView.setOnItemClickListener(new SubTopicOnListClickListenerImpl(this, classIdx));
     }
-
-    void selectClassAndUpdateDrawerSelection(final int classIdx) {
-        drawer.deselect();
-
-        selectClass(classIdx);
-    }
-
 
     // this method will be called from another thread
     public void contentLoaded() {
@@ -227,6 +227,7 @@ public class MataActivity extends AppCompatActivity implements
 
     @Override
     public void handleEmittedSubtopic(int subTopicIdx) {
+        selectedSubTopic = subTopicIdx;
         toolbar.setTitle(Matemaatika.searchTitles[subTopicIdx]);
 
         String content = Matemaatika.subTopicContents[subTopicIdx];
