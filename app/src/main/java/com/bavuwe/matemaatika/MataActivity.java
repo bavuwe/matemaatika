@@ -83,7 +83,10 @@ public class MataActivity extends AppCompatActivity implements
     @Override
     protected void onSaveInstanceState(Bundle state) {
         super.onSaveInstanceState(state);
-        state.putInt(SELECTED_CLASS_KEY, selectedSubTopic);
+        if (selectedSubTopic != null) {
+            state.putInt(SELECTED_CLASS_KEY, selectedSubTopic);
+        }
+        selectedSubTopic = null;
     }
 
     @Override
@@ -215,7 +218,6 @@ public class MataActivity extends AppCompatActivity implements
         searchView = (SearchView) searchItem.getActionView();
         searchView.setOnQueryTextListener(searchResultsAdapter);
         searchResultsAdapter.setSearchResultsView(searchResults);
-
 
         return true;
     }
