@@ -19,6 +19,9 @@
  */
 package com.bavuwe.matemaatika;
 
+import android.animation.ObjectAnimator;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
@@ -32,6 +35,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 
 import com.bavuwe.matemaatika.adapters.FlattenedSubtopicAdapter;
 import com.bavuwe.matemaatika.adapters.SearchResultsAdapter;
@@ -123,6 +127,14 @@ public class MataActivity extends AppCompatActivity implements
             showDialog(LOAD_DIALOG);
             loader = new ContentLoader(this, getAssets());
             loader.execute();
+        }
+    }
+
+    void setStatusBarColor() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            int startColor = getWindow().getStatusBarColor();
+            int endColor = ContextCompat.getColor(getApplicationContext(), R.color.mata_statusbar_color);
+            ObjectAnimator.ofArgb(getWindow(), "statusBarColor", startColor, endColor).start();
         }
     }
 

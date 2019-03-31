@@ -1,16 +1,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
     android:gravity="center">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        tools:ignore="UnusedAttribute" />
+        app:theme="@style/MataToolbarStyle" />
 
     <FrameLayout
         android:id="@+id/main_layout"
@@ -35,7 +34,7 @@
 
             <WebView
                 android:id="@+id/webview"
-                android:layout_weight="2"
+                android:layout_weight="2.8"
                 android:layout_width="0dp"
                 android:layout_height="match_parent">
             </WebView>
@@ -44,9 +43,10 @@
 
     <ListView
         android:id="@+id/search_results"
+        android:background="@color/md_white_1000"
         android:layout_width="match_parent"
         android:layout_alignTop="@id/toolbar"
+        android:layout_marginTop="?attr/actionBarSize"
         android:layout_height="wrap_content"
-        android:background="@color/md_light_background"
         />
 </RelativeLayout>

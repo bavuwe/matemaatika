@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MataApptheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+    <style name="MataToolbarStyle" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:background">#BBDEFB</item>
+        <item name="android:textColorPrimary">#2196F3</item>
+        <item name="android:textColorSecondary">#2196F3</item>
+    </style>
+</resources>
