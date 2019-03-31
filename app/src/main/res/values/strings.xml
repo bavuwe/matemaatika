@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Matemaatika minileksikon</string>
     <string name="action_search">Otsi</string>
+    <string name="class_1">1. klass</string>
+    <string name="class_2">2. klass</string>
+    <string name="class_3">3. klass</string>
+    <string name="class_4">4. klass</string>
+    <string name="class_5">5. klass</string>
+    <string name="class_6">6. klass</string>
+    <string name="class_7">7. klass</string>
+    <string name="class_8">8. klass</string>
+    <string name="class_9">9. klass</string>
+    <string name="class_gymnaasium">Gümnaasium</string>
+    <string name="about">Minileksikonist</string>
 </resources>

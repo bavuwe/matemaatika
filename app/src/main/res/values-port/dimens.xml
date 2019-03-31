@@ -2,10 +2,10 @@
 <resources>
     <dimen name="webview_marginstart">0dp</dimen>
     <dimen name="webview_margintop">0dp</dimen>
-    <dimen name="webview_weight">2</dimen>
+    <dimen name="webview_weight">1.6</dimen>
     <dimen name="topic_marginleft">0dp</dimen>
     <dimen name="topic_layoutheight">48dp</dimen>
-    <dimen name="topic_textsize">15sp</dimen>
+    <dimen name="topic_textsize">14sp</dimen>
     <dimen name="subtopic_layoutheight">32dp</dimen>
     <dimen name="subtopic_textsize">12sp</dimen>
 </resources>

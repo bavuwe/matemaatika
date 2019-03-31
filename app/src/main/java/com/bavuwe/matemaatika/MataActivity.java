@@ -164,22 +164,22 @@ public class MataActivity extends AppCompatActivity implements
                 .addDrawerItems(
                         //new PrimaryDrawerItem().withName("Lemmikud").withIcon(GoogleMaterial.Icon.gmd_star).withIdentifier(DRAWER_FAVOURITES_IDENTIFIER),
                         //new DividerDrawerItem(),
-                        new PrimaryDrawerItem().withName("1. klass").withIcon(GoogleMaterial.Icon.gmd_filter_1).withIdentifier(DRAWER_CLASS1_IDENTIFIER),
-                        new PrimaryDrawerItem().withName("2. klass").withIcon(GoogleMaterial.Icon.gmd_filter_2).withIdentifier(DRAWER_CLASS2_IDENTIFIER),
-                        new PrimaryDrawerItem().withName("3. klass").withIcon(GoogleMaterial.Icon.gmd_filter_3).withIdentifier(DRAWER_CLASS3_IDENTIFIER),
-                        new PrimaryDrawerItem().withName("4. klass").withIcon(GoogleMaterial.Icon.gmd_filter_4).withIdentifier(DRAWER_CLASS4_IDENTIFIER),
-                        new PrimaryDrawerItem().withName("5. klass").withIcon(GoogleMaterial.Icon.gmd_filter_5).withIdentifier(DRAWER_CLASS5_IDENTIFIER),
-                        new PrimaryDrawerItem().withName("6. klass").withIcon(GoogleMaterial.Icon.gmd_filter_6).withIdentifier(DRAWER_CLASS6_IDENTIFIER),
-                        new PrimaryDrawerItem().withName("7. klass").withIcon(GoogleMaterial.Icon.gmd_filter_7).withIdentifier(DRAWER_CLASS7_IDENTIFIER),
-                        new PrimaryDrawerItem().withName("8. klass").withIcon(GoogleMaterial.Icon.gmd_filter_8).withIdentifier(DRAWER_CLASS8_IDENTIFIER),
-                        new PrimaryDrawerItem().withName("9. klass").withIcon(GoogleMaterial.Icon.gmd_filter_9).withIdentifier(DRAWER_CLASS9_IDENTIFIER),
-                        new PrimaryDrawerItem().withName("Gümnaasium").withIcon(GoogleMaterial.Icon.gmd_school).withIdentifier(DRAWER_GYMNASIUM_IDENTIFIER),
+                        new PrimaryDrawerItem().withName(getString(R.string.class_1)).withIcon(GoogleMaterial.Icon.gmd_filter_1).withIdentifier(DRAWER_CLASS1_IDENTIFIER),
+                        new PrimaryDrawerItem().withName(getString(R.string.class_2)).withIcon(GoogleMaterial.Icon.gmd_filter_2).withIdentifier(DRAWER_CLASS2_IDENTIFIER),
+                        new PrimaryDrawerItem().withName(getString(R.string.class_3)).withIcon(GoogleMaterial.Icon.gmd_filter_3).withIdentifier(DRAWER_CLASS3_IDENTIFIER),
+                        new PrimaryDrawerItem().withName(getString(R.string.class_4)).withIcon(GoogleMaterial.Icon.gmd_filter_4).withIdentifier(DRAWER_CLASS4_IDENTIFIER),
+                        new PrimaryDrawerItem().withName(getString(R.string.class_5)).withIcon(GoogleMaterial.Icon.gmd_filter_5).withIdentifier(DRAWER_CLASS5_IDENTIFIER),
+                        new PrimaryDrawerItem().withName(getString(R.string.class_6)).withIcon(GoogleMaterial.Icon.gmd_filter_6).withIdentifier(DRAWER_CLASS6_IDENTIFIER),
+                        new PrimaryDrawerItem().withName(getString(R.string.class_7)).withIcon(GoogleMaterial.Icon.gmd_filter_7).withIdentifier(DRAWER_CLASS7_IDENTIFIER),
+                        new PrimaryDrawerItem().withName(getString(R.string.class_8)).withIcon(GoogleMaterial.Icon.gmd_filter_8).withIdentifier(DRAWER_CLASS8_IDENTIFIER),
+                        new PrimaryDrawerItem().withName(getString(R.string.class_9)).withIcon(GoogleMaterial.Icon.gmd_filter_9).withIdentifier(DRAWER_CLASS9_IDENTIFIER),
+                        new PrimaryDrawerItem().withName(getString(R.string.class_gymnaasium)).withIcon(GoogleMaterial.Icon.gmd_school).withIdentifier(DRAWER_GYMNASIUM_IDENTIFIER),
                         //new DividerDrawerItem(),
                         //new PrimaryDrawerItem().withName("Liitintresside kalkulaator").withIcon(GoogleMaterial.Icon.gmd_trending_up).withIdentifier(DRAWER_COMPUND_INTEREST_IDENTIFIER), // need better icon here
                         //new PrimaryDrawerItem().withName("Ruutvõrrandi lahendaja").withIcon(GoogleMaterial.Icon.gmd_swap_calls).withIdentifier(DRAWER_QUADRATIC_IDENTIFIER), // need better icon here
                         new DividerDrawerItem(),
                         //new PrimaryDrawerItem().withName("Teavita veast").withIcon(GoogleMaterial.Icon.gmd_notifications_active).withIdentifier(DRAWER_REPORT_IDENTIFIER),
-                        new PrimaryDrawerItem().withName("Programmist").withIcon(GoogleMaterial.Icon.gmd_pets).withIdentifier(DRAWER_ABOUT_IDENTIFIER)
+                        new PrimaryDrawerItem().withName(getString(R.string.about)).withIcon(GoogleMaterial.Icon.gmd_pets).withIdentifier(DRAWER_ABOUT_IDENTIFIER)
                 ) // Add the items we want to use with our Drawer.
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
