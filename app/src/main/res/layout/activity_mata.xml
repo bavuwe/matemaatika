@@ -34,11 +34,11 @@
 
             <WebView
                 android:id="@+id/webview"
-                android:layout_weight="2.8"
+                android:layout_weight="@dimen/webview_weight"
                 android:layout_width="0dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginStart="@dimen/webview_marginstart"
+                android:layout_marginLeft="@dimen/webview_marginstart"
+                android:layout_marginTop="@dimen/webview_margintop"
                 android:layout_height="match_parent">
             </WebView>
         </LinearLayout>
@@ -46,7 +46,7 @@
 
     <ListView
         android:id="@+id/search_results"
-        android:background="@color/md_white_1000"
+        style="@style/MataListView"
         android:layout_width="match_parent"
         android:layout_alignTop="@id/toolbar"
         android:layout_marginTop="?attr/actionBarSize"

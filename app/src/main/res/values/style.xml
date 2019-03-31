@@ -7,4 +7,7 @@
         <item name="android:textColorPrimary">#2196F3</item>
         <item name="android:textColorSecondary">#2196F3</item>
     </style>
+    <style name="MataListView" parent="Widget.AppCompat.ListView">
+        <item name="android:background">#FFFFFF</item>
+    </style>
 </resources>

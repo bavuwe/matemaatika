@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="text_margin">16dp</dimen>
+    <dimen name="webview_marginstart">5dp</dimen>
+    <dimen name="webview_margintop">5dp</dimen>
+    <dimen name="webview_weight">2.8</dimen>
+    <dimen name="topic_marginleft">10dp</dimen>
+    <dimen name="topic_layoutheight">64dp</dimen>
+    <dimen name="topic_textsize">18sp</dimen>
+    <dimen name="subtopic_layoutheight">32dp</dimen>
+    <dimen name="subtopic_textsize">14sp</dimen>
 </resources>

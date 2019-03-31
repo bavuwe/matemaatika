@@ -2,14 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="32dp">
+    android:layout_height="@dimen/subtopic_layoutheight">
 
     <TextView
         android:id="@+id/flattened_subtopic_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_marginLeft="10dp"
+        android:textColor="#444"
+        android:layout_marginStart="@dimen/topic_marginleft"
+        android:layout_marginLeft="@dimen/topic_marginleft"
         android:text=""
-        android:textSize="14sp" />
+        android:textSize="@dimen/subtopic_textsize" />
 </LinearLayout>
