@@ -100,6 +100,7 @@ public class MataActivity extends AppCompatActivity implements
             selectedSubTopic = (Integer)value;
             handleEmittedSubtopicAndSelectClass(selectedSubTopic);
         }
+        setStatusBarColor();
     }
 
     @Override
@@ -121,6 +122,7 @@ public class MataActivity extends AppCompatActivity implements
         onCreateToolbar();
         onCreateActionbar();
         onCreateDrawer(savedInstanceState);
+        setStatusBarColor();
 
         // Kick off contentloader.
         if (Matemaatika.classTitles == null) {

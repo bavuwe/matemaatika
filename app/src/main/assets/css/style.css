@@ -23,15 +23,15 @@
 body {
 	font: 90% sans-serif;
 	background: white;
-	color: black;
+	color: #444;
 	margin: 0;
 	padding: 0;
 }
 
 #globalWrapper {
-	margin: 10px 5%;
-	padding: 20px;
-	background: #ffffff;
+	margin: 0;
+	padding: 0 0 0 0;
+	background: white;
 	line-height: 1.5em;
 }
 
