@@ -218,7 +218,7 @@ public class MataActivity extends AppCompatActivity implements
             @Override
             public void run() {
                 removeDialog(MataActivity.LOAD_DIALOG);
-                Toast.makeText(getApplicationContext(), "content loaded", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), "content loaded", Toast.LENGTH_LONG).show();
 
                 // by default, show the first topic of the first class
                 selectClass(0);
