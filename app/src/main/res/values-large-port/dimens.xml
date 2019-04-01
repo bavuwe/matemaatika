@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="webview_marginstart">0dp</dimen>
-    <dimen name="webview_margintop">0dp</dimen>
+    <dimen name="webview_marginstart">5dp</dimen>
+    <dimen name="webview_margintop">5dp</dimen>
     <dimen name="webview_weight">2.2</dimen>
     <dimen name="topic_marginleft">5dp</dimen>
     <dimen name="topic_layoutheight">64dp</dimen>

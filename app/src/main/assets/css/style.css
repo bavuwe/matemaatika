@@ -20,6 +20,10 @@
 * Global CSS file for LyX documents.
 */
 
+img.appicon {
+   width: 200px;
+}
+
 body {
 	background: white;
 	color: #444;

@@ -20,6 +20,7 @@
 package com.bavuwe.matemaatika;
 
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -193,7 +194,8 @@ public class MataActivity extends AppCompatActivity implements
                                 drawer.closeDrawer();
                                 return true;
                             } else if (identifier == DRAWER_ABOUT_IDENTIFIER) {
-                                loadAboutHtml();
+                                Intent intent = new Intent(MataActivity.this, AboutActivity.class);
+                                startActivity(intent);
                             }
                         }
                         selectedSubTopic = null;
@@ -275,16 +277,6 @@ public class MataActivity extends AppCompatActivity implements
         int flattenedIdx = Matemaatika.findFlattenedIndex(classIdx, subTopicIdx);
         listView.setSelection(flattenedIdx);
         listView.setItemChecked(flattenedIdx, true);
-    }
-
-    void loadAboutHtml() {
-        webView.setWebViewClient(new WebViewClient() {
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                return true;
-            }
-        });
-        webView.loadUrl("file:///android_asset/about.html");
     }
 }
 
